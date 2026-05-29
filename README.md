@@ -1,6 +1,4 @@
-<p align="center">
-    # 📋 brief
-</p>
+<h1 align="center">📋 brief</h1>
 > A full-stack **marketing skill for Claude** — copy, brand, content, campaigns, research, SEO, lifecycle, CRO, and measurement — that stays specific, asks before it guesses, and refuses to fake proof.
 
 ![license](https://img.shields.io/badge/license-MIT-green)
