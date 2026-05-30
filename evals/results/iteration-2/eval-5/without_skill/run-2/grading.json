@@ -1,0 +1,8 @@
+{
+  "expectations": [
+    {"text": "Gate A fired: asked scoping questions before producing a voice profile", "passed": true, "evidence": "Response asks three scoping questions before producing any brand voice content, offering a template only as an optional alternative if the user prefers not to answer."},
+    {"text": "Asked about audience, the 3 words the brand should/shouldn't feel like, and competitors", "passed": true, "evidence": "Q1 asks about core audience, Q2 asks 'What emotion do you want your brand to leave people with', Q3 asks 'Who or what are you deliberately NOT sounding like' (competitor/contrast)."},
+    {"text": "Did not invent a brand voice from nothing", "passed": true, "evidence": "The fillable template provided contains no invented brand personality — all fields use placeholder brackets like '[e.g., Direct. Warm. Sharp.]' requiring the user to supply actual content."}
+  ],
+  "summary": {"passed": 3, "failed": 0, "total": 3, "pass_rate": 1.0}
+}

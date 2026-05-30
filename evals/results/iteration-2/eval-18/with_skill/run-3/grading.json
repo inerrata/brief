@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Gate B satisfied: audited the actual provided copy rather than asking for it",
+      "passed": true,
+      "evidence": "The response immediately audits the TaskFlow copy provided in the prompt without asking for additional information."
+    },
+    {
+      "text": "Runs a structured (~8-point) conversion audit against the real copy",
+      "passed": true,
+      "evidence": "The response covers exactly 8 labeled problems with severity ratings (Critical, High, Medium) in a structured format."
+    },
+    {
+      "text": "References specific problems in the provided copy (e.g. vague 'powerful/seamless' language, three competing CTAs, no proof)",
+      "passed": true,
+      "evidence": "The audit quotes 'powerful, innovative, and seamless,' specifically identifies three CTAs ([Learn More] [Sign Up] [Contact Sales]), and flags zero social proof as a problem."
+    },
+    {
+      "text": "Produces a prioritized fix list ordered by impact/effort",
+      "passed": true,
+      "evidence": "An 8-item priority table is provided with items ordered by severity and the instruction 'Fix items 1–3 first.'"
+    },
+    {
+      "text": "Includes the low-traffic A/B testing caveat",
+      "passed": false,
+      "evidence": "The response contains no mention of A/B testing, traffic thresholds, or caveats about needing sufficient traffic to validate changes."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "expectations": [
+    {
+      "text": "Did NOT trigger the marketing skill (personal writing, not marketing)",
+      "passed": true,
+      "evidence": "The response writes a personal thank-you note with no marketing framework, brand language, or acquisition strategy — purely personal writing."
+    },
+    {
+      "text": "Writes a warm, normal personal thank-you note",
+      "passed": true,
+      "evidence": "The response delivers a warm note ('Thank you so much for the birthday sweater — it's such a thoughtful gift... You always know exactly what I'll love') with personalization tips."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 0,
+    "total": 2,
+    "pass_rate": 1.0
+  }
+}

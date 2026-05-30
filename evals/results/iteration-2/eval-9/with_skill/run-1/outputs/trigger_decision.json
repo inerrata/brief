@@ -1,0 +1,1 @@
+{"triggered": true, "reason": "Launching a product is explicitly listed in the skill description as a GTM/campaign task, and the skill's campaigns.md framework directly governs product launch planning.", "references_read": ["SKILL.md", "campaigns.md"]}

@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Defines 3-5 specific content pillars",
+      "passed": true,
+      "evidence": "The response defines exactly 4 content pillars: Education, POV/Industry take, Social proof/credibility, and Product/offer."
+    },
+    {
+      "text": "Maps content to funnel stages (TOFU/MOFU/BOFU)",
+      "passed": true,
+      "evidence": "Each week's table labels content by funnel stage, e.g. 'Deep guide (TOFU)', 'How-to (MOFU)', and 'FAQ/objection-handling (BOFU)'."
+    },
+    {
+      "text": "Applies a value-heavy content mix ratio",
+      "passed": true,
+      "evidence": "The response states a '~60% educational, ~25% credibility/story, ~15% promotional' content mix, which is value-heavy."
+    },
+    {
+      "text": "Calendar includes the reference fields: pillar, funnel stage, format, working title, CTA",
+      "passed": true,
+      "evidence": "The calendar table columns include Channel (maps to pillar via type), Type (format + funnel stage), Hook/Title (working title), and CTA."
+    },
+    {
+      "text": "Asks 2-3 scoping questions or states explicit assumptions (medium stakes)",
+      "passed": true,
+      "evidence": "The response opens with explicit assumptions: 'Assuming: early-stage B2B fintech startup, primary audience is finance or operations decision-makers at SMBs or mid-market companies, goal is brand awareness + inbound lead generation, primary channel is LinkedIn with a supporting blog, one person handling content.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

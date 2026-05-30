@@ -1,0 +1,20 @@
+{
+  "expectations": [
+    {
+      "text": "Did NOT trigger the marketing skill (not a brand/product naming task)",
+      "passed": true,
+      "evidence": "The response gives pet name ideas organized by personality and color traits with no marketing framework, brand positioning language, or skill-characteristic framing."
+    },
+    {
+      "text": "Gives a normal, friendly set of cat name ideas",
+      "passed": true,
+      "evidence": "The response provides multiple categorized name suggestions (personality-forward, grey-inspired, dignified, cozy) with playful commentary appropriate for a pet naming request."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 0,
+    "total": 2,
+    "pass_rate": 1.0
+  }
+}

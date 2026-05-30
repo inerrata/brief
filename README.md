@@ -5,8 +5,9 @@
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![format](https://img.shields.io/badge/format-SKILL.md-blue)
 ![evals](https://img.shields.io/badge/evals-26%20prompts-blue)
-![with--skill](https://img.shields.io/badge/with--skill-82.7%25-brightgreen)
-![delta](https://img.shields.io/badge/vs%20baseline-%2B20.4pp-brightgreen)
+![with--skill](https://img.shields.io/badge/with--skill-86.4%25-brightgreen)
+![delta](https://img.shields.io/badge/vs%20baseline-%2B5.7pp-brightgreen)
+![iterations](https://img.shields.io/badge/eval%20iterations-2-blue)
 
 Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 9 purpose-built reference modules only when relevant. The depth of nine specialist playbooks, none of the context bloat. Works with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and anything that reads the open `SKILL.md` format.
 
@@ -48,24 +49,24 @@ That difference is measurable — see below.
 
 Each of 26 eval prompts was run **with the skill and without it (baseline)**, then graded against per-prompt assertions. Full method, per-eval table, and raw outputs in [`benchmarks/`](benchmarks) and [`evals/`](evals).
 
-| Metric | With skill | Baseline | Delta |
-|---|:--:|:--:|:--:|
-| **Mean pass rate** | **82.7%** | 62.3% | **+20.4 pp** |
-| Evals where skill ≥ baseline | 23 / 26 | — | — |
-| Gates (A & B) + negative controls | ✅ correct | n/a | — |
+| Metric | With skill | Baseline | Delta | Runs |
+|---|:--:|:--:|:--:|:--:|
+| **Iteration-2** (3× avg, headline) | **86.4%** | 80.7% | **+5.7 pp** | 3× |
+| Iteration-1 (1× directional) | 82.7% | 62.3% | +20.4 pp | 1× |
 
-**Where it moves the needle most:**
+The 3× pass is the reliable number — it averages out single-run variance. The baseline strengthened significantly when measured consistently (+18pp), but so did the skill (+3.7pp). The +5.7pp delta is the honest, repeatable lift.
 
-| Eval | With | Base | Why |
-|---|:--:|:--:|---|
-| positioning statement (Gate A) | 1.00 | 0.00 | asks the load-bearing questions instead of guessing |
-| honesty probe | 1.00 | 0.25 | placeholders, never fabricated testimonials/stats |
-| homepage hero | 1.00 | 0.25 | drafts outcome-led copy on a stated assumption |
-| competitor analysis | 1.00 | 0.33 | ends in a white-space gap, not just description |
-| pricing-page audit (Gate B) | 1.00 | 0.67 | demands the real asset before auditing |
-| cold email | 0.86 | 0.43 | one idea, one low-friction CTA, relevance-first |
+**Where it moves the needle most (iteration-2):**
 
-**Negative controls** ("name my cat", "explain DNS", "thank-you note to grandma") correctly did **not** trigger the skill — no false positives. A few weak spots (welcome-sequence, LinkedIn) are tracked openly in [`benchmarks/README.md`](benchmarks/README.md).
+| Eval | With | Base | Δ | Why |
+|---|:--:|:--:|:--:|---|
+| positioning statement (Gate A) | 1.00 | 0.00 | +1.00 | asks the load-bearing questions instead of guessing |
+| implicit trigger (#22) | 1.00 | 0.50 | +0.50 | fires correctly with no marketing keywords |
+| BF subject lines | 0.92 | 0.50 | +0.42 | angle labels, preview text, length-checked |
+| homepage hero | 1.00 | 0.75 | +0.25 | outcome-led copy on a stated assumption |
+| competitor analysis | 1.00 | 0.67 | +0.33 | ends in white-space gap, not just description |
+
+**Negative controls** ("name my cat", "explain DNS", "thank-you note to grandma") correctly did **not** trigger — no false positives across all 3 runs. Weak spots and iteration-3 targets tracked openly in [`benchmarks/README.md`](benchmarks/README.md).
 
 📊 **Browse every output and grade:** open [`evals/review.html`](evals/review.html) in a browser.
 

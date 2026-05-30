@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Provides exactly three subject line options", "passed": true, "evidence": "Response provides exactly three numbered subject lines."},
+    {"text": "Each option takes a genuinely distinct angle and is labeled by angle (e.g. curiosity / benefit+offer / urgency)", "passed": true, "evidence": "Options are labeled 'Urgency', 'Direct offer', and 'Personality-led' — each a distinct angle."},
+    {"text": "Each subject line is under ~50 characters", "passed": false, "evidence": "'Black Friday: [X]% off every subscription, this weekend only' is approximately 60 characters, exceeding the ~50 char limit."},
+    {"text": "Does not fabricate specific discount figures; flags if a real discount % is needed", "passed": false, "evidence": "Uses '[X]%' as a placeholder but provides no explicit note flagging that a real discount figure is needed."}
+  ],
+  "summary": {"passed": 2, "failed": 2, "total": 4, "pass_rate": 0.5}
+}

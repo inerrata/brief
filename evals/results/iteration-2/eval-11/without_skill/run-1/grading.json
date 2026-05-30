@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Includes firmographics, goals, pains, objections, buying triggers, watering holes, and decision role",
+      "passed": true,
+      "evidence": "The ICP includes firmographics (business type, industry, revenue, team size), goals, pains and frustrations, objections, buying triggers, and watering holes; decision role is implicit in the solo-owner persona description."
+    },
+    {
+      "text": "Explicitly flags the ICP as a hypothesis pending real customer evidence",
+      "passed": true,
+      "evidence": "The closing note reads 'This ICP is hypothesis-based. The strongest version would be validated against your actual customer data.'"
+    },
+    {
+      "text": "May ask 1-2 questions first",
+      "passed": true,
+      "evidence": "The response proceeds directly to building the ICP without asking questions, which is acceptable given the 'may' qualifier in the assertion."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  }
+}

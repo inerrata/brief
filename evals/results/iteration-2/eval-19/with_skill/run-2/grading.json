@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Names a primary metric tied to the goal (CAC or ROAS)",
+      "passed": true,
+      "evidence": "The response explicitly says 'Pick one primary metric tied to your goal — usually CAC or ROAS' with definitions for both."
+    },
+    {
+      "text": "Includes leading indicators (CTR, CPC, conversion rate)",
+      "passed": true,
+      "evidence": "CTR, CPC, and Conversion Rate appear in Layers 1 and 2 and are included in the weekly tracking cadence."
+    },
+    {
+      "text": "Shows formulas with their inputs",
+      "passed": true,
+      "evidence": "A dedicated 'Key formulas for reference' section shows all four formulas with their inputs: CAC, ROAS, LTV:CAC, and CAC Payback."
+    },
+    {
+      "text": "Warns against vanity metrics such as impressions",
+      "passed": false,
+      "evidence": "Impressions are presented neutrally as 'a baseline for everything else' rather than flagged as a vanity metric to avoid over-indexing on."
+    },
+    {
+      "text": "Includes the attribution-is-imperfect caveat",
+      "passed": false,
+      "evidence": "Attribution is mentioned as something to 'layer in' later but the response never warns that attribution is imperfect or unreliable."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 2,
+    "total": 5,
+    "pass_rate": 0.6
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "expectations": [
+    {
+      "text": "Did NOT trigger the marketing skill",
+      "passed": true,
+      "evidence": "The response is a purely technical DNS explanation with no marketing framework, assumption statements, or acquisition language."
+    },
+    {
+      "text": "Gives a normal, correct technical explanation of DNS resolution",
+      "passed": true,
+      "evidence": "The response correctly explains DNS resolution step-by-step from browser cache through root nameserver, TLD nameserver, and authoritative nameserver, including TTL and record types."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 0,
+    "total": 2,
+    "pass_rate": 1.0
+  }
+}

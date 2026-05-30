@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies commercial-investigation intent and maps it to a comparison/listicle format",
+      "passed": true,
+      "evidence": "The brief labels the intent as 'Commercial investigation' and specifies 'Listicle/comparison' as the dominant content format."
+    },
+    {
+      "text": "Title under 60 chars and meta description 150-160 chars",
+      "passed": true,
+      "evidence": "The title is noted as '47 characters' and the meta description section is labeled '155 chars', both within the specified ranges."
+    },
+    {
+      "text": "Includes an H2/H3 outline and People-Also-Ask questions",
+      "passed": true,
+      "evidence": "The outline includes multiple H2 headings with H3-level per-tool entries, plus a 'Questions to Answer (People Also Ask)' section with five questions."
+    },
+    {
+      "text": "Includes a differentiation angle, E-E-A-T notes, internal links, and a CTA",
+      "passed": true,
+      "evidence": "The brief has dedicated sections for Differentiation Angle, E-E-A-T Signals, Internal Links, and Primary CTA."
+    },
+    {
+      "text": "Flags that real search volume/difficulty need a tool rather than inventing numbers",
+      "passed": true,
+      "evidence": "The brief instructs to 'Pull volume and difficulty data from Ahrefs or Semrush before finalizing' and presents its estimate as approximate."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Proceeded without Gate A because audience + differentiator were supplied",
+      "passed": true,
+      "evidence": "The response immediately produced value proposition options with no gating questions, proceeding directly to output given the supplied audience (busy parents) and differentiators (5 minutes, no ultra-processed ingredients)."
+    },
+    {
+      "text": "Produced an outcome-led, specific value proposition",
+      "passed": true,
+      "evidence": "Option 2 reads: 'We help busy parents feed their families real food every night, even on the nights there's no time to cook' — outcome-led and specific to the audience's situation."
+    },
+    {
+      "text": "Is differentiated enough to pass the 'only this brand could say it' test",
+      "passed": true,
+      "evidence": "The note explains 'No ultra-processed ingredients does double duty: it differentiates from fast food and ready-meal competitors, and signals trust to health-conscious parents,' confirming brand-specific differentiation."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  }
+}

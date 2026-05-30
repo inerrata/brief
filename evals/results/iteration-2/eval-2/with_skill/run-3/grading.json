@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Triggered the skill despite casual, keyword-light phrasing", "passed": true, "evidence": "Response opens with 'Assuming audience: creators, freelancers, or small business owners...' indicating skill-style structured output."},
+    {"text": "Headline is outcome-led and concrete, not a vague aspirational tagline", "passed": true, "evidence": "Headline: 'Your social content — scheduled, published, done.' is concrete and outcome-led."},
+    {"text": "Includes a subheadline and a primary CTA", "passed": true, "evidence": "Subheadline and Primary CTA ('Get started free →') are both clearly labeled and present."},
+    {"text": "Output is finished hero copy, not a description of what could be written", "passed": true, "evidence": "The response delivers a single complete, ready-to-use hero section rather than describing options."}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.0}
+}

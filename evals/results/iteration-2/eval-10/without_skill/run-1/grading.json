@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Proceeded because inputs (audience, goal, timeline) are rich",
+      "passed": true,
+      "evidence": "The response proceeds directly to the campaign brief with only a brief assumption note ('Assuming this is a SaaS product with a standard free-trial signup flow'), without asking gating questions."
+    },
+    {
+      "text": "Brief states a measurable objective",
+      "passed": false,
+      "evidence": "The Objective section states 'Drive free-trial signups from freelance designers over a 6-week period. (Set a specific numeric target based on your current baseline — e.g., 300 net new trials.)' — it defers the specific number to the user rather than committing to one."
+    },
+    {
+      "text": "Articulates the audience before->after belief shift",
+      "passed": true,
+      "evidence": "The Audience section states 'Current belief: Tracking time is more hassle than it's worth...' and 'Desired belief after the campaign: This tool fits the way designers actually work...'"
+    },
+    {
+      "text": "States a single key message plus a reason to believe",
+      "passed": true,
+      "evidence": "The brief states a Single Key Message: 'Stop guessing how long projects take. Know exactly what to charge.' and includes a 'Reason to Believe' section with proof points."
+    },
+    {
+      "text": "Includes CTA, channels, timeline, and success metrics",
+      "passed": true,
+      "evidence": "The brief includes 'Call to Action: Start your free trial — no credit card needed', a Channels table, a Timeline table by week, and a Success Metrics section."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Proceeded without Gate A because audience + differentiator were supplied",
+      "passed": true,
+      "evidence": "The response immediately produced value proposition options without asking any gating questions, directly acting on the supplied audience (busy parents) and differentiators."
+    },
+    {
+      "text": "Produced an outcome-led, specific value proposition",
+      "passed": true,
+      "evidence": "Option 2 — 'We help busy parents get a real, home-cooked meal on the table every night — even the nights when there's no time to cook' — is outcome-led and specific."
+    },
+    {
+      "text": "Is differentiated enough to pass the 'only this brand could say it' test",
+      "passed": true,
+      "evidence": "The explanation notes that '5 minutes' and 'No ultra-processed ingredients' together differentiate from 'fast food, meal kits that cut corners, and convenience food in general,' making this brand-specific."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  }
+}

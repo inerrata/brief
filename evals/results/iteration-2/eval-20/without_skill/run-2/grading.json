@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Computes LTV correctly (50*18 = 900)",
+      "passed": true,
+      "evidence": "The response computes LTV = $50/month × 18 months = $900."
+    },
+    {
+      "text": "Computes LTV:CAC ratio (~2.25:1)",
+      "passed": true,
+      "evidence": "The response computes LTV:CAC = $900 ÷ $400 = 2.25:1."
+    },
+    {
+      "text": "Shows the formulas and inputs used",
+      "passed": true,
+      "evidence": "The Math section shows all inputs: LTV = $50 × 18, LTV:CAC = $900 ÷ $400, CAC Payback = $400 ÷ $50."
+    },
+    {
+      "text": "Interprets against the ~3:1 guideline while flagging benchmarks vary by industry and gross margin matters",
+      "passed": true,
+      "evidence": "The response references the 3:1 benchmark and includes a gross margin caveat section with adjusted LTV examples at 70% and 80% margins."
+    },
+    {
+      "text": "Does not present the verdict as financial certainty",
+      "passed": true,
+      "evidence": "The response qualifies with 'can strain cash flow' and 'the real picture is tighter' for lower margins, avoiding absolute financial certainty."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

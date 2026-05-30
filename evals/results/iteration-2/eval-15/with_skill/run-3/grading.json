@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Produces a 3-5 email welcome flow with a logical progression (welcome -> story/why -> best value -> social proof -> soft offer)",
+      "passed": true,
+      "evidence": "The response is a 5-email sequence following exactly: Email 1 Welcome, Email 2 Story/Why, Email 3 Best Value, Email 4 Social Proof, Email 5 Soft Offer."
+    },
+    {
+      "text": "Specifies timing for each email",
+      "passed": true,
+      "evidence": "Each email specifies timing: immediately, day 2, day 4, day 6, and day 8 respectively."
+    },
+    {
+      "text": "Has one CTA per email",
+      "passed": true,
+      "evidence": "Each email has a single CTA: Email 1 asks subscribers to reply, Email 2 ends with implicit reflection, Email 3 has a '[LINK: Read/get it here]', Email 4 closes with an identity CTA, and Email 5 has '[LINK: Learn more / See if it's a fit]'."
+    },
+    {
+      "text": "May ask about the newsletter topic/audience",
+      "passed": true,
+      "evidence": "The response assumes a content/knowledge creator audience and notes 'adjust the tone and specifics to your brand and offer,' which is acceptable given the 'may' qualifier."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

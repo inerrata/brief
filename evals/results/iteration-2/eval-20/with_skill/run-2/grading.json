@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Computes LTV correctly (50*18 = 900)",
+      "passed": true,
+      "evidence": "The response explicitly computes LTV = $50/month × 18 months = $900."
+    },
+    {
+      "text": "Computes LTV:CAC ratio (~2.25:1)",
+      "passed": true,
+      "evidence": "The response computes LTV:CAC ratio = $900 ÷ $400 = 2.25:1."
+    },
+    {
+      "text": "Shows the formulas and inputs used",
+      "passed": true,
+      "evidence": "All computations are shown with inputs: LTV = $50 × 18 months, LTV:CAC = $900 ÷ $400, Payback = $400 ÷ $50/month, and margin-adjusted formulas."
+    },
+    {
+      "text": "Interprets against the ~3:1 guideline while flagging benchmarks vary by industry and gross margin matters",
+      "passed": true,
+      "evidence": "The response references the '3:1 for a healthy SaaS or subscription business' benchmark and includes a full 'gross margin matters' section with examples at 70% margin."
+    },
+    {
+      "text": "Does not present the verdict as financial certainty",
+      "passed": true,
+      "evidence": "The response qualifies its verdict with 'Whether that's good depends on your cash position' and notes that margins significantly change the picture, avoiding absolute certainty."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

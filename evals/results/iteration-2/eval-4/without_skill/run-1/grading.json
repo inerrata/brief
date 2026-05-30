@@ -1,0 +1,8 @@
+{
+  "expectations": [
+    {"text": "Gate A fired: asked 2-3 sharp scoping questions BEFORE writing", "passed": false, "evidence": "Response immediately outputs a finished positioning statement before asking any scoping questions."},
+    {"text": "Questions cover narrowest audience, key differentiator, and the real competing alternative", "passed": false, "evidence": "No scoping questions were asked before writing; only a brief sharpening prompt appears after the completed statement."},
+    {"text": "Did NOT output a finished positioning statement built on guessed inputs", "passed": false, "evidence": "Response explicitly states 'Assuming: the core audience is creative or digital agencies of 5–50 people...' and then produces a complete positioning statement based on those guessed inputs."}
+  ],
+  "summary": {"passed": 0, "failed": 3, "total": 3, "pass_rate": 0.0}
+}

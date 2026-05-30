@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Re-engagement flow that acknowledges the silence and offers a reason to return",
+      "passed": true,
+      "evidence": "Email 1 acknowledges 'It's been a couple of months since you last logged into [Product name]' and Email 2 lists new product features as reasons to return."
+    },
+    {
+      "text": "Makes both staying and leaving easy",
+      "passed": true,
+      "evidence": "Email 4 explicitly states 'you can [cancel / pause / keep your account at no cost — whatever applies]' making exit easy while providing a login link for re-engagement."
+    },
+    {
+      "text": "Ends with suppression/removal of non-responders to protect deliverability",
+      "passed": true,
+      "evidence": "Post-sequence action states 'No response after Email 4: Remove from active marketing sends. Keep in a suppressed segment.'"
+    },
+    {
+      "text": "Tone is helpful, not nagging",
+      "passed": true,
+      "evidence": "The sequence uses empathetic framing ('I know life gets busy'), invites feedback rather than demanding action, and commits to stopping contact after Email 4."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

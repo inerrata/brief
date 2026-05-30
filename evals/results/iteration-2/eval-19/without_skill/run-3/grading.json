@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Names a primary metric tied to the goal (CAC or ROAS)",
+      "passed": true,
+      "evidence": "The response recommends 'picking one primary goal metric (usually CAC or ROAS)' and defines both in the Revenue/Business Metrics section."
+    },
+    {
+      "text": "Includes leading indicators (CTR, CPC, conversion rate)",
+      "passed": true,
+      "evidence": "CTR, CPC, and Conversion Rate are listed with definitions in the Efficiency and Conversion Metrics sections and in the weekly check schedule."
+    },
+    {
+      "text": "Shows formulas with their inputs",
+      "passed": true,
+      "evidence": "Formulas are shown inline for CTR (clicks ÷ impressions), CAC (total spend ÷ new customers acquired), and ROAS (revenue generated ÷ ad spend)."
+    },
+    {
+      "text": "Warns against vanity metrics such as impressions",
+      "passed": false,
+      "evidence": "Impressions and CPM are listed as valid metrics with no warning about their vanity metric status."
+    },
+    {
+      "text": "Includes the attribution-is-imperfect caveat",
+      "passed": true,
+      "evidence": "The Attribution Setup section explicitly calls last-click attribution 'common but imperfect,' acknowledging the limitation."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  }
+}

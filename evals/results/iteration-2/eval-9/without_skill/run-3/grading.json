@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Asked 2-3 scoping questions (audience, goal/metric, timeline) and/or led with a one-page campaign brief",
+      "passed": true,
+      "evidence": "The response asks four scoping questions covering audience, differentiator, launch logistics/budget, and goal/metric — satisfying the requirement to ask scoping questions before proceeding."
+    },
+    {
+      "text": "Provides a phased pre-launch / launch / post-launch structure",
+      "passed": false,
+      "evidence": "No launch plan was produced; the response only promises 'a concrete launch plan covering what to do before launch, on launch day, and in the weeks after' once questions are answered."
+    },
+    {
+      "text": "Includes an asset checklist",
+      "passed": false,
+      "evidence": "No asset checklist is present; the response is entirely scoping questions with no deliverable content."
+    },
+    {
+      "text": "Pulls multiple modules (campaign + copy + email + measurement) without sprawling",
+      "passed": false,
+      "evidence": "No multi-module content was produced; the response defers all output until scoping questions are answered."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 3,
+    "total": 4,
+    "pass_rate": 0.25
+  }
+}
