@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Synthesizes GTM (research + channels + acquisition motion), content, email, and launch",
+      "passed": true,
+      "evidence": "Response covers community research, channel selection, content posts, waitlist/email list, and a full launch sequence with pre-launch, launch day, and post-launch steps."
+    },
+    {
+      "text": "Is sequenced and focused (one channel/motion first, not everything at once)",
+      "passed": true,
+      "evidence": "The plan explicitly says 'Pick the single community/platform where your exact buyer is most concentrated, and go deep there' and structures activity in weekly phases."
+    },
+    {
+      "text": "Asks a couple of scoping questions or states clear assumptions",
+      "passed": true,
+      "evidence": "The response states clear assumptions by noting the template niche is unknown and prompts the founder to 'Name that person precisely,' and closes with 'Adjust the above based on what your templates are actually for.'"
+    },
+    {
+      "text": "Stays structured rather than a generic info-dump",
+      "passed": true,
+      "evidence": "The response is organized into titled weekly phases (Week 1-2, Week 2-3, Week 3-4), a metrics section, and a single focus principle — clearly structured and not a generic dump."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

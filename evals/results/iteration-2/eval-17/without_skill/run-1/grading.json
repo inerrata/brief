@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Gate B fired: asked for the actual page (paste copy / URL / screenshot) plus goal and audience BEFORE auditing",
+      "passed": true,
+      "evidence": "The response asks for the page copy, what action visitors should take, and where the traffic comes from before conducting any audit."
+    },
+    {
+      "text": "Did NOT invent the page's contents and audit its own invention",
+      "passed": true,
+      "evidence": "No page content is invented — the response only asks questions and promises a specific, prioritized fix list once the content is shared."
+    },
+    {
+      "text": "May offer a clearly-labeled generic checklist as a fallback",
+      "passed": true,
+      "evidence": "The response states 'I can give you a general checklist to self-audit against in the meantime' as a clearly labeled fallback option."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  }
+}

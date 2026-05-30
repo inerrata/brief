@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Triggered the skill despite no explicit marketing keywords",
+      "passed": false,
+      "evidence": "The response lacks the assumption statement present in with_skill runs and is shorter and less detailed, indicating the marketing skill was not triggered."
+    },
+    {
+      "text": "Gives a focused acquisition plan (channels matched to audience, one motion to start, content/proof)",
+      "passed": true,
+      "evidence": "The response gives a phased plan: personal outreach first, then one social channel ('Pick one social channel and commit'), then paid amplification — focused and channel-matched."
+    },
+    {
+      "text": "Is not a vague pep talk",
+      "passed": true,
+      "evidence": "The response offers concrete actions: seeding with free product, specific platform options, email list building, and retargeting ads — not motivational fluff."
+    },
+    {
+      "text": "May ask about the product/audience",
+      "passed": false,
+      "evidence": "The response neither asks about the product/audience nor states any assumptions about the store type before diving into advice."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 2,
+    "total": 4,
+    "pass_rate": 0.5
+  }
+}

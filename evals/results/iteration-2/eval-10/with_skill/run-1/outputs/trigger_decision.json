@@ -1,0 +1,1 @@
+{"triggered": true, "reason": "The request explicitly asks for a campaign brief, which is a core deliverable defined in the skill's campaigns.md reference.", "references_read": ["SKILL.md", "campaigns.md"]}

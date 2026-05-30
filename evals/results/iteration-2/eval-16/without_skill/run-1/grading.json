@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Re-engagement flow that acknowledges the silence and offers a reason to return",
+      "passed": true,
+      "evidence": "Email 1 acknowledges 'you haven't logged into [Product] in about two months' and Email 2 lists new features as reasons to return."
+    },
+    {
+      "text": "Makes both staying and leaving easy",
+      "passed": true,
+      "evidence": "Email 4 states 'If [Product] isn't a fit right now, no hard feelings. You can [cancel/pause/keep your account — whatever applies]' alongside a login CTA."
+    },
+    {
+      "text": "Ends with suppression/removal of non-responders to protect deliverability",
+      "passed": true,
+      "evidence": "After the sequence section states 'No engagement: Remove from marketing sends. Keep in a suppressed segment.'"
+    },
+    {
+      "text": "Tone is helpful, not nagging",
+      "passed": true,
+      "evidence": "Emails acknowledge the customer may be busy ('I get it — life gets busy'), invite feedback, and Email 4 closes with 'This is the last email we'll send about coming back.'"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

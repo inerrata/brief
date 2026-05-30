@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Covers each competitor across positioning, audience, key messages, tone, proof, channels, strengths, gaps",
+      "passed": false,
+      "evidence": "Each competitor snapshot covers positioning, audience, key message, strengths, and weaknesses, but tone/voice, proof, and channels are not addressed as explicit dimensions for each player."
+    },
+    {
+      "text": "Ends in a gap / white-space analysis ('therefore...'), not just descriptions",
+      "passed": true,
+      "evidence": "The response includes a 'Where the White Space Is' section and a 'Therefore' paragraph with strategic positioning recommendations."
+    },
+    {
+      "text": "Uses real, well-known players accurately and flags uncertainty rather than inventing specifics",
+      "passed": true,
+      "evidence": "All seven players are real and well-known, and the opening note advises to 'verify current pricing and features before using for strategic decisions.'"
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 1,
+    "total": 3,
+    "pass_rate": 0.67
+  }
+}

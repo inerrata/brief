@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Triggered content strategy guidance, not a generic 'post valuable content' answer",
+      "passed": true,
+      "evidence": "The response provides a structured content mix, five specific post types with concrete example hooks, and LinkedIn mechanics — not a generic 'post valuable content' answer."
+    },
+    {
+      "text": "Gives content pillars plus format guidance tied to LinkedIn norms",
+      "passed": true,
+      "evidence": "The response defines five post types as content pillars (observation, framework, mini case study, contrarian take, process transparency) and includes LinkedIn-specific mechanics like hook importance and short-line formatting."
+    },
+    {
+      "text": "Ties content to funnel stages",
+      "passed": true,
+      "evidence": "The content mix maps to funnel stages: '~60% — Specific insights from your work' (awareness), '~25% — Proof and process' (consideration), '~15% — Direct signal of availability' (conversion)."
+    },
+    {
+      "text": "May ask about niche/audience",
+      "passed": true,
+      "evidence": "The response closes with: 'To make this more specific to your situation: what type of consulting do you do, and are you primarily trying to attract new clients or build a referral network?'"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

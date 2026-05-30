@@ -1,0 +1,12 @@
+{
+  "expectations": [
+    {"text": "Decided the marketing skill applies and used it", "passed": false, "evidence": "Response produces direct email copy without any indication that the marketing skill was invoked."},
+    {"text": "Subject line is present and under ~50 characters", "passed": true, "evidence": "Subject: 'The churn you can still stop this month' is approximately 39 characters."},
+    {"text": "Includes preview/preheader text complementary to the subject", "passed": true, "evidence": "Preview text: 'Most at-risk customers signal weeks before they cancel.' complements the subject line."},
+    {"text": "Opening is relevance-first (no generic throat-clearing like 'I hope this finds you well')", "passed": true, "evidence": "Email opens with 'Here's a pattern that shows up across SaaS businesses:' — relevance-first with no generic greeting."},
+    {"text": "Body is one idea and under ~120 words", "passed": true, "evidence": "The body focuses solely on churn signals and the tool's function, approximately 80 words."},
+    {"text": "Has exactly one low-friction CTA (yes/no or permission ask), not a 30-minute meeting demand", "passed": false, "evidence": "'I can walk you through it in 15 minutes. [Pick a time →]' is a direct meeting booking request, not a yes/no or permission ask."},
+    {"text": "States assumptions inline rather than blocking with questions (scoped/low-stakes task)", "passed": false, "evidence": "No assumptions are stated inline; the response produces the email without noting any framing choices."}
+  ],
+  "summary": {"passed": 4, "failed": 3, "total": 7, "pass_rate": 0.571}
+}

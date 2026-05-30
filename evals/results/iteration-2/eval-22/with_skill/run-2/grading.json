@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Triggered the skill despite no explicit marketing keywords",
+      "passed": true,
+      "evidence": "The response opens with 'Assuming you're running an e-commerce or DTC online store selling physical or digital products' — a skill-characteristic assumption statement absent from without_skill runs, indicating the marketing skill was triggered."
+    },
+    {
+      "text": "Gives a focused acquisition plan (channels matched to audience, one motion to start, content/proof)",
+      "passed": true,
+      "evidence": "The response phases acquisition into personal outreach first, then one social channel ('Nail one social channel — don't try to be everywhere'), then paid amplification only after signal is established."
+    },
+    {
+      "text": "Is not a vague pep talk",
+      "passed": true,
+      "evidence": "The response provides concrete tactics: specific community types, posting frequency (3-5x/week), influencer follower ranges (1k-20k), and specific ad strategies (retargeting, boosting organic content)."
+    },
+    {
+      "text": "May ask about the product/audience",
+      "passed": true,
+      "evidence": "The response states a clear assumption about store type upfront ('Assuming you're running an e-commerce or DTC online store') rather than asking, which satisfies the spirit of this assertion."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

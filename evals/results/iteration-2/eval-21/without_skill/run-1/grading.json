@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Synthesizes GTM (research + channels + acquisition motion), content, email, and launch",
+      "passed": true,
+      "evidence": "Response covers buyer research, community channels, content (Loom walkthrough, posts), waitlist email, and a full launch sequence including pre-launch, launch day, and post-launch."
+    },
+    {
+      "text": "Is sequenced and focused (one channel/motion first, not everything at once)",
+      "passed": true,
+      "evidence": "The 'Key principle' section explicitly says 'One month is short. Don't spread thin across five platforms. Pick the one place your buyer hangs out most and go deep there.'"
+    },
+    {
+      "text": "Asks a couple of scoping questions or states clear assumptions",
+      "passed": false,
+      "evidence": "The response dives straight into advice without asking questions or explicitly stating assumptions about the template niche or target audience."
+    },
+    {
+      "text": "Stays structured rather than a generic info-dump",
+      "passed": true,
+      "evidence": "Response is organized into numbered steps within weekly phases with clear headers and a focused key principle at the end."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 1,
+    "total": 4,
+    "pass_rate": 0.75
+  }
+}

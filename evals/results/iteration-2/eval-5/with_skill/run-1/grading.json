@@ -1,0 +1,8 @@
+{
+  "expectations": [
+    {"text": "Gate A fired: asked scoping questions before producing a voice profile", "passed": true, "evidence": "Response asks three scoping questions and explicitly states it will 'build you a full voice profile' only after receiving answers — no profile is produced."},
+    {"text": "Asked about audience, the 3 words the brand should/shouldn't feel like, and competitors", "passed": true, "evidence": "Q1 asks about core audience, Q2 asks what people should 'feel' after reading brand content (covering the brand personality dimension), Q3 asks about 'who or what are the alternatives' and how to 'sound different from them' (competitors/contrast)."},
+    {"text": "Did not invent a brand voice from nothing", "passed": true, "evidence": "Response concludes 'Once I have these, I'll build you a full voice profile' — no brand voice is invented without inputs."}
+  ],
+  "summary": {"passed": 3, "failed": 0, "total": 3, "pass_rate": 1.0}
+}

@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Provides exactly three subject line options", "passed": true, "evidence": "Response provides exactly three subject lines labeled 1, 2, and 3."},
+    {"text": "Each option takes a genuinely distinct angle and is labeled by angle (e.g. curiosity / benefit+offer / urgency)", "passed": true, "evidence": "Options are labeled 'Urgency/scarcity', 'Curiosity/pattern interrupt', and 'Direct benefit' — each a distinct angle."},
+    {"text": "Each subject line is under ~50 characters", "passed": true, "evidence": "All three subject lines are under 50 characters: 'Your Black Friday coffee deal expires tonight' (45), 'We don't do Black Friday. (Except this year.)' (45), 'Black Friday: [X]% off every bag, all weekend' (45)."},
+    {"text": "Does not fabricate specific discount figures; flags if a real discount % is needed", "passed": true, "evidence": "Uses '[X]%' placeholder and includes note: 'Replace [X]% with your actual discount — a specific number always outperforms a vague promise.'"}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.0}
+}

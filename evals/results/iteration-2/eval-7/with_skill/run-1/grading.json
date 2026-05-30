@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Defines 3-5 specific content pillars",
+      "passed": false,
+      "evidence": "The response asks scoping questions and promises to build the calendar later; no content pillars are defined in this response."
+    },
+    {
+      "text": "Maps content to funnel stages (TOFU/MOFU/BOFU)",
+      "passed": false,
+      "evidence": "No calendar was produced; the response only promises future 'funnel-stage mapping (TOFU/MOFU/BOFU)' once questions are answered."
+    },
+    {
+      "text": "Applies a value-heavy content mix ratio",
+      "passed": false,
+      "evidence": "The response mentions a future '60/25/15 content mix (educational/social proof/promotional)' but does not apply it in this response."
+    },
+    {
+      "text": "Calendar includes the reference fields: pillar, funnel stage, format, working title, CTA",
+      "passed": false,
+      "evidence": "No calendar is produced in this response; only a promise to include 'content pillars, funnel-stage mapping, specific working titles, formats, channels, CTAs' in a future response."
+    },
+    {
+      "text": "Asks 2-3 scoping questions or states explicit assumptions (medium stakes)",
+      "passed": true,
+      "evidence": "The response asks exactly three scoping questions covering audience/awareness stage, primary business goal, and available channels/resources."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 4,
+    "total": 5,
+    "pass_rate": 0.2
+  }
+}

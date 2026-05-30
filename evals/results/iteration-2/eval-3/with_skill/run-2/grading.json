@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Provides exactly three subject line options", "passed": true, "evidence": "Response provides exactly three subject lines labeled 1, 2, and 3."},
+    {"text": "Each option takes a genuinely distinct angle and is labeled by angle (e.g. curiosity / benefit+offer / urgency)", "passed": true, "evidence": "Options are labeled 'Direct benefit', 'Social proof / warmth', and 'Pattern interrupt / personality' — each a distinct angle."},
+    {"text": "Each subject line is under ~50 characters", "passed": false, "evidence": "'Your fellow coffee lovers are stocking up. Here's why.' is approximately 52 characters, exceeding the ~50 char limit."},
+    {"text": "Does not fabricate specific discount figures; flags if a real discount % is needed", "passed": true, "evidence": "Uses '[X]%' placeholder and notes: 'Replace [X]% with the actual figure. A real number is always stronger than \"big savings\".'"}
+  ],
+  "summary": {"passed": 3, "failed": 1, "total": 4, "pass_rate": 0.75}
+}

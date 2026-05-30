@@ -1,0 +1,12 @@
+{
+  "expectations": [
+    {"text": "Decided the marketing skill applies and used it", "passed": true, "evidence": "Response opens with 'Assuming audience: B2B SaaS founders...' and produces structured cold email copy, consistent with skill execution."},
+    {"text": "Subject line is present and under ~50 characters", "passed": true, "evidence": "Subject: 'The $[X] you're losing before you see it leave' is approximately 47 characters."},
+    {"text": "Includes preview/preheader text complementary to the subject", "passed": true, "evidence": "Preview text: 'Most churn is predictable 30 days before it happens.' complements the subject line."},
+    {"text": "Opening is relevance-first (no generic throat-clearing like 'I hope this finds you well')", "passed": true, "evidence": "Email opens immediately with 'The average SaaS loses 5–7% of MRR to churn every month.' — no generic greeting."},
+    {"text": "Body is one idea and under ~120 words", "passed": true, "evidence": "The body focuses solely on early churn signals and is approximately 90 words."},
+    {"text": "Has exactly one low-friction CTA (yes/no or permission ask), not a 30-minute meeting demand", "passed": false, "evidence": "'Worth a 15-minute look? [Book a slot here →]' is a meeting booking request, not a yes/no or permission ask."},
+    {"text": "States assumptions inline rather than blocking with questions (scoped/low-stakes task)", "passed": true, "evidence": "Response opens: 'Assuming audience: B2B SaaS founders running a product with monthly subscribers; adjust if wrong.'"}
+  ],
+  "summary": {"passed": 6, "failed": 1, "total": 7, "pass_rate": 0.857}
+}

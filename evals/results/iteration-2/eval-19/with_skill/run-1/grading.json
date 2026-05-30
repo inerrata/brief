@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Names a primary metric tied to the goal (CAC or ROAS)",
+      "passed": true,
+      "evidence": "The response explicitly states 'Pick one primary metric tied to your goal — usually CAC or ROAS' and defines both metrics."
+    },
+    {
+      "text": "Includes leading indicators (CTR, CPC, conversion rate)",
+      "passed": true,
+      "evidence": "CTR, CPC, and Conversion Rate are all listed as Layer 1 and Layer 2 metrics and included in the weekly tracking list."
+    },
+    {
+      "text": "Shows formulas with their inputs",
+      "passed": true,
+      "evidence": "A 'Key formulas for reference' section shows CAC = total ad spend ÷ new customers acquired, ROAS = revenue from ads ÷ ad spend, LTV:CAC = customer lifetime value ÷ CAC, and CAC Payback = CAC ÷ monthly gross margin per customer."
+    },
+    {
+      "text": "Warns against vanity metrics such as impressions",
+      "passed": false,
+      "evidence": "Impressions are listed as 'a baseline for everything else' without any warning that they are vanity metrics; no explicit caution against vanity metrics appears."
+    },
+    {
+      "text": "Includes the attribution-is-imperfect caveat",
+      "passed": false,
+      "evidence": "The response advises using UTM parameters and mentions 'attribution modeling and incrementality testing' but never states that attribution is imperfect or unreliable."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 2,
+    "total": 5,
+    "pass_rate": 0.6
+  }
+}
