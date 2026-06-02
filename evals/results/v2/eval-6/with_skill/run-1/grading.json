@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Produces an actual SEO content brief, not just clarifying questions", "passed": true, "evidence": "Full brief: keyword, intent, outline, on-page guidance."},
+    {"text": "Identifies a primary target keyword and the search intent behind it", "passed": true, "evidence": "Primary keyword 'time blocking'; intent labeled informational/how-to."},
+    {"text": "Includes a suggested outline or set of H2/H3 headings", "passed": true, "evidence": "H1 + eight H2s provided."},
+    {"text": "Includes guidance for at least one of: meta title/description, internal links, or word count", "passed": true, "evidence": "Meta title + description, word count range, and internal-link guidance all included."},
+    {"text": "States an assumption about audience or goal in one line because they were not given", "passed": true, "evidence": "Opening 'Assuming: audience = busy professionals new to time blocking; goal = organic traffic to signups.'"}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Asks 2-3 scoping questions before producing the value proposition", "passed": true, "evidence": "Three questions before any draft."},
+    {"text": "At least one question targets who exactly the audience is", "passed": true, "evidence": "Q1 narrows which kind of musician (beginner/pro/producer/teacher)."},
+    {"text": "At least one question targets the single most important differentiator or the main alternative", "passed": true, "evidence": "Q2 differentiator vs YouTube/Skillshare/Teachable; Q3 the main alternative."},
+    {"text": "Does NOT output a finished value proposition built on assumptions in this turn", "passed": true, "evidence": "No value prop written; offered as optional next step."},
+    {"text": "Keeps the questions sharp and limited rather than a long checklist", "passed": true, "evidence": "Three focused questions."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

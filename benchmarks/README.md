@@ -98,6 +98,8 @@ All five were fixed by editing the skill and re-benchmarked (1× re-run; see [`b
 
 | File | Description |
 |---|---|
+| [`benchmark-v2-evalset.md`](benchmark-v2-evalset.md) | Held-out v2 set (24 new prompts): 122/122, method + caveats |
+| [`benchmark-v2-evalset.json`](benchmark-v2-evalset.json) | Held-out v2 results, machine-readable |
 | [`benchmark-iteration-3.json`](benchmark-iteration-3.json) | Iteration-3 targeted re-bench, machine-readable |
 | [`benchmark-iteration-3.md`](benchmark-iteration-3.md) | Iteration-3 fixes, results, caveats |
 | [`benchmark-iteration-2.json`](benchmark-iteration-2.json) | Full 3× results, machine-readable |

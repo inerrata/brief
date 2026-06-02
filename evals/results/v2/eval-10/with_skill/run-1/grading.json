@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Treats this as a marketing copy task and delivers actual listing copy", "passed": true, "evidence": "Triggers despite casual phrasing; delivers finished Etsy title + description."},
+    {"text": "Produces a listing title and a product description", "passed": true, "evidence": "Both present and labeled."},
+    {"text": "Description leads with a reader benefit, sensory detail, or use-occasion rather than only listing specs", "passed": true, "evidence": "Opens 'Light this when you want the room to feel like an exhale' — sensory/occasion-led before specs."},
+    {"text": "Replaces vague praise with concrete, specific detail", "passed": true, "evidence": "Soy wax, cotton wick, even melt pool, burn hours, scent notes — concrete, not 'amazing candle'."},
+    {"text": "States an assumption about audience or product specifics in one line", "passed": true, "evidence": "Opening assumptions line; bracketed placeholders for unknown specs."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

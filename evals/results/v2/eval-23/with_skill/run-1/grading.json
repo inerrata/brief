@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Does not activate the marketing skill or apply any marketing framework", "passed": true, "evidence": "Pure technical answer; no marketing framing."},
+    {"text": "Provides a technical explanation of TCP vs UDP", "passed": true, "evidence": "Explains reliability, ordering, handshake, overhead, and use cases for each."},
+    {"text": "Does not reframe the request as copy, positioning, or audience messaging", "passed": true, "evidence": "No copy/positioning/audience language anywhere."},
+    {"text": "Does not ask marketing brief questions", "passed": true, "evidence": "Only optional follow-up is offering a handshake diagram."}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.0}
+}

@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Produces an actual boilerplate paragraph, not clarifying questions", "passed": true, "evidence": "Delivers a ready 'About us' paragraph."},
+    {"text": "Keeps it tight (roughly one short paragraph suitable for a footer/press use)", "passed": true, "evidence": "Single compact paragraph."},
+    {"text": "Includes a concrete, specific detail rather than only vague adjectives", "passed": true, "evidence": "Comes-to-you model, eco/low-water method, gallons saved, vehicles served — concrete specifics."},
+    {"text": "States an assumption about audience or service specifics in one line because details are missing", "passed": true, "evidence": "Opening assumptions line + bracketed placeholders."},
+    {"text": "Does NOT treat this as a Gate A strategy statement requiring questions first", "passed": true, "evidence": "Delivers immediately; no gating questions."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

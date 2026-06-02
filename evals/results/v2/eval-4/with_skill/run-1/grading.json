@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "Delivers an actual campaign concept including a referral mechanic, not only questions", "passed": true, "evidence": "'Sweat Together' concept with a double-sided referral mechanic."},
+    {"text": "Articulates a single core message or hook for the campaign", "passed": true, "evidence": "One core message: workouts are easier with a friend; bring one, both win."},
+    {"text": "Specifies a concrete incentive or reward structure for referrer and/or invitee", "passed": true, "evidence": "Double-sided reward unlocked after friend's first week (both parties)."},
+    {"text": "Names at least two channels for running the campaign", "passed": true, "evidence": "In-app prompt, lifecycle email/push, shareable result card."},
+    {"text": "States load-bearing assumptions (e.g. audience or goal) in one line", "passed": true, "evidence": "Opening assumptions line on audience and goal."},
+    {"text": "Any reward dollar amount or stat is presented as an adjustable placeholder", "passed": true, "evidence": "Rewards given as [reward placeholder] with an explicit 'set against your margins' note."}
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0}
+}

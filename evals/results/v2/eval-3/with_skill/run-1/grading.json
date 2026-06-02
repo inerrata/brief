@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Produces an actual content-pillar structure, not just questions", "passed": true, "evidence": "Delivers four pillars with examples and channel mapping."},
+    {"text": "Defines between 3 and 5 distinct pillars", "passed": true, "evidence": "Four distinct pillars."},
+    {"text": "Gives at least one concrete example topic or format under each pillar", "passed": true, "evidence": "Each pillar has an e.g. episode/newsletter example."},
+    {"text": "States an assumption in one line about audience or goal", "passed": true, "evidence": "Opens 'Assuming: audience = early indie game devs; goal = grow a loyal audience.'"},
+    {"text": "Does not stall the deliverable behind a list of clarifying questions", "passed": true, "evidence": "Delivers first; single optional follow-up at the end."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

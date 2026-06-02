@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Produces specific A/B test ideas because the flow was described (does not refuse for lack of an asset)", "passed": true, "evidence": "Delivers five concrete tests; does not invoke the audit/asset gate since the flow was described."},
+    {"text": "Provides at least 3 distinct test hypotheses", "passed": true, "evidence": "Five distinct hypotheses."},
+    {"text": "Each hypothesis ties to a plausible reason for drop-off on the payment/shipping step", "passed": true, "evidence": "Each has a 'Why' grounded in form length, surprise cost, payment anxiety, or forced account creation."},
+    {"text": "Names the primary metric to evaluate the test", "passed": true, "evidence": "Each test names a metric (middle-step/checkout-completion rate, etc.)."},
+    {"text": "Includes at least one caution about test validity, sample size, or not chasing a vanity metric", "passed": true, "evidence": "'Run them right' covers single-variable, sample size, significance, and vanity-metric warning."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

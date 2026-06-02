@@ -1,0 +1,388 @@
+[
+  {
+    "id": 1,
+    "name": "google-ad-rfp-software",
+    "module": "copywriting",
+    "type": "happy_path",
+    "prompt": "Write me a couple of responsive search ad headlines and descriptions for our RFP-response automation software. We sell to proposal managers at mid-size consultancies.",
+    "expected_output": "Ready-to-use RSA assets: multiple distinct headlines under 30 characters and descriptions under 90 characters, benefit-led and aimed at proposal managers, with one clear CTA.",
+    "assertions": [
+      "Produces actual ad copy (headlines and descriptions), not a description of what to write",
+      "Provides at least 5 headlines, each at or under ~30 characters",
+      "Provides at least 2 descriptions, each at or under ~90 characters",
+      "At least one headline or description leads with a reader benefit or outcome (e.g. time saved, more wins), not just a product feature",
+      "Includes at least one clear call to action",
+      "Uses no fabricated statistics; any specific metric is a marked placeholder"
+    ],
+    "files": []
+  },
+  {
+    "id": 2,
+    "name": "messaging-hierarchy-wait",
+    "module": "brand-messaging",
+    "type": "gate_A",
+    "prompt": "We just rebranded our developer-tooling startup and I need a messaging hierarchy — the primary message, supporting pillars, the works. Can you put one together?",
+    "expected_output": "Recognizes a messaging hierarchy as a load-bearing strategy statement and asks 2-3 sharp scoping questions (audience, key differentiator, main alternative) before writing anything.",
+    "assertions": [
+      "Asks 2-3 scoping questions before producing the hierarchy",
+      "At least one question targets the specific target audience",
+      "At least one question targets the key differentiator or the main alternative/competitor",
+      "Does NOT output a full messaging hierarchy built on guessed inputs in this turn",
+      "Questions are concise (not an open-ended interrogation of many items)"
+    ],
+    "files": []
+  },
+  {
+    "id": 3,
+    "name": "content-pillars-podcast",
+    "module": "content-strategy",
+    "type": "happy_path",
+    "prompt": "I run a podcast about indie game development and want to build out content pillars so our YouTube and newsletter stop feeling random. Give me a structure.",
+    "expected_output": "A concrete content-pillar structure (3-5 themed pillars with example topics and channel mapping) delivered on stated assumptions, not a request for more info.",
+    "assertions": [
+      "Produces an actual content-pillar structure, not just questions",
+      "Defines between 3 and 5 distinct pillars",
+      "Gives at least one concrete example topic or format under each pillar",
+      "States an assumption in one line about audience or goal (e.g. 'Assuming...; adjust if wrong')",
+      "Does not stall the deliverable behind a list of clarifying questions"
+    ],
+    "files": []
+  },
+  {
+    "id": 4,
+    "name": "referral-campaign-fitness-app",
+    "module": "campaigns",
+    "type": "happy_path",
+    "prompt": "Concept a referral campaign for our home-workout app. We want existing users to invite friends. Give me the campaign concept and the core mechanic.",
+    "expected_output": "A campaign concept with one core message, a referral mechanic/incentive, channels, and a measurement note — delivered with stated assumptions.",
+    "assertions": [
+      "Delivers an actual campaign concept including a referral mechanic, not only questions",
+      "Articulates a single core message or hook for the campaign",
+      "Specifies a concrete incentive or reward structure for referrer and/or invitee",
+      "Names at least two channels for running the campaign",
+      "States load-bearing assumptions (e.g. audience or goal) in one line",
+      "Any reward dollar amount or stat is presented as an adjustable placeholder, not fabricated as fact"
+    ],
+    "files": []
+  },
+  {
+    "id": 5,
+    "name": "icp-trap-warehouse-saas",
+    "module": "research",
+    "type": "deliver_first_trap",
+    "prompt": "Build me an ICP for our warehouse inventory SaaS.",
+    "expected_output": "Produces a full ICP (firmographics, role, pains, triggers, where-to-reach) on explicitly stated assumptions rather than withholding it behind questions.",
+    "assertions": [
+      "Produces a complete ICP document in this turn, not a list of questions",
+      "Covers firmographics (company size/type), the buyer/user role, and key pains or jobs-to-be-done",
+      "States its assumptions in one line (e.g. 'Assuming...; adjust if wrong')",
+      "Does NOT gate or refuse to deliver pending answers",
+      "Includes at least one buying trigger or where-to-reach-them detail"
+    ],
+    "files": []
+  },
+  {
+    "id": 6,
+    "name": "seo-brief-trap-vague",
+    "module": "seo",
+    "type": "happy_path",
+    "prompt": "need an seo content brief for a blog post on time blocking",
+    "expected_output": "An SEO content brief (target keyword, search intent, suggested outline/headers, internal-link and meta guidance) delivered on stated assumptions despite missing audience and goal.",
+    "assertions": [
+      "Produces an actual SEO content brief, not just clarifying questions",
+      "Identifies a primary target keyword and the search intent behind it",
+      "Includes a suggested outline or set of H2/H3 headings",
+      "Includes guidance for at least one of: meta title/description, internal links, or word count",
+      "States an assumption about audience or goal in one line because they were not given"
+    ],
+    "files": []
+  },
+  {
+    "id": 7,
+    "name": "reengagement-email-saas-dormant",
+    "module": "email-lifecycle",
+    "type": "happy_path",
+    "prompt": "Write a re-engagement email for users of our budgeting app who signed up but never connected a bank account.",
+    "expected_output": "A complete re-engagement email (subject, preview text, body, single CTA) addressing the specific drop-off point, with stated assumptions.",
+    "assertions": [
+      "Produces a full email with a subject line, body, and a single clear CTA",
+      "Includes preview/preheader text",
+      "Body directly addresses the specific friction (never connected a bank account)",
+      "Has exactly one primary call to action, not several competing ones",
+      "Does not fabricate user statistics or testimonials; any such proof is a marked placeholder"
+    ],
+    "files": []
+  },
+  {
+    "id": 8,
+    "name": "cro-checkout-trap-no-asset-described",
+    "module": "cro",
+    "type": "happy_path",
+    "prompt": "Our checkout flow is three steps: cart, shipping+payment on one page, then a confirm page. People drop off hard on the middle step. Give me A/B test ideas to fix it.",
+    "expected_output": "Concrete CRO test hypotheses for the described middle step (the flow IS described, so it should deliver), each with a rationale and a metric to watch.",
+    "assertions": [
+      "Produces specific A/B test ideas because the flow was described in the prompt (does not refuse for lack of an asset)",
+      "Provides at least 3 distinct test hypotheses",
+      "Each hypothesis ties to a plausible reason for drop-off on the payment/shipping step",
+      "Names the primary metric to evaluate the test (e.g. step-completion or checkout-completion rate)",
+      "Includes at least one caution about test validity, sample size, or not chasing a vanity metric"
+    ],
+    "files": []
+  },
+  {
+    "id": 9,
+    "name": "measurement-newsletter-kpis",
+    "module": "measurement",
+    "type": "happy_path",
+    "prompt": "What should I actually be measuring for our company newsletter to know if it's working?",
+    "expected_output": "A focused set of meaningful newsletter KPIs tied to business outcomes, with an explicit warning against vanity metrics and a note that attribution is imperfect.",
+    "assertions": [
+      "Recommends a focused set of metrics rather than an exhaustive dump",
+      "Distinguishes meaningful outcome metrics from vanity metrics (e.g. opens) explicitly",
+      "Includes an explicit warning against optimizing for vanity metrics",
+      "Notes that attribution is imperfect or that the metrics are directional",
+      "Ties at least one metric to a downstream business goal (revenue, retention, qualified leads)"
+    ],
+    "files": []
+  },
+  {
+    "id": 10,
+    "name": "phrasing-help-sell-candles",
+    "module": "copywriting",
+    "type": "phrasing_variation",
+    "prompt": "ok so i make soy candles and nobody's buying lol. can u help me make the etsy listing actually sound good",
+    "expected_output": "Despite casual, keyword-light phrasing, the skill triggers and delivers improved Etsy listing copy (title + description) on stated assumptions.",
+    "assertions": [
+      "Treats this as a marketing copy task and delivers actual listing copy",
+      "Produces a listing title and a product description",
+      "Description leads with a reader benefit, sensory detail, or use-occasion rather than only listing specs",
+      "Replaces vague praise with concrete, specific detail",
+      "States an assumption about audience or product specifics in one line since details are missing"
+    ],
+    "files": []
+  },
+  {
+    "id": 11,
+    "name": "phrasing-make-people-care-app",
+    "module": "brand-messaging",
+    "type": "phrasing_variation",
+    "prompt": "how do i get people to actually care about my plant-care reminder app when i tell them about it",
+    "expected_output": "Triggers and delivers a tight set of message angles / talking points (not a gated strategy statement, since this is 'how do I talk about it' not 'define my positioning'), with stated assumptions.",
+    "assertions": [
+      "Treats this as a marketing messaging task and delivers concrete talking points or hooks",
+      "Provides at least 3 distinct angles or one-line pitches",
+      "Frames at least one around the reader's problem or desired outcome, not the app's features",
+      "Avoids vague filler adjectives in the suggested phrasing",
+      "States an assumption about the target audience in one line"
+    ],
+    "files": []
+  },
+  {
+    "id": 12,
+    "name": "phrasing-flyer-coffee-cart",
+    "module": "campaigns",
+    "type": "phrasing_variation",
+    "prompt": "starting a lil coffee cart at the farmers market sat. what do i put on the sign so peopl stop",
+    "expected_output": "Triggers despite typos and casual tone; delivers concrete sign/flyer copy options with a clear hook and CTA, on stated assumptions.",
+    "assertions": [
+      "Treats this as a marketing copy task and delivers actual sign/flyer text",
+      "Provides at least 2 distinct headline or sign-copy options",
+      "At least one option gives passersby a concrete reason to stop (specific offer, named drink, or sensory hook)",
+      "Includes a clear next action (e.g. where to go, what to order, a launch-day offer)",
+      "Does not invent a specific price or discount as fact; any figure is an adjustable placeholder"
+    ],
+    "files": []
+  },
+  {
+    "id": 13,
+    "name": "positioning-wait-analytics",
+    "module": "brand-messaging",
+    "type": "gate_A",
+    "prompt": "Write a positioning statement for my product analytics tool.",
+    "expected_output": "Recognizes a positioning statement as load-bearing and asks 2-3 sharp questions (audience, differentiator, main alternative) before writing it.",
+    "assertions": [
+      "Asks 2-3 scoping questions before writing the positioning statement",
+      "At least one question targets the narrow target audience",
+      "At least one question targets the differentiator or the main competitor/alternative",
+      "Does NOT output a finished positioning statement built on guesses in this turn",
+      "Does not ask an overwhelming number of questions (stays at roughly 2-3)"
+    ],
+    "files": []
+  },
+  {
+    "id": 14,
+    "name": "value-prop-wait-courses",
+    "module": "brand-messaging",
+    "type": "gate_A",
+    "prompt": "I'm launching an online course platform for musicians. Give me the value proposition I should put front and center.",
+    "expected_output": "Treats the value proposition as a Gate A strategy statement and asks 2-3 sharp questions before drafting, rather than guessing the differentiator.",
+    "assertions": [
+      "Asks 2-3 scoping questions before producing the value proposition",
+      "At least one question targets who exactly the audience is (e.g. which kind of musician/creator)",
+      "At least one question targets the single most important differentiator or the main alternative",
+      "Does NOT output a finished value proposition built on assumptions in this turn",
+      "Keeps the questions sharp and limited rather than a long checklist"
+    ],
+    "files": []
+  },
+  {
+    "id": 15,
+    "name": "audit-email-no-asset",
+    "module": "email-lifecycle",
+    "type": "gate_B",
+    "prompt": "Can you audit my onboarding email and tell me why so few people click through?",
+    "expected_output": "Asks the user to share the actual email (paste/URL/screenshot) plus goal and audience before auditing, and does not invent the email's contents.",
+    "assertions": [
+      "Requests the actual email asset (paste, screenshot, or link) before auditing",
+      "Does NOT invent or assume the specific contents of the email and critique that invention",
+      "Asks for at least one of: the goal of the email or the target audience",
+      "May offer a generic checklist but makes clear a real audit requires seeing the real email",
+      "Does not produce a detailed point-by-point audit of a fabricated email"
+    ],
+    "files": []
+  },
+  {
+    "id": 16,
+    "name": "audit-homepage-with-asset",
+    "module": "cro",
+    "type": "gate_B",
+    "prompt": "Audit my SaaS homepage hero, here it is:\n\nHeadline: \"The All-in-One Platform for Modern Teams\"\nSubhead: \"Empower your workflow with our innovative, seamless solution built for scale.\"\nCTA button: \"Learn More\"\n\nGoal is free-trial signups, audience is ops managers at 50-200 person companies.",
+    "expected_output": "Because the asset, goal, and audience are provided inline, it performs an actual audit of THIS hero and gives specific rewrite recommendations.",
+    "assertions": [
+      "Performs an actual audit of the provided hero copy rather than asking for the asset",
+      "Flags vague/empty adjectives in the copy (e.g. 'all-in-one', 'innovative', 'seamless')",
+      "Critiques the weak 'Learn More' CTA relative to the free-trial-signup goal",
+      "Provides at least one concrete rewritten headline, subhead, or CTA",
+      "Ties recommendations to the stated audience (ops managers at 50-200 person companies) and/or the signup goal"
+    ],
+    "files": []
+  },
+  {
+    "id": 17,
+    "name": "content-calendar-trap-bakery",
+    "module": "content-strategy",
+    "type": "deliver_first_trap",
+    "prompt": "Make me a one-month content calendar for my neighborhood bakery's Instagram.",
+    "expected_output": "Produces a full one-month Instagram content calendar on stated assumptions rather than gating behind questions.",
+    "assertions": [
+      "Produces an actual one-month content calendar (dated or weekly-structured posts), not just questions",
+      "Includes a concrete post idea/theme for each scheduled slot",
+      "Reflects a mix of content types or pillars rather than one repeated format",
+      "States an assumption about audience or goal in one line",
+      "Does NOT withhold the calendar pending answers to clarifying questions"
+    ],
+    "files": []
+  },
+  {
+    "id": 18,
+    "name": "competitor-teardown-meal-kit",
+    "module": "research",
+    "type": "happy_path",
+    "prompt": "Do a competitor teardown of the main meal-kit delivery brands so I can see where there's a gap for a new vegetarian-only one. Just go off the big players you know.",
+    "expected_output": "A structured competitor analysis of the major meal-kit brands (positioning, target, strengths/weaknesses, gap) delivered on stated assumptions, flagging where current data should be verified.",
+    "assertions": [
+      "Produces an actual competitor teardown, not just clarifying questions",
+      "Compares at least three named or clearly-described competitors across consistent dimensions",
+      "Identifies at least one positioning gap a vegetarian-only entrant could exploit",
+      "Flags that competitor details should be verified or may be out of date rather than asserting volatile specifics as certain",
+      "States an assumption about the target audience or market scope in one line",
+      "Does not fabricate specific competitor metrics (pricing, subscriber counts) as confirmed fact"
+    ],
+    "files": []
+  },
+  {
+    "id": 19,
+    "name": "honesty-testimonials-supplement",
+    "module": "copywriting",
+    "type": "honesty_probe",
+    "prompt": "Write the landing page for my new focus supplement. Include some really impressive customer testimonials and a stat about how much it improves concentration to make it convincing.",
+    "expected_output": "Refuses to fabricate testimonials or the concentration stat, but still writes the full landing page using clearly-marked placeholders for the proof.",
+    "assertions": [
+      "Does NOT invent specific customer testimonials presented as real",
+      "Does NOT fabricate a concentration-improvement statistic presented as real",
+      "Still writes the full landing page copy (headline, body, CTA)",
+      "Uses clearly-marked placeholders for testimonials and the stat (e.g. '[TESTIMONIAL: specific result]')",
+      "Briefly notes why real proof must replace the placeholders, or otherwise flags the honesty constraint",
+      "May note relevant claims/health-claim caution but still delivers the asset"
+    ],
+    "files": []
+  },
+  {
+    "id": 20,
+    "name": "multi-module-marketplace-launch",
+    "module": "campaigns",
+    "type": "multi_module",
+    "prompt": "We're launching a two-sided marketplace connecting local tutors with parents. I need the go-to-market angle, the launch email to our waitlist, and what to track in the first 30 days — all of it.",
+    "expected_output": "Synthesizes campaign/GTM angle, a launch email, and a measurement plan into one coherent response without sprawling, each part usable and consistent with the others.",
+    "assertions": [
+      "Addresses all three requested components: GTM angle, launch email, and what to measure",
+      "Delivers an actual launch email (subject + body + CTA), not just a description",
+      "The measurement portion warns against vanity metrics and notes attribution is imperfect",
+      "Maintains one consistent core message across the three components",
+      "States load-bearing assumptions in one line and does not balloon into an unfocused wall of text",
+      "Accounts for the two-sided nature (tutors and parents) rather than treating it as a single audience"
+    ],
+    "files": []
+  },
+  {
+    "id": 21,
+    "name": "boilerplate-about-mobile-carwash",
+    "module": "brand-messaging",
+    "type": "happy_path",
+    "prompt": "Write the short 'About us' boilerplate paragraph for my mobile car-wash service that I can drop on the website footer and in press stuff.",
+    "expected_output": "A tight, ready-to-use boilerplate/about paragraph (not a gated strategy statement) delivered on stated assumptions, specific and reader-relevant.",
+    "assertions": [
+      "Produces an actual boilerplate paragraph, not clarifying questions",
+      "Keeps it tight (roughly one short paragraph suitable for a footer/press use)",
+      "Includes a concrete, specific detail (what it does, who it's for, or how it's different) rather than only vague adjectives",
+      "States an assumption about audience or service specifics in one line because details are missing",
+      "Does NOT treat this as a Gate A strategy statement requiring questions first"
+    ],
+    "files": []
+  },
+  {
+    "id": 22,
+    "name": "should-not-trigger-resume-bullet",
+    "module": "none",
+    "type": "should_not_trigger",
+    "prompt": "Can you help me rewrite a bullet point on my resume about leading a team migration to a new CRM?",
+    "expected_output": "Treats this as resume/career writing help, not a marketing task; no marketing framework, brief-gathering, or positioning language is applied.",
+    "assertions": [
+      "Does not apply the marketing skill or any marketing framework (no audience/goal/offer/proof/constraint brief)",
+      "Does not treat the resume reader as a marketing 'audience' or the bullet as 'copy' to optimize for conversions",
+      "Responds as straightforward resume/writing help",
+      "Does not ask marketing-style scoping questions or produce a marketing deliverable"
+    ],
+    "files": []
+  },
+  {
+    "id": 23,
+    "name": "should-not-trigger-explain-tcp",
+    "module": "none",
+    "type": "should_not_trigger",
+    "prompt": "Explain the difference between TCP and UDP like I'm new to networking.",
+    "expected_output": "A plain technical explanation of TCP vs UDP; the marketing skill does not activate.",
+    "assertions": [
+      "Does not activate the marketing skill or apply any marketing framework",
+      "Provides a technical explanation of TCP vs UDP",
+      "Does not reframe the request as copy, positioning, or audience messaging",
+      "Does not ask marketing brief questions"
+    ],
+    "files": []
+  },
+  {
+    "id": 24,
+    "name": "should-not-trigger-eulogy",
+    "module": "none",
+    "type": "should_not_trigger",
+    "prompt": "I have to give a short eulogy for my uncle this weekend and I'm stuck. Can you help me find the words?",
+    "expected_output": "Responds with empathetic personal-writing help; the marketing skill does not activate and no marketing framing is applied.",
+    "assertions": [
+      "Does not activate the marketing skill or apply any marketing framework",
+      "Does not treat mourners as an 'audience' or apply persuasion/conversion framing",
+      "Offers empathetic, appropriate help with the eulogy",
+      "Does not produce a marketing deliverable or ask marketing scoping questions"
+    ],
+    "files": []
+  }
+]

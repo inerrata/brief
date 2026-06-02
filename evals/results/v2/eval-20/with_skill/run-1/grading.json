@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "Addresses all three requested components: GTM angle, launch email, and what to measure", "passed": true, "evidence": "Three labeled sections: GTM angle, launch email, first-30-days measurement."},
+    {"text": "Delivers an actual launch email (subject + body + CTA), not just a description", "passed": true, "evidence": "Full email with subject, preview, body, and 'Find my tutor' CTA."},
+    {"text": "The measurement portion warns against vanity metrics and notes attribution is imperfect", "passed": true, "evidence": "Warns against vanity counts (waitlist size/page views) and states attribution is directional in a two-sided launch."},
+    {"text": "Maintains one consistent core message across the three components", "passed": true, "evidence": "'Vetted, nearby, booked this week' carries through angle, email, and the activation metric."},
+    {"text": "States load-bearing assumptions in one line and does not balloon into an unfocused wall of text", "passed": true, "evidence": "One assumptions line; tight three-part structure."},
+    {"text": "Accounts for the two-sided nature (tutors and parents)", "passed": true, "evidence": "Addresses both sides: liquidity strategy, a tutor-side email variant, and supply-health metrics."}
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0}
+}

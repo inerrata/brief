@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "Produces actual ad copy (headlines and descriptions), not a description of what to write", "passed": true, "evidence": "Delivers 8 headlines and 3 descriptions as finished copy."},
+    {"text": "Provides at least 5 headlines, each at or under ~30 characters", "passed": true, "evidence": "8 headlines, all 20-26 chars (counts shown)."},
+    {"text": "Provides at least 2 descriptions, each at or under ~90 characters", "passed": true, "evidence": "3 descriptions at 84/87/75 chars."},
+    {"text": "At least one headline or description leads with a reader benefit or outcome", "passed": true, "evidence": "'Win More RFPs, Faster', 'Save [X hours] per RFP and hit every deadline' are outcome-led."},
+    {"text": "Includes at least one clear call to action", "passed": true, "evidence": "CTA line: 'Start a free trial / Book a demo'."},
+    {"text": "Uses no fabricated statistics; any specific metric is a marked placeholder", "passed": true, "evidence": "Uses [X hours]/[X]% placeholders with an explicit note to insert real numbers."}
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0}
+}

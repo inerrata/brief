@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Does not apply the marketing skill or any marketing framework (no audience/goal/offer/proof/constraint brief)", "passed": true, "evidence": "No marketing brief or framework invoked; treats it as resume writing."},
+    {"text": "Does not treat the resume reader as a marketing 'audience' or the bullet as 'copy' to optimize for conversions", "passed": true, "evidence": "Frames it as a resume bullet with verb + scale + result, not conversion copy."},
+    {"text": "Responds as straightforward resume/writing help", "passed": true, "evidence": "Provides two rewrites plus standard resume-bullet tips."},
+    {"text": "Does not ask marketing-style scoping questions or produce a marketing deliverable", "passed": true, "evidence": "Only optional question is about the target role/line length — resume-relevant, not a marketing scoping gate."}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.0}
+}

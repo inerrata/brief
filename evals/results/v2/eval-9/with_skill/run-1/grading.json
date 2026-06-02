@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Recommends a focused set of metrics rather than an exhaustive dump", "passed": true, "evidence": "Four outcome metrics, explicitly 'focused', not an ESP-report dump."},
+    {"text": "Distinguishes meaningful outcome metrics from vanity metrics (e.g. opens) explicitly", "passed": true, "evidence": "Separate 'ones that matter' vs 'watch, don't optimize' sections; opens flagged as vanity."},
+    {"text": "Includes an explicit warning against optimizing for vanity metrics", "passed": true, "evidence": "'Don't chase them at the expense of clicks, conversions, and retention.'"},
+    {"text": "Notes that attribution is imperfect or that the metrics are directional", "passed": true, "evidence": "Dedicated attribution caveat: 'treat these numbers as directional'."},
+    {"text": "Ties at least one metric to a downstream business goal", "passed": true, "evidence": "Conversion/newsletter-attributed qualified leads tied to revenue/retention goal."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

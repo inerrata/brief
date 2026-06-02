@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Asks 2-3 scoping questions before writing the positioning statement", "passed": true, "evidence": "Exactly three questions before any statement."},
+    {"text": "At least one question targets the narrow target audience", "passed": true, "evidence": "Q1 asks for the narrowest core user with examples."},
+    {"text": "At least one question targets the differentiator or the main competitor/alternative", "passed": true, "evidence": "Q2 targets the differentiator; Q3 targets the real alternative (Amplitude/Mixpanel/GA4/nothing)."},
+    {"text": "Does NOT output a finished positioning statement built on guesses in this turn", "passed": true, "evidence": "No statement written; only questions + offer to draft on assumptions if asked."},
+    {"text": "Does not ask an overwhelming number of questions (stays at roughly 2-3)", "passed": true, "evidence": "Three questions."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

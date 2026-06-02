@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Requests the actual email asset (paste, screenshot, or link) before auditing", "passed": true, "evidence": "Item 1 asks for the actual email pasted/screenshot/link."},
+    {"text": "Does NOT invent or assume the specific contents of the email and critique that invention", "passed": true, "evidence": "Explicitly refuses to guess contents; no fabricated email is critiqued."},
+    {"text": "Asks for at least one of: the goal of the email or the target audience", "passed": true, "evidence": "Asks for both the goal and the audience."},
+    {"text": "May offer a generic checklist but makes clear a real audit requires seeing the real email", "passed": true, "evidence": "Offers a generic checklist while stating 'the real audit needs the real email'."},
+    {"text": "Does not produce a detailed point-by-point audit of a fabricated email", "passed": true, "evidence": "No point-by-point critique of invented content; only a general checklist."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

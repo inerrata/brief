@@ -4,10 +4,11 @@ A full-stack marketing skill for Claude — copy, brand, content, campaigns, res
 
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![format](https://img.shields.io/badge/format-SKILL.md-blue)
-![evals](https://img.shields.io/badge/evals-26%20prompts-blue)
-![with--skill](https://img.shields.io/badge/with--skill-86.4%25-brightgreen)
-![delta](https://img.shields.io/badge/vs%20baseline-%2B5.7pp-brightgreen)
-![iterations](https://img.shields.io/badge/eval%20iterations-2-blue)
+![evals](https://img.shields.io/badge/evals-26%20%2B%2024%20held--out-blue)
+![with--skill](https://img.shields.io/badge/with--skill-98.9%25-brightgreen)
+![held-out](https://img.shields.io/badge/held--out%20v2-122%2F122-brightgreen)
+![delta](https://img.shields.io/badge/vs%20baseline-%2B18.2pp-brightgreen)
+![iterations](https://img.shields.io/badge/eval%20iterations-3-blue)
 
 Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 9 purpose-built reference modules only when relevant. The depth of nine specialist playbooks, none of the context bloat. Works with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and anything that reads the open `SKILL.md` format.
 
@@ -51,10 +52,22 @@ Each of 26 eval prompts was run **with the skill and without it (baseline)**, th
 
 | Metric | With skill | Baseline | Delta | Runs |
 |---|:--:|:--:|:--:|:--:|
-| **Iteration-2** (3× avg, headline) | **86.4%** | 80.7% | **+5.7 pp** | 3× |
+| **Iteration-3** (projected, targeted re-bench) | **98.9%** | 80.7% | **+18.2 pp** | 1× |
+| Iteration-2 (3× avg) | 86.4% | 80.7% | +5.7 pp | 3× |
 | Iteration-1 (1× directional) | 82.7% | 62.3% | +20.4 pp | 1× |
 
-The 3× pass is the reliable number — it averages out single-run variance. The baseline strengthened significantly when measured consistently (+18pp), but so did the skill (+3.7pp). The +5.7pp delta is the honest, repeatable lift.
+**Iteration-3** edited the skill to fix the five weak spots iteration-2 surfaced (over-gating on calendars/ICPs/launches, withholding on the honesty probe, missing measurement caveats). The six affected evals went from a 0.20–0.86 spread to **1.00** each. The 98.9% is *projected* — the iteration-2 table with those evals substituted (1× re-run). Full fixes + caveats in [`benchmarks/benchmark-iteration-3.md`](benchmarks/benchmark-iteration-3.md).
+
+### Held-out v2 set — 24 brand-new prompts
+
+To check the iteration-3 skill against cases it was never tuned on, a **separate AI generated 24 fresh evals** (see [`evals/NEW-EVALS-PROMPT.md`](evals/NEW-EVALS-PROMPT.md)) — including traps in *both* directions of the ask-vs-deliver boundary.
+
+| Held-out v2 | Result |
+|---|:--:|
+| Assertions passed | **122 / 122** |
+| Evals at 1.00 | **24 / 24** |
+
+Both gate directions held: strategy statements (positioning, value prop, messaging hierarchy) asked first; working documents (ICP, content calendar) delivered on stated assumptions. Negative controls didn't fire. Method + honest caveats (1× run, self-graded) in [`benchmarks/benchmark-v2-evalset.md`](benchmarks/benchmark-v2-evalset.md).
 
 **Where it moves the needle most (iteration-2):**
 
@@ -66,7 +79,7 @@ The 3× pass is the reliable number — it averages out single-run variance. The
 | homepage hero | 1.00 | 0.75 | +0.25 | outcome-led copy on a stated assumption |
 | competitor analysis | 1.00 | 0.67 | +0.33 | ends in white-space gap, not just description |
 
-**Negative controls** ("name my cat", "explain DNS", "thank-you note to grandma") correctly did **not** trigger — no false positives across all 3 runs. Weak spots and iteration-3 targets tracked openly in [`benchmarks/README.md`](benchmarks/README.md).
+**Negative controls** ("name my cat", "explain DNS", "thank-you note to grandma", plus v2's resume bullet, TCP/UDP, and a eulogy) correctly did **not** trigger. The iteration-2 weak spots are now fixed and re-benchmarked — see [`benchmarks/README.md`](benchmarks/README.md).
 
 📊 **Browse every output and grade:** open [`evals/review.html`](evals/review.html) in a browser.
 
@@ -198,7 +211,7 @@ Checked against every deliverable before it ships: **specificity** (numbers, not
 
 ## Evaluation
 
-The skill ships with its own test suite in [`evals/`](evals): **26 prompts** covering every module, phrasing variations, both gate checks, multi-module synthesis, an implicit trigger, an honesty probe, and **negative controls** (prompts that should *not* trigger it).
+The skill ships with its own test suite in [`evals/`](evals): **26 prompts** (`evals.json`) plus a **24-prompt held-out v2 set** (`evals-v2.json`, AI-generated) covering every module, phrasing variations, both gate checks, deliver-first traps, multi-module synthesis, an implicit trigger, an honesty probe, and **negative controls** (prompts that should *not* trigger it).
 
 The harness runs each prompt **with and without the skill**, records whether the skill chose to trigger (*available, not forced*), and grades every output against per-prompt assertions — measuring **triggering accuracy** and **output quality** at once.
 
@@ -247,7 +260,9 @@ Run with-skill and baseline for each prompt, grade against expected_output, and 
 
 - More reference modules (paid-media buying, partnerships/influencer, PR & comms, localization)
 - A brand-profile file the skill reads so output inherits your voice automatically
-- Multi-run (3×) eval pass with variance reporting; fix the tracked weak spots (#15, #8)
+- ✅ ~~Multi-run (3×) eval pass with variance reporting~~ (iteration-2) and ✅ ~~fix the tracked weak spots~~ (iteration-3, re-benchmarked)
+- Independent grading: run the held-out v2 set on a different model with a third-model grader to remove self-grading bias
+- 3× multi-run pass on the v2 set; merge it into the standing regression suite
 - More worked before/after examples
 
 ---

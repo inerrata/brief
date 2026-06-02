@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Produces an actual one-month content calendar (dated or weekly-structured posts), not just questions", "passed": true, "evidence": "Four weeks, 4 posts each, day-labeled."},
+    {"text": "Includes a concrete post idea/theme for each scheduled slot", "passed": true, "evidence": "Every slot has a specific idea (croissant Reel, 5am prep, regular spotlight, etc.)."},
+    {"text": "Reflects a mix of content types or pillars rather than one repeated format", "passed": true, "evidence": "Four pillars with a stated mix; rotates product/BTS/community/promo."},
+    {"text": "States an assumption about audience or goal in one line", "passed": true, "evidence": "Opening assumptions line (local bakery, foot traffic, ~4x/week)."},
+    {"text": "Does NOT withhold the calendar pending answers to clarifying questions", "passed": true, "evidence": "Delivers immediately; single optional follow-up at the end."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

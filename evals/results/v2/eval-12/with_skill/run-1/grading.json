@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Treats this as a marketing copy task and delivers actual sign/flyer text", "passed": true, "evidence": "Triggers despite typos/casual tone; delivers two ready sign options."},
+    {"text": "Provides at least 2 distinct headline or sign-copy options", "passed": true, "evidence": "Option A (sensory) and Option B (offer) are distinct."},
+    {"text": "At least one option gives passersby a concrete reason to stop", "passed": true, "evidence": "'Fresh Espresso, Pulled to Order' (sensory) and a named special with chalk drink suggestion."},
+    {"text": "Includes a clear next action", "passed": true, "evidence": "Arrows pointing to the cart, 'two steps away', and an order suggestion."},
+    {"text": "Does not invent a specific price or discount as fact; any figure is an adjustable placeholder", "passed": true, "evidence": "Price shown as [$X] with explicit 'set the real price' note."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

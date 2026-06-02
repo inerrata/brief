@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Produces a complete ICP document in this turn, not a list of questions", "passed": true, "evidence": "Full ICP delivered with all sections."},
+    {"text": "Covers firmographics (company size/type), the buyer/user role, and key pains or jobs-to-be-done", "passed": true, "evidence": "Firmographics, Decision role (user + economic buyer), Goals/JTBD and Pains all present."},
+    {"text": "States its assumptions in one line", "passed": true, "evidence": "Opening hypothesis + 'Assuming a mid-market warehouse inventory SaaS...; adjust if wrong.'"},
+    {"text": "Does NOT gate or refuse to deliver pending answers", "passed": true, "evidence": "Delivers immediately; validation question is optional at the end."},
+    {"text": "Includes at least one buying trigger or where-to-reach-them detail", "passed": true, "evidence": "Buying triggers section + Where-to-reach-them channels."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

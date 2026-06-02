@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Asks 2-3 scoping questions before producing the hierarchy", "passed": true, "evidence": "Asks exactly 3 questions before writing anything."},
+    {"text": "At least one question targets the specific target audience", "passed": true, "evidence": "Q1 asks who exactly the primary audience is, with concrete examples."},
+    {"text": "At least one question targets the key differentiator or the main alternative/competitor", "passed": true, "evidence": "Q2 targets the single differentiator; Q3 targets the real competing alternative."},
+    {"text": "Does NOT output a full messaging hierarchy built on guessed inputs in this turn", "passed": true, "evidence": "No hierarchy produced; only questions plus an offer to proceed on assumptions if asked."},
+    {"text": "Questions are concise (not an open-ended interrogation of many items)", "passed": true, "evidence": "Three sharp questions, not a long checklist."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

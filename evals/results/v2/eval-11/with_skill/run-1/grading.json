@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Treats this as a marketing messaging task and delivers concrete talking points or hooks", "passed": true, "evidence": "Delivers three usable one-line pitches; does not gate it as a positioning exercise."},
+    {"text": "Provides at least 3 distinct angles or one-line pitches", "passed": true, "evidence": "Three labeled angles: guilt-relief, effortless, identity."},
+    {"text": "Frames at least one around the reader's problem or desired outcome, not the app's features", "passed": true, "evidence": "Angle 1 leads with 'stop killing them'; explicit advice to name the feeling not the feature."},
+    {"text": "Avoids vague filler adjectives in the suggested phrasing", "passed": true, "evidence": "Pitches use concrete images (jungle apartment, ten seconds a week), not 'amazing/innovative'."},
+    {"text": "States an assumption about the target audience in one line", "passed": true, "evidence": "Opening 'Assuming: audience = casual houseplant owners who keep killing plants.'"}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

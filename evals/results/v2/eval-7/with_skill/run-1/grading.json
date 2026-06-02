@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Produces a full email with a subject line, body, and a single clear CTA", "passed": true, "evidence": "Subject, body, and a single 'Connect your account' CTA."},
+    {"text": "Includes preview/preheader text", "passed": true, "evidence": "Preview line present: 'Connecting your bank takes ~60 seconds...'."},
+    {"text": "Body directly addresses the specific friction (never connected a bank account)", "passed": true, "evidence": "Body is entirely about connecting the bank account and what it unlocks, plus a security reassurance."},
+    {"text": "Has exactly one primary call to action, not several competing ones", "passed": true, "evidence": "Single primary CTA; the 'reply for manual option' is a low-friction fallback, not a competing CTA."},
+    {"text": "Does not fabricate user statistics or testimonials; any such proof is a marked placeholder", "passed": true, "evidence": "No invented stats; closing note marks time/number claims as placeholders."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Performs an actual audit of the provided hero copy rather than asking for the asset", "passed": true, "evidence": "Audits the provided headline, subhead, and CTA directly; no asset request."},
+    {"text": "Flags vague/empty adjectives in the copy (e.g. 'all-in-one', 'innovative', 'seamless')", "passed": true, "evidence": "Explicitly calls out 'all-in-one', 'modern teams', 'innovative', 'seamless', 'solution' as empty filler."},
+    {"text": "Critiques the weak 'Learn More' CTA relative to the free-trial-signup goal", "passed": true, "evidence": "'Learn More' flagged as the weakest CTA for a free-trial goal; doesn't match the desired action."},
+    {"text": "Provides at least one concrete rewritten headline, subhead, or CTA", "passed": true, "evidence": "Rewrites all three: headline, subhead, and CTA ('Start free — no card required')."},
+    {"text": "Ties recommendations to the stated audience and/or the signup goal", "passed": true, "evidence": "'Why it matters for this audience' ties to ops managers at 50-200-person companies and the trial goal."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

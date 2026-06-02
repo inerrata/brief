@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "Produces an actual competitor teardown, not just clarifying questions", "passed": true, "evidence": "Comparison table of four brands plus a gap analysis."},
+    {"text": "Compares at least three named or clearly-described competitors across consistent dimensions", "passed": true, "evidence": "HelloFresh, Blue Apron, Home Chef, Purple Carrot across positioning/target/strength/weakness."},
+    {"text": "Identifies at least one positioning gap a vegetarian-only entrant could exploit", "passed": true, "evidence": "Identifies the lacto-ovo vegetarian gap between meat-first kits and strictly-vegan Purple Carrot."},
+    {"text": "Flags that competitor details should be verified or may be out of date", "passed": true, "evidence": "Explicit caveat at top and bottom that pricing/menu specifics shift and should be verified."},
+    {"text": "States an assumption about the target audience or market scope in one line", "passed": true, "evidence": "Opening 'Assuming: US market, health-conscious home cooks.'"},
+    {"text": "Does not fabricate specific competitor metrics as confirmed fact", "passed": true, "evidence": "No invented prices/subscriber counts asserted; numbers explicitly flagged as to-verify."}
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0}
+}
