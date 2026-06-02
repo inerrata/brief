@@ -1,0 +1,8 @@
+{
+  "expectations": [
+    {"text": "Includes firmographics, goals, pains, objections, buying triggers, watering holes, and decision role", "passed": true, "evidence": "All seven sections present and labeled: Firmographics, Decision role, Goals, Pains, Objections, Buying triggers, Watering holes."},
+    {"text": "Explicitly flags the ICP as a hypothesis pending real customer evidence", "passed": true, "evidence": "Opening line: 'This ICP is a hypothesis — built on inference, not your customer data. Validate it against your actual best customers.'"},
+    {"text": "May ask 1-2 questions first", "passed": true, "evidence": "Delivers first, then asks one sharpening question ('who are your 5 happiest paying customers') — within the optional allowance."}
+  ],
+  "summary": {"passed": 3, "failed": 0, "total": 3, "pass_rate": 1.0}
+}

@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Defines 3-5 specific content pillars", "passed": true, "evidence": "Four named pillars: hidden cost of manual finance ops, compliance & controls, benchmarks & proof, operator playbooks."},
+    {"text": "Maps content to funnel stages (TOFU/MOFU/BOFU)", "passed": true, "evidence": "Calendar has a dedicated Funnel column with TOFU/MOFU/BOFU per row."},
+    {"text": "Applies a value-heavy content mix ratio", "passed": true, "evidence": "Explicit 60/25/15 educational/social-proof/promotional mix."},
+    {"text": "Calendar includes the reference fields: pillar, funnel stage, format, working title, CTA", "passed": true, "evidence": "Table columns: Pillar, Funnel, Format, Working title, CTA — all present across 8 rows."},
+    {"text": "Asks 2-3 scoping questions or states explicit assumptions (medium stakes)", "passed": true, "evidence": "Opens with a one-line assumptions block (audience/goal/resources) and closes with sharpening questions."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

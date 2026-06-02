@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Names a primary metric tied to the goal (CAC or ROAS)", "passed": true, "evidence": "Primary metric section names CAC (and ROAS), judged against LTV with a 3:1 target."},
+    {"text": "Includes leading indicators (CTR, CPC, conversion rate)", "passed": true, "evidence": "Leading-indicator funnel lists CTR, CPC, landing conversion rate, CPA."},
+    {"text": "Shows formulas with their inputs", "passed": true, "evidence": "Formulas given: CTR = clicks/impressions, CPC = spend/clicks, conv = conversions/clicks, CAC = spend/paying customers."},
+    {"text": "Warns against vanity metrics such as impressions", "passed": true, "evidence": "Watch-outs: 'Don't optimize vanity metrics — impressions, reach, raw clicks feel like progress but don't pay rent.'"},
+    {"text": "Includes the attribution-is-imperfect caveat", "passed": true, "evidence": "'Attribution is imperfect — no model assigns credit perfectly... treat reported ROAS as directional; sanity-check against blended CAC and a holdout/geo test.'"}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}
