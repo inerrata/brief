@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Asked 2-3 scoping questions (audience, goal/metric, timeline) and/or led with a one-page campaign brief", "passed": true, "evidence": "Leads with a one-page brief (audience, core message, primary metric) and appends 3 sharpening questions."},
+    {"text": "Provides a phased pre-launch / launch / post-launch structure", "passed": true, "evidence": "Explicit Pre-launch (wk -4 to 0), Launch (wk 0), Post-launch (wk 1-4) sections."},
+    {"text": "Includes an asset checklist", "passed": true, "evidence": "Checkbox asset checklist: landing page, app store listing, PH assets, emails, social posts, testimonials, analytics."},
+    {"text": "Pulls multiple modules (campaign + copy + email + measurement) without sprawling", "passed": true, "evidence": "Synthesizes campaign brief + copy (core message) + a 4-step lifecycle email sequence + measurement (activation north star) in one tight plan."}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.0}
+}

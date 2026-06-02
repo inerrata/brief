@@ -42,12 +42,17 @@ is the single most important habit in this skill.
 If the user hasn't given you these, how you proceed depends on the task. There are two task types where
 you must STOP and gather inputs first — do not produce the deliverable on assumptions:
 
-**Gate A — Strategy foundations (positioning, value proposition, messaging hierarchy, brand voice, GTM
-plans).** These are load-bearing: everything downstream inherits their flaws, and a plausible-looking
-guess is worse than no answer because it looks authoritative. Ask 2–3 sharp questions covering the most
-important unknowns (almost always: who exactly is this for, what's the single most important
-differentiator, and who/what is the main alternative) before writing. Do not output a positioning
-statement built on guessed inputs.
+**Gate A — Single load-bearing strategy statements (positioning statement, value proposition, messaging
+hierarchy, brand voice/tone definition).** These are the foundations everything downstream inherits, they
+compress to one authoritative artifact, and a plausible-looking guess is worse than no answer because it
+reads as fact. ONLY these four hard-stop. Ask 2–3 sharp questions covering the most important unknowns
+(almost always: who exactly is this for, what's the single most important differentiator, and who/what is
+the main alternative) before writing. Do not output a positioning statement built on guessed inputs.
+
+Everything else that *feels* strategic — ICPs/personas, content calendars, campaign briefs, launch/GTM
+plans — is **deliver-first**, not a gate. These are multi-part working documents, not a single
+load-bearing sentence: a reader skims an assumption-tagged draft and corrects it in seconds, which is far
+more useful than a wall of questions. See the deliver-first rules below; do not hard-stop on them.
 
 **Gate B — Audits and "improve my X" tasks (audit my landing page, why isn't my email converting, review
 my copy, make this better).** You cannot meaningfully audit an asset you cannot see. Ask the user to share
@@ -56,11 +61,17 @@ auditing. If they can't share it, say what you'd need and offer a generic checkl
 clear a real audit requires seeing the real thing. Do not invent the contents of the asset and audit your
 own invention.
 
-For everything else, scale to stakes — and bias toward producing something useful rather than
-withholding it:
-- **Big, ambiguous strategy work** (a campaign concept, a content strategy, a launch plan): ask 2–3
-  sharp questions before writing. The work is large and a wrong assumption wastes all of it, so it's
-  worth a moment to aim first.
+For everything else, scale to stakes — and bias hard toward producing something useful rather than
+withholding it. The default is **deliver-first**: state your load-bearing assumptions in one line at the
+top, build the real deliverable on them, then optionally append 1–2 sharpening questions. Asking instead
+of delivering is the failure mode, not diligence.
+- **Big working documents** (a campaign concept, a content strategy/calendar, a launch or GTM plan, an
+  ICP or persona): still deliver-first. Open with a one-line assumptions block naming the audience, goal,
+  and any other inputs you inferred ("Assuming [audience], goal = [X]; adjust if wrong"), then produce the
+  full structured document — the calendar with all its fields, the phased pre/launch/post plan with its
+  asset checklist, the ICP with firmographics/pains/triggers. For an ICP or persona, explicitly mark it
+  as a **hypothesis pending real customer evidence**, not asserted fact. You may add 2–3 sharpening
+  questions *after* the draft, but never withhold the document behind them.
 - **A concrete copy deliverable** (a homepage hero, an ad, a landing-page section, a handful of
   subject lines): lead with the copy. Even when the audience or angle is unstated, pick the single
   most likely one, name it in a one-line assumption at the top ("Assuming [X]; adjust if wrong"), and
@@ -71,10 +82,11 @@ withholding it:
   the audience" rule below bends: stating a guess out loud and building on it is exactly what we want;
   only a *silent, unstated* guess is forbidden.
 
-Note the difference from Gate A above: defining the *positioning, value prop, voice, or messaging
-hierarchy* is a strategy foundation and still gets gated, because everything downstream inherits its
-flaws. But writing the *copy* that expresses an already-implied position is a deliverable — lead with
-the draft.
+Note the difference from Gate A above: defining the *positioning statement, value prop, voice, or
+messaging hierarchy* is a single load-bearing artifact and still gets gated, because everything downstream
+inherits its flaws. But writing the *copy* that expresses an already-implied position — or building a
+*working document* like a calendar, launch plan, or ICP — is a deliverable: lead with the draft and flag
+your assumptions.
 
 Never silently guess on the audience or the goal — those two are load-bearing in every task. Stating
 an assumption out loud is fine; hiding one is not.
@@ -156,7 +168,10 @@ delivering. This is what separates this skill's output from a generic AI respons
 
 **Honesty**
 - No fabricated statistics, fake testimonials, or invented credentials. If proof doesn't exist, don't
-  invent it — flag that proof is needed instead. Marketing that overpromises destroys trust and, in many
+  invent it — but **still write the full deliverable**, dropping in clearly-marked placeholders where the
+  proof goes (e.g. `[TESTIMONIAL: specific customer result]`, `[STAT: cite source]`) and a one-line note
+  telling the user to supply the real thing. Refusing to fabricate never means refusing to write — produce
+  the asset with placeholders, not a lecture. Marketing that overpromises destroys trust and, in many
   jurisdictions, breaks advertising law.
 
 ---

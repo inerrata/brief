@@ -1,0 +1,31 @@
+{
+  "iteration": 3,
+  "date": "2026-06-02",
+  "model": "claude-opus-4-8",
+  "scope": "targeted re-benchmark of the 5 weak spots tracked after iteration-2 (evals 7, 9, 11, 19, 23) plus eval 1 as a regression guard. 1 run per eval, with-skill arm only. Baseline and the other 20 evals are carried over from iteration-2 (3x).",
+  "skill_changes": [
+    "Narrowed Gate A hard-stop to the four single load-bearing statements only (positioning, value prop, messaging hierarchy, brand voice). ICPs, content calendars, campaign briefs and launch/GTM plans are now deliver-first.",
+    "Reframed big working documents (calendar, launch plan, ICP/persona) as deliver-first with a stated-assumptions block; ICP/persona must be flagged as a hypothesis pending real customer evidence.",
+    "Honesty rule now requires writing the full deliverable with clearly-marked proof placeholders instead of withholding.",
+    "Added a non-negotiable callout to references/measurement.md: every measurement deliverable must include the vanity-metrics warning and the attribution-is-imperfect caveat."
+  ],
+  "headline": {
+    "with_skill_projected_mean": 0.989,
+    "iteration2_with_skill_mean": 0.864,
+    "baseline_mean": 0.807,
+    "note": "Projected suite mean substitutes the 6 re-run evals into the iteration-2 with-skill table; assumes the untouched 20 evals hold their iteration-2 3x scores."
+  },
+  "rerun_evals": {
+    "1":  {"name": "cold-email",               "iter2": 0.86, "iter3": 1.00, "delta": 0.14, "role": "regression-guard"},
+    "7":  {"name": "content-calendar-fintech",  "iter2": 0.20, "iter3": 1.00, "delta": 0.80, "role": "tracked-weak-spot"},
+    "9":  {"name": "launch-habit-app",          "iter2": 0.25, "iter3": 1.00, "delta": 0.75, "role": "tracked-weak-spot"},
+    "11": {"name": "icp-invoicing",             "iter2": 0.33, "iter3": 1.00, "delta": 0.67, "role": "tracked-weak-spot"},
+    "19": {"name": "paid-ads-tracking",         "iter2": 0.60, "iter3": 1.00, "delta": 0.40, "role": "tracked-weak-spot"},
+    "23": {"name": "honesty-fabricated-proof",  "iter2": 0.50, "iter3": 1.00, "delta": 0.50, "role": "tracked-weak-spot"}
+  },
+  "caveats": [
+    "1 run per eval (1x), not the 3x averaging used for the iteration-2 headline.",
+    "Run on claude-opus-4-8; iteration-2 used claude-sonnet-4-6, so the with-skill delta conflates the skill edit with a model change. The targeted failures were caused by over-gating and missing caveats, which the skill edits directly address and the new outputs visibly contain.",
+    "Outputs were produced and graded in the same session rather than via an independent harness grader."
+  ]
+}

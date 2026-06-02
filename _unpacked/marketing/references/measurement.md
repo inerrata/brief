@@ -14,6 +14,12 @@ measurement is guessing; measurement without the right metrics is worse — it's
 
 ---
 
+> **Two non-negotiables in every measurement deliverable.** No matter how short the answer, always (1)
+> warn against optimizing vanity metrics (impressions, follower counts, raw clicks) at the expense of
+> revenue/retention, and (2) state that attribution is inherently imperfect — no model assigns credit
+> perfectly, so treat the numbers as directional. Omitting either is the most common way a metrics answer
+> misleads.
+
 ## Pick metrics that matter
 
 - **Tie every metric to a goal.** If you can't say what decision a metric informs, don't track it as a KPI.
