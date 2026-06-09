@@ -12,7 +12,7 @@ A full-stack marketing skill for Claude — copy, brand, content, campaigns, res
 
 <sub>\* 1× runs, self-graded — click a badge for the full caveats. The most rigorous number remains the 3×-averaged iteration-2 result (86.4% vs 80.7% baseline, **+5.7 pp**).</sub>
 
-Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 9 purpose-built reference modules only when relevant. The depth of nine specialist playbooks, none of the context bloat. Works with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and anything that reads the open `SKILL.md` format.
+Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 11 purpose-built reference modules only when relevant. The depth of eleven specialist playbooks, none of the context bloat. Works with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and anything that reads the open `SKILL.md` format.
 
 ---
 
@@ -115,11 +115,13 @@ cp -r brief/_unpacked/marketing your-project/.claude/skills/marketing
 Two options, depending on your plan/UI:
 
 - **Skills upload** (Pro/Max/Team/Enterprise): download `marketing.skill` and upload it under **Settings → Capabilities → Skills**. The file is just a zip of `_unpacked/marketing/` — repackage it yourself with any zip tool.
-- **Projects fallback** (works everywhere): paste the contents of [`_unpacked/marketing/SKILL.md`](_unpacked/marketing/SKILL.md) into a Project's custom instructions (**Project → Settings → Project instructions**). You lose progressive disclosure (the 9 reference modules won't lazy-load), so for deep work also paste the relevant module from `_unpacked/marketing/references/`.
+- **Projects fallback** (works everywhere): paste the contents of [`_unpacked/marketing/SKILL.md`](_unpacked/marketing/SKILL.md) into a Project's custom instructions (**Project → Settings → Project instructions**). You lose progressive disclosure (the 11 reference modules won't lazy-load), so for deep work also paste the relevant module from `_unpacked/marketing/references/`.
 
 ### Brand profile (optional, recommended)
 
 Copy [`brand.template.md`](brand.template.md) into your project as `brand.md` and fill it in. The skill reads it at the start of a session and treats it as your standing brief — audience, voice, proof on file — so you stop re-answering the same scoping questions every session.
+
+Don't want to fill it in by hand? Ask the skill to draft it for you — it can build a `brand.md` from what it learns in conversation, or (in tool-enabled environments like Claude Code) from fetching your homepage, and show you the draft to correct before saving.
 
 ---
 
@@ -136,6 +138,8 @@ Copy [`brand.template.md`](brand.template.md) into your project as `brand.md` an
 | **Email & lifecycle** | Welcome / nurture / sales / onboarding / win-back / abandoned-cart sequences, newsletters, deliverability |
 | **CRO** | Conversion audits, the conversion equation, A/B testing methodology, high-impact fixes |
 | **Measurement** | Metrics by goal, AARRR funnel, CAC / LTV / ROAS formulas, attribution, reporting |
+| **Product marketing** | Release notes, changelogs, feature announcements & tiering, feature naming, battle cards, sales one-pagers, marketing to developers |
+| **Channel specs** | Character limits, truncation points, image sizes, and format constraints for ads, email, social, SEO, video, app stores, SMS/push |
 
 ---
 
@@ -176,7 +180,9 @@ Concrete scenarios, the prompt that triggers them, and what you get back.
 | SEO brief | *"SEO brief targeting 'best crm for nonprofits'."* | Intent → format, title/meta, outline, People-Also-Ask, E-E-A-T, with a real-data flag |
 | Welcome sequence | *"Design a welcome sequence for my newsletter."* | 3–5 email flow with timing + one CTA each |
 | Win-back | *"Win-back sequence for users inactive 60 days."* | Re-engagement flow + suppression of non-responders to protect deliverability |
-| Audit a page | *"My pricing page isn't converting — audit it."* | Asks for the real page first, then a structured audit + prioritized fixes |
+| Audit a page | *"My pricing page isn't converting — audit it."* | Fetches the live page itself (with tools) or asks for it, then a structured audit + prioritized fixes |
+| Ship a release | *"Write release notes for v2.3."* | User-outcome release notes from the real changelog — breaking changes first, no "improved performance" filler |
+| Arm your sales team | *"Battle card against [competitor]."* | One-page card: where you win with proof, where they win (honestly), objections, landmines |
 | What to measure | *"What should I track for a new paid ads channel?"* | Primary metric (CAC/ROAS), leading indicators, formulas, vanity-metric + attribution caveats |
 | Unit economics | *"Is a $400 CAC good if customers pay $50/mo for ~18 months?"* | LTV + LTV:CAC math shown, read against ~3:1, with the caveats |
 
@@ -188,9 +194,10 @@ Concrete scenarios, the prompt that triggers them, and what you get back.
 marketing/
 ├── SKILL.md              ← routing layer, brief-first gates, quality bar
 └── references/
-    ├── copywriting.md      ├── research.md         ├── email-lifecycle.md
-    ├── brand-messaging.md  ├── seo.md              ├── cro.md
-    ├── content-strategy.md ├── campaigns.md        └── measurement.md
+    ├── copywriting.md       ├── research.md         ├── email-lifecycle.md
+    ├── brand-messaging.md   ├── seo.md              ├── cro.md
+    ├── content-strategy.md  ├── campaigns.md        ├── measurement.md
+    ├── product-marketing.md └── specs.md
 ```
 
 At session start, only the `SKILL.md` **description** (~100 tokens) is in context. When a marketing task is detected, the full `SKILL.md` loads and routes to the relevant module(s); unused modules never load. Multi-area requests pull several and synthesize.
@@ -198,7 +205,7 @@ At session start, only the `SKILL.md` **description** (~100 tokens) is in contex
 Two hard gates enforce quality:
 
 - **Gate A — Strategy foundations** (positioning, value prop, voice, GTM): asks 2–3 sharp questions before writing. These are load-bearing — everything downstream inherits their flaws.
-- **Gate B — Audits / "improve my X"**: requests the actual asset first. It won't invent a page's contents and critique its own invention.
+- **Gate B — Audits / "improve my X"**: sees the real asset before auditing. In tool-enabled environments (Claude Code, etc.) it fetches the URL or finds the asset in your repo itself; otherwise it asks you to share it. It won't invent a page's contents and critique its own invention.
 
 Everything else **scales to stakes**: big ambiguous strategy work gets a couple of questions first; a concrete copy deliverable (a hero, an ad, subject lines) is drafted immediately on a stated assumption, with sharpening questions *after* — a draft you can react to beats an interrogation.
 
@@ -274,6 +281,9 @@ Run with-skill and baseline for each prompt, grade against expected_output, and 
 ## Roadmap
 
 - More reference modules (paid-media buying, partnerships/influencer, PR & comms, localization)
+- ✅ ~~Product-marketing module (release notes, battle cards, dev marketing) + channel-specs cheat sheet~~
+- ✅ ~~Agentic audits — fetch the URL / find the asset in-repo instead of asking for a paste~~
+- ✅ ~~brand.md generation — the skill drafts your brand profile from conversation or your homepage~~
 - ✅ ~~A brand-profile file the skill reads so output inherits your voice automatically~~ (`brand.template.md`, read via Step 0 in `SKILL.md`)
 - ✅ ~~Multi-run (3×) eval pass with variance reporting~~ (iteration-2) and ✅ ~~fix the tracked weak spots~~ (iteration-3, re-benchmarked)
 - Independent grading: run the held-out v2 set on a different model with a third-model grader to remove self-grading bias

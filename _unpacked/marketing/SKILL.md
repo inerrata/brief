@@ -7,8 +7,9 @@ description: >
   or messaging audit, build a content calendar or editorial plan, develop a campaign concept or go-to-market
   (GTM) plan, define a brand voice or tone, write a value proposition or positioning statement, create
   audience personas or ICPs, write SEO content briefs, plan an email sequence or newsletter, design a
-  conversion-rate-optimization (CRO) test, analyze competitor positioning, or measure marketing
-  performance. Make sure to use this skill whenever the user mentions attracting customers, growing an
+  conversion-rate-optimization (CRO) test, analyze competitor positioning, write release notes, a
+  changelog, or a feature announcement, build sales enablement assets (battle cards, one-pagers), or
+  measure marketing performance. Make sure to use this skill whenever the user mentions attracting customers, growing an
   audience, launching a product, increasing conversions, communicating value, or any task that touches
   marketing copy or strategy — even if they don't explicitly say the word "marketing." This includes
   casual, non-marketer phrasings like "nobody's clicking / buying / signing up," "my page / ad / email
@@ -37,8 +38,22 @@ this skill), read it before anything else. It is the user's standing brief — c
 and tone rules, and proof on file (real stats, testimonials, case studies). Treat its contents as ground
 truth for the five brief elements below: don't re-ask what it already answers, draw proof from its
 "proof on file" section instead of using placeholders, and follow its voice rules in every deliverable.
-Anything the user says in-session overrides it. If there is no `brand.md`, proceed normally — and when a
-user gives you durable brand facts worth keeping, you may suggest starting one.
+Anything the user says in-session overrides it.
+
+If there is no `brand.md`, proceed normally — and offer to create one when it would clearly pay off:
+when the user gives you durable brand facts worth keeping, or when you find yourself asking scoping
+questions they've plainly answered before. Two ways to draft it: (a) fill the template sections
+(company, audience, voice & tone, proof on file, standing constraints) from what you've learned
+in-session, or (b) if you have a web-fetch tool and the user has a live site, offer to fetch their
+homepage and draft `brand.md` from it. Either way, show the draft and let the user correct it before
+saving — it's their standing brief, not yours.
+
+**Step 0.5 — Ground in product truth when it's at hand.** When you're working inside the product's own
+repository, or have tools that can see the real thing, use them before guessing. Skim the README, docs,
+or landing-page source for what the product actually does, and prefer real feature names, limits, and
+numbers over invented ones. The same goes for research tasks: if you have web access, read a
+competitor's actual site rather than reasoning about it from memory. Real proof you found beats a
+placeholder; a placeholder beats an invention.
 
 **Step 1 — Establish the brief before writing.** Marketing output is only as good as its inputs. Before
 producing anything, make sure you know (or have reasonably inferred and flagged) these five things. This
@@ -66,11 +81,14 @@ load-bearing sentence: a reader skims an assumption-tagged draft and corrects it
 more useful than a wall of questions. See the deliver-first rules below; do not hard-stop on them.
 
 **Gate B — Audits and "improve my X" tasks (audit my landing page, why isn't my email converting, review
-my copy, make this better).** You cannot meaningfully audit an asset you cannot see. Ask the user to share
-the actual asset (paste the copy, share the URL, or upload a screenshot) plus the goal and audience before
-auditing. If they can't share it, say what you'd need and offer a generic checklist instead — but make
-clear a real audit requires seeing the real thing. Do not invent the contents of the asset and audit your
-own invention.
+my copy, make this better).** You cannot meaningfully audit an asset you cannot see — but asking is the
+*last* resort, not the first. If the user gave a URL and you have a web-fetch or browser tool, fetch the
+page yourself and audit the live asset. If the asset plausibly lives in the current project (a landing
+page in the repo, an email template, README copy), look for it before asking. Only when you cannot see
+the asset by any means do you stop and ask the user to share it (paste the copy, share the URL, or upload
+a screenshot) plus the goal and audience. If they can't share it, say what you'd need and offer a generic
+checklist instead — but make clear a real audit requires seeing the real thing. Do not invent the
+contents of the asset and audit your own invention.
 
 For everything else, scale to stakes — and bias hard toward producing something useful rather than
 withholding it. The default is **deliver-first**: state your load-bearing assumptions in one line at the
@@ -136,6 +154,8 @@ short "why this works" note or offer variants, but the deliverable comes first.
 | Email sequences, nurture flows, newsletters, lifecycle/drip campaigns | `references/email-lifecycle.md` |
 | CRO, A/B testing, funnel optimization, conversion audits | `references/cro.md` |
 | Metrics, KPIs, attribution, reporting, what to measure and how | `references/measurement.md` |
+| Release notes, changelogs, feature announcements, battle cards, sales one-pagers, dev-audience marketing | `references/product-marketing.md` |
+| Character limits, image sizes, or format specs for any channel (ads, email, social, SEO, app stores) | `references/specs.md` |
 
 If a task spans several areas (e.g. "launch plan for my app"), read each relevant reference and synthesize.
 A launch typically needs `campaigns.md` + `copywriting.md` + `email-lifecycle.md` + `measurement.md`.
