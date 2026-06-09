@@ -10,7 +10,10 @@ description: >
   conversion-rate-optimization (CRO) test, analyze competitor positioning, or measure marketing
   performance. Make sure to use this skill whenever the user mentions attracting customers, growing an
   audience, launching a product, increasing conversions, communicating value, or any task that touches
-  marketing copy or strategy — even if they don't explicitly say the word "marketing."
+  marketing copy or strategy — even if they don't explicitly say the word "marketing." This includes
+  casual, non-marketer phrasings like "nobody's clicking / buying / signing up," "my page / ad / email
+  isn't working / converting," "I'm not getting customers / traffic / leads," "how do I get people to
+  notice / buy / care," "write something for my website / post / email," or "words for my homepage."
 ---
 
 # Marketing Skill
@@ -28,6 +31,14 @@ that make the difference between competent and excellent output.
 ---
 
 ## How to use this skill
+
+**Step 0 — Check for a brand profile.** If the project contains a `brand.md` (project root, or next to
+this skill), read it before anything else. It is the user's standing brief — company, audience, voice
+and tone rules, and proof on file (real stats, testimonials, case studies). Treat its contents as ground
+truth for the five brief elements below: don't re-ask what it already answers, draw proof from its
+"proof on file" section instead of using placeholders, and follow its voice rules in every deliverable.
+Anything the user says in-session overrides it. If there is no `brand.md`, proceed normally — and when a
+user gives you durable brand facts worth keeping, you may suggest starting one.
 
 **Step 1 — Establish the brief before writing.** Marketing output is only as good as its inputs. Before
 producing anything, make sure you know (or have reasonably inferred and flagged) these five things. This

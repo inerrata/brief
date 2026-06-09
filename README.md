@@ -5,10 +5,12 @@ A full-stack marketing skill for Claude — copy, brand, content, campaigns, res
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![format](https://img.shields.io/badge/format-SKILL.md-blue)
 ![evals](https://img.shields.io/badge/evals-26%20%2B%2024%20held--out-blue)
-![with--skill](https://img.shields.io/badge/with--skill-98.9%25-brightgreen)
-![held-out](https://img.shields.io/badge/held--out%20v2-122%2F122-brightgreen)
-![delta](https://img.shields.io/badge/vs%20baseline-%2B18.2pp-brightgreen)
+[![with--skill](https://img.shields.io/badge/with--skill-98.9%25%2a-brightgreen)](benchmarks/benchmark-iteration-3.md#caveats-read-these)
+[![held-out](https://img.shields.io/badge/held--out%20v2-122%2F122%2a-brightgreen)](benchmarks/benchmark-v2-evalset.md#caveats-read-these)
+![delta](https://img.shields.io/badge/vs%20baseline-%2B5.7pp%20%283%C3%97%29-brightgreen)
 ![iterations](https://img.shields.io/badge/eval%20iterations-3-blue)
+
+<sub>\* 1× runs, self-graded — click a badge for the full caveats. The most rigorous number remains the 3×-averaged iteration-2 result (86.4% vs 80.7% baseline, **+5.7 pp**).</sub>
 
 Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 9 purpose-built reference modules only when relevant. The depth of nine specialist playbooks, none of the context bloat. Works with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and anything that reads the open `SKILL.md` format.
 
@@ -91,20 +93,33 @@ Both gate directions held: strategy statements (positioning, value prop, messagi
 
 ```bash
 # macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/inerrata/marketing-tool/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/inerrata/brief/main/install.sh | bash
+```
 
+```powershell
 # Windows (PowerShell)
-irm https://raw.githubusercontent.com/inerrata/marketing-tool/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/inerrata/brief/main/install.ps1 | iex
+```
+
+Installs to `~/.claude/skills/marketing` (all your projects pick it up).
 
 ### Claude Code (project-specific)
 
 ```bash
-cp -r marketing-tool/_unpacked/marketing .claude/skills/marketing
+git clone https://github.com/inerrata/brief
+cp -r brief/_unpacked/marketing your-project/.claude/skills/marketing
 ```
 
 ### Claude.ai
 
-Download `marketing.skill` and upload it under **Settings → Capabilities → Skills** (Pro/Max/Team/Enterprise). The file is just a zip of `_unpacked/marketing/` — repackage it yourself with any zip tool.
+Two options, depending on your plan/UI:
+
+- **Skills upload** (Pro/Max/Team/Enterprise): download `marketing.skill` and upload it under **Settings → Capabilities → Skills**. The file is just a zip of `_unpacked/marketing/` — repackage it yourself with any zip tool.
+- **Projects fallback** (works everywhere): paste the contents of [`_unpacked/marketing/SKILL.md`](_unpacked/marketing/SKILL.md) into a Project's custom instructions (**Project → Settings → Project instructions**). You lose progressive disclosure (the 9 reference modules won't lazy-load), so for deep work also paste the relevant module from `_unpacked/marketing/references/`.
+
+### Brand profile (optional, recommended)
+
+Copy [`brand.template.md`](brand.template.md) into your project as `brand.md` and fill it in. The skill reads it at the start of a session and treats it as your standing brief — audience, voice, proof on file — so you stop re-answering the same scoping questions every session.
 
 ---
 
@@ -259,7 +274,7 @@ Run with-skill and baseline for each prompt, grade against expected_output, and 
 ## Roadmap
 
 - More reference modules (paid-media buying, partnerships/influencer, PR & comms, localization)
-- A brand-profile file the skill reads so output inherits your voice automatically
+- ✅ ~~A brand-profile file the skill reads so output inherits your voice automatically~~ (`brand.template.md`, read via Step 0 in `SKILL.md`)
 - ✅ ~~Multi-run (3×) eval pass with variance reporting~~ (iteration-2) and ✅ ~~fix the tracked weak spots~~ (iteration-3, re-benchmarked)
 - Independent grading: run the held-out v2 set on a different model with a third-model grader to remove self-grading bias
 - 3× multi-run pass on the v2 set; merge it into the standing regression suite
