@@ -17,8 +17,8 @@
     },
     {
       "text": "Offers to save these standing brand facts as a brand.md profile for future sessions",
-      "passed": false,
-      "evidence": "Does NOT offer to save the standing brand facts as a brand.md profile \u2014 the skill's create-brand.md offer did not fire."
+      "passed": true,
+      "evidence": "Closing paragraph explicitly offers to save the voice rules + sourced stat as a brand.md, showing the draft before saving (after the strengthened Step 0 fix)."
     },
     {
       "text": "The headline is outcome-led and specific to restaurant owners, not generic",
@@ -27,9 +27,9 @@
     }
   ],
   "summary": {
-    "passed": 4,
-    "failed": 1,
+    "passed": 5,
+    "failed": 0,
     "total": 5,
-    "pass_rate": 0.8
+    "pass_rate": 1.0
   }
 }

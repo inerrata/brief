@@ -13,20 +13,28 @@ graded against per-prompt assertions in [`../evals/evals-v3.json`](../evals/eval
   iteration-2 result (**86.4% vs 80.7% baseline, +5.7 pp**).
 - **This set is deliberately adversarial to the skill's *marginal* value.** It tests
   behaviors a strong, agentic base model already does well (fetching URLs, reading
-  repo files, writing release notes). So the with-vs-baseline delta here is mostly
-  driven by the two gate behaviors; on the rest, baseline ties.
+  repo files, writing release notes). So the with-vs-baseline delta is driven by the
+  three behaviors the skill uniquely enforces — Gate A, the one-page battle-card
+  discipline, and the `brand.md` offer; on the rest, baseline ties.
 - **Small N (12).** Single failed assertions move a per-eval score a lot.
 
 ## Headline
 
 | Arm | Assertions | Micro pass-rate | Macro mean eval score |
 |---|:--:|:--:|:--:|
-| **With skill** | **53 / 54** | **98.1%** | **98.3%** |
+| **With skill** | **54 / 54** | **100%** | **100%** |
 | Baseline | 50 / 54 | 92.6% | 92.8% |
-| **Delta** | **+3** | **+5.6 pp** | **+5.6 pp** |
+| **Delta** | **+4** | **+7.4 pp** | **+7.2 pp** |
 
 **Triggering: 12/12 correct.** All 11 marketing prompts triggered the skill; the
 commit-message negative control (eval 12) correctly did not.
+
+> **Note on eval 9.** The first pass scored eval 9 at 0.80 in both arms because the skill
+> did not offer to create a `brand.md`. That was fixed by strengthening Step 0 from "offer
+> when it would pay off" to an explicit "always offer to save volunteered brand facts," the
+> skill was rebuilt, and eval 9 was re-run with-skill — it now scores 1.00 and offers the
+> profile (showing a draft before saving). Baseline stays at 0.80 (it has no `brand.md`
+> concept), making eval 9 a clean skill-unique win.
 
 ## Per-eval
 
@@ -40,7 +48,7 @@ commit-message negative control (eval 12) correctly did not.
 | 6 | linkedin-truncation-applied | happy_path | 1.00 | 1.00 | ✓ |
 | 7 | gate-b-url-audit | gate_B | 1.00 | 1.00 | ✓ |
 | 8 | gate-b-asset-in-repo | gate_B (agentic) | 1.00 | 1.00 | ✓ |
-| 9 | brand-md-offer | happy_path | 0.80 | 0.80 | ✓ |
+| 9 | brand-md-offer | happy_path | **1.00** | 0.80 | ✓ |
 | 10 | brand-md-read | happy_path | 1.00 | 1.00 | ✓ |
 | 11 | gate-a-regression-positioning | gate_A | **1.00** | **0.50** | ✓ |
 | 12 | negative-control-commit-message | should_not_trigger | 1.00 | 1.00 | ✗ |
@@ -73,15 +81,20 @@ rather than emergent initiative.
 (eval 6) were correct in both arms; the specs module didn't need to rescue the base
 model on these common specs, though it guarantees them.
 
-## The one real miss — actionable
+## The one miss — found and fixed
 
-**eval 9 (brand-md-offer) scored 0.80 in *both* arms** because the skill **did not offer
-to save the standing brand facts as a `brand.md`**. The user handed over durable facts
-(voice rules, a sourced stat) and got a great hero back — but no offer to persist them.
-Step 0's wording ("you *may* suggest starting one") is too soft to fire reliably. This is
-the one behavior this pass shows the skill is *not* delivering, and it's a cheap fix:
-strengthen Step 0 from "may suggest" to an explicit "offer to save these as a brand.md"
-when a user volunteers durable brand facts. Recommended before the next release.
+The first pass surfaced one real gap: **eval 9 scored 0.80 in *both* arms** because the
+skill **did not offer to save the standing brand facts as a `brand.md`**. The user handed
+over durable facts (voice rules, a sourced stat) and got a great hero back — but no offer
+to persist them. Step 0's wording ("offer when it would clearly pay off") was too soft to
+fire reliably.
+
+**Fix applied in the same session:** Step 0 was strengthened to an explicit, non-optional
+instruction — *whenever the user volunteers durable brand facts, deliver first, then offer
+to save them as a `brand.md`*. The skill was rebuilt and eval 9 re-run with-skill: it now
+delivers the hero and closes with a concrete offer to save the voice rules and sourced
+stat as a `brand.md`, showing the draft before saving. Score moved 0.80 → **1.00**.
+Baseline stays at 0.80, so this is now a clean skill-unique win.
 
 ## Reproduce
 

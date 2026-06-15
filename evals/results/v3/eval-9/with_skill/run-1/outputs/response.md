@@ -1,43 +1,45 @@
-Assuming the reader is an independent restaurant owner/operator who's drowning in receipts and reconciliation and doing the books themselves (or late at night after close); adjust if your core buyer is different.
-
-Here's the hero section.
+Here's a hero section for the Brightline homepage. It leads with the reader's real pain (paperwork stealing time from the floor), puts the product and the audience in the subhead, and lets the 11-hours stat carry the proof right above the fold.
 
 ---
 
-## Hero
+## Homepage hero
 
-**Headline:**
-Your books, done. So you can get back to your restaurant.
+**Headline**
+Spend your nights running the restaurant, not the books.
 
-**Subhead:**
-Brightline is done-for-you bookkeeping built for independent restaurants. We handle the receipts, the reconciliations, and the month-end close — so the paperwork stops eating your nights. Owners we work with get back an average of 11 hours a month.
+**Subhead**
+Brightline does the bookkeeping for independent restaurants — reconciled, categorized, and ready for your accountant — so you get your evenings back. Clients save an average of 11 hours a month on paperwork.
 
-**Primary CTA:**
-Talk to a bookkeeper
+**Primary CTA**
+Book a 15-minute call
 
-**Secondary CTA:**
+**Secondary CTA**
 See how it works
 
-**Proof line (under the CTAs):**
-11 hours a month, back in your pocket — average across 142 restaurant owners we surveyed in 2025.
+**Proof line (just under the buttons)**
+Real bookkeepers, on your books every month. Based on a 2025 survey of 142 Brightline clients.
 
 ---
 
-### A couple of headline alternates, in case you want a different angle
+### A couple of alternate headlines, in case you want to test the angle
 
-1. **Direct benefit:** "Spend 11 fewer hours a month on paperwork. We'll take it from here."
-2. **Problem-led:** "You didn't open a restaurant to do bookkeeping."
-3. **Plainspoken/warm:** "Hand us the shoebox of receipts. Go run your restaurant."
+These take genuinely different swings at the same promise — worth A/B testing if you can:
+
+- **Time-saving (direct benefit):** "Get 11 hours of your month back." — Leads with the stat. Punchy, but works best paired with a subhead that names what the hours are spent on.
+- **Pain-led:** "The shoebox of receipts isn't going to sort itself." — Warmest, most restaurant-specific. Funny without being corporate; says "we get your world" in one line.
+- **Plain-promise:** "Done-for-you bookkeeping for independent restaurants." — Clearest, least clever. Reads as a label more than a hook, but it's the safe baseline to test the others against.
+
+### Why it's built this way
+
+- **The headline sells the outcome, not the service.** "Running the restaurant, not the books" is what owners actually want; bookkeeping is the means. It earns the subhead.
+- **The subhead does the heavy lifting** — names what you do (bookkeeping), who it's for (independent restaurants), what they get (reconciled, ready for the accountant, evenings back), and drops the proof. Anyone landing here knows what this is and why it matters in about five seconds.
+- **The stat is specific and sourced.** "11 hours a month," with the survey and n=142 right there, beats any "save time" line and builds trust at the exact moment people are skeptical.
+- **Voice check:** plainspoken and warm, no "leverage" or "solutions" anywhere. "Get your evenings back" and "the shoebox of receipts" sound like a person, not a brand deck.
+
+A quick note on the CTA: I went with "Book a 15-minute call" because a done-for-you service is a considered purchase — people want to talk to a human before handing over their books. If your strongest converter is actually a pricing page or a free trial, swap it in; the rest holds.
+
+One thing that would sharpen this further: who's the typical owner you're writing to — a single-location chef-owner doing the books at midnight, or someone running two or three spots who's outgrown the spreadsheet? The copy works for both, but if it's mostly one, I can tighten the pain to match.
 
 ---
 
-### Why this is built the way it is
-
-- **The headline leads with the outcome they actually want** — being back on the floor, in the kitchen, with their people — not with "bookkeeping services." The product is the bridge to that, so the subhead carries the *how* and *who*.
-- **The stat does real work.** I put the 11 hours in the subhead as a benefit and again in a proof line with the source (n=142, 2025 survey) right beside it, so the number reads as evidence, not a slogan. Specific and cited beats "save tons of time."
-- **Voice check:** no "leverage," no "solutions," no "streamline." It reads the way a person talks — "done," "back to your restaurant," "stops eating your nights." Read it aloud and it shouldn't sound like a brochure.
-- **One job, one ask.** The hero argues exactly one thing (we take the books off your plate) and points to one primary action (talk to a bookkeeper). The secondary CTA gives the not-ready-yet reader somewhere to go without competing for attention.
-
-Two quick things that would sharpen it if you want to tweak:
-1. What's the single action you most want a first-time visitor to take — book a call, start a free month, or get a quote? I defaulted to "Talk to a bookkeeper" as the lowest-friction ask; swap the CTA if your funnel starts somewhere else.
-2. Do you serve a particular slice (single-location indies, small groups, specific cuisines/regions)? The narrower I can make "independent restaurants," the sharper the headline can get.
+By the way — you've handed me a few things worth keeping on file: your voice rules (plainspoken, warm, never "leverage" or "solutions"), what you do (done-for-you bookkeeping for independent restaurants), and a real sourced stat (11 hrs/month saved, 2025 survey, n=142). Want me to save those as a short `brand.md` so I can pull from them next time instead of you re-typing it? Takes a second and I'll show you the draft before anything's saved.

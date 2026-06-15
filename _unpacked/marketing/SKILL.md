@@ -40,13 +40,16 @@ truth for the five brief elements below: don't re-ask what it already answers, d
 "proof on file" section instead of using placeholders, and follow its voice rules in every deliverable.
 Anything the user says in-session overrides it.
 
-If there is no `brand.md`, proceed normally — and offer to create one when it would clearly pay off:
-when the user gives you durable brand facts worth keeping, or when you find yourself asking scoping
-questions they've plainly answered before. Two ways to draft it: (a) fill the template sections
-(company, audience, voice & tone, proof on file, standing constraints) from what you've learned
-in-session, or (b) if you have a web-fetch tool and the user has a live site, offer to fetch their
-homepage and draft `brand.md` from it. Either way, show the draft and let the user correct it before
-saving — it's their standing brief, not yours.
+If there is no `brand.md`, proceed normally — but watch for the moment to start one. **Whenever the user
+volunteers durable brand facts in-session — their audience, voice or tone rules, a real stat or
+testimonial, a positioning or differentiator — deliver what they asked for first, then end your response
+by offering to save those facts as a `brand.md`** so they don't have to repeat them next session. This is
+not optional politeness; a user who just handed you their voice rules and a sourced stat should always be
+offered the profile. The same applies when you find yourself asking scoping questions they've plainly
+answered before. Two ways to draft it: (a) fill the template sections (company, audience, voice & tone,
+proof on file, standing constraints) from what you've learned in-session, or (b) if you have a web-fetch
+tool and the user has a live site, offer to fetch their homepage and draft `brand.md` from it. Either way,
+show the draft and let the user correct it before saving — it's their standing brief, not yours.
 
 **Step 0.5 — Ground in product truth when it's at hand.** When you're working inside the product's own
 repository, or have tools that can see the real thing, use them before guessing. Skim the README, docs,

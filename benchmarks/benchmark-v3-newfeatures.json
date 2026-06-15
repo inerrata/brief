@@ -2,10 +2,10 @@
   "set": "evals-v3.json",
   "runs_per_arm": 1,
   "with_skill": {
-    "assertions_passed": 53,
+    "assertions_passed": 54,
     "assertions_total": 54,
-    "micro_pass_rate": 0.9815,
-    "macro_mean_eval_score": 0.9833,
+    "micro_pass_rate": 1.0,
+    "macro_mean_eval_score": 1.0,
     "evals": 12
   },
   "without_skill": {
@@ -158,9 +158,9 @@
       "module": "brand-profile",
       "type": "happy_path",
       "with_skill": {
-        "passed": 4,
+        "passed": 5,
         "total": 5,
-        "pass_rate": 0.8
+        "pass_rate": 1.0
       },
       "without_skill": {
         "passed": 4,

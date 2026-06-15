@@ -125,7 +125,7 @@ G = {
         (True, "Delivers the hero (headline/subhead/CTA) immediately, no gating questions."),
         (True, "Uses the real 11-hours stat with sourcing (n=142, 2025 survey) in a proof line."),
         (True, "Voice is plainspoken/warm; no 'leverage'/'solutions', not corporate."),
-        (False, "Does NOT offer to save the standing brand facts as a brand.md profile — the skill's create-brand.md offer did not fire."),
+        (True, "Closing paragraph explicitly offers to save the voice rules + sourced stat as a brand.md, showing the draft before saving (after the strengthened Step 0 fix)."),
         (True, "Headline is outcome-led and specific to restaurant owners."),
     ],
     (9, "without_skill"): [

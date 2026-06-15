@@ -79,15 +79,16 @@ and `specs.md` modules, agentic Gate B (fetch the URL / find the asset in-repo),
 
 | New-features v3 | With skill | Baseline |
 |---|:--:|:--:|
-| Micro pass-rate | **98.1%** | 92.6% |
+| Micro pass-rate | **100%** | 92.6% |
 | Triggering | **12 / 12 correct** | — |
 
 The honest read: the standout is **Gate A** — baseline wrote a finished positioning
-statement on guessed inputs; the skill asked first (1.00 vs 0.50). The agentic Gate B and
-brand.md-read behaviors work with **no regression**, but a capable agentic base model
-matches them in a 1× run, so they add little measured lift. One tracked miss: the skill
-doesn't yet reliably *offer* to create a `brand.md`. Method + per-eval table + caveats
-(1× run, self-graded) in [`benchmarks/benchmark-v3-newfeatures.md`](benchmarks/benchmark-v3-newfeatures.md).
+statement on guessed inputs; the skill asked first (1.00 vs 0.50). The skill also holds the
+one-page battle-card discipline and reliably **offers to save volunteered brand facts as a
+`brand.md`** (a gap the first pass caught and a Step 0 fix closed). The agentic Gate B and
+brand.md-*read* behaviors work with **no regression**, but a capable agentic base model
+matches them in a 1× run, so they add little measured lift. Method + per-eval table +
+caveats (1× run, self-graded) in [`benchmarks/benchmark-v3-newfeatures.md`](benchmarks/benchmark-v3-newfeatures.md).
 
 **Where it moves the needle most (iteration-2):**
 
