@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Does not invent the page's contents and audit its own invention",
+      "passed": true,
+      "evidence": "Refuses to invent the page; says it won't critique its own guesses."
+    },
+    {
+      "text": "Either attempts/offers to fetch the live URL itself or asks the user to share the page (paste, screenshot)",
+      "passed": true,
+      "evidence": "Reports it tried to load the URL and the domain didn't resolve, then asks for screenshot/paste/working URL."
+    },
+    {
+      "text": "Asks for or confirms the page's goal and target audience",
+      "passed": true,
+      "evidence": "Asks for buyer, the one target action, and where the funnel leaks."
+    },
+    {
+      "text": "If it cannot access the page, makes clear a real audit requires seeing the real asset; any generic checklist is labeled as generic",
+      "passed": true,
+      "evidence": "Option B is explicitly labeled a generic self-audit checklist, with a real audit requiring the real page."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

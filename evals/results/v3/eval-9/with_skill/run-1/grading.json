@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Delivers the hero (headline + subhead + CTA) immediately, without gating questions",
+      "passed": true,
+      "evidence": "Delivers the hero (headline/subhead/CTA) immediately, no gating questions."
+    },
+    {
+      "text": "Uses the real 11-hours stat (with its sourcing) instead of a placeholder",
+      "passed": true,
+      "evidence": "Uses the real 11-hours stat with sourcing (n=142, 2025 survey) in a proof line."
+    },
+    {
+      "text": "Follows the voice rules: plainspoken and warm, never uses 'leverage' or 'solutions', not corporate",
+      "passed": true,
+      "evidence": "Voice is plainspoken/warm; no 'leverage'/'solutions', not corporate."
+    },
+    {
+      "text": "Offers to save these standing brand facts as a brand.md profile for future sessions",
+      "passed": false,
+      "evidence": "Does NOT offer to save the standing brand facts as a brand.md profile \u2014 the skill's create-brand.md offer did not fire."
+    },
+    {
+      "text": "The headline is outcome-led and specific to restaurant owners, not generic",
+      "passed": true,
+      "evidence": "Headline is outcome-led and specific to restaurant owners."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  }
+}

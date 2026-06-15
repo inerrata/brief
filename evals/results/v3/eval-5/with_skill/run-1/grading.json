@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "States the 30-character headline limit and 90-character description limit correctly",
+      "passed": true,
+      "evidence": "States 30-char headlines and 90-char descriptions."
+    },
+    {
+      "text": "States up to 15 headlines and up to 4 descriptions",
+      "passed": true,
+      "evidence": "Up to 15 headlines, up to 4 descriptions."
+    },
+    {
+      "text": "Mentions that Google mixes and matches assets, so each headline must stand alone (or gives pinning guidance)",
+      "passed": true,
+      "evidence": "Notes Google mixes/matches so each headline must stand alone; pin sparingly."
+    },
+    {
+      "text": "Answer is concise and direct, matching the quick factual question \u2014 not a generic essay",
+      "passed": true,
+      "evidence": "Concise table + tips matching the quick factual question."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

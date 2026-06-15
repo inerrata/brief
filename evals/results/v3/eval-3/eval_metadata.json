@@ -1,0 +1,16 @@
+{
+  "id": 3,
+  "name": "dev-audience-show-hn",
+  "module": "product-marketing",
+  "type": "happy_path",
+  "prompt": "We're launching sqlsnap, an open-source CLI that snapshots and diffs Postgres schemas. Write the launch post for Hacker News (Show HN).",
+  "expected_output": "A plain, peer-to-peer Show HN post: concrete about what the tool does and how, zero hype adjectives, acknowledges a limitation or non-goal, invites feedback.",
+  "assertions": [
+    "Written in plain, peer-to-peer engineering tone with no marketing hype adjectives (no 'revolutionary', 'blazing', 'seamless', 'game-changing')",
+    "Concrete and specific about what the tool does and how (commands, mechanism, or workflow shown)",
+    "Acknowledges at least one limitation, trade-off, or non-goal",
+    "Claims are demonstrable and specific rather than superlative",
+    "Reads as a Show HN post (first-person, direct, invites feedback), not a press release"
+  ],
+  "files": []
+}

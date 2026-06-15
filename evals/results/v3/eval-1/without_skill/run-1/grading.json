@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Delivers actual release notes, not advice on how to write them",
+      "passed": true,
+      "evidence": "Delivers finished release notes."
+    },
+    {
+      "text": "The breaking change (v1 API removal) is flagged prominently at or near the top, not buried",
+      "passed": true,
+      "evidence": "'Action required: legacy v1 Tasks API removed' is the first content section."
+    },
+    {
+      "text": "Engineering items are translated into user outcomes (e.g. the sync race condition becomes 'edits no longer lost when editing on two devices'; streaming export becomes 'large exports now complete')",
+      "passed": true,
+      "evidence": "Sync and streaming-export items translated to user outcomes."
+    },
+    {
+      "text": "The internal logging upgrade is omitted or clearly de-emphasized rather than presented as a user-facing change",
+      "passed": true,
+      "evidence": "Logging upgrade demoted to an 'Under the hood / no visible changes' note."
+    },
+    {
+      "text": "No vague filler like 'improved performance' or 'various bug fixes' without specifics",
+      "passed": true,
+      "evidence": "Each item is specific; intro is mildly fluffy but no vague filler items."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

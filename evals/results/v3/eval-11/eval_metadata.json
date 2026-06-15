@@ -1,0 +1,15 @@
+{
+  "id": 11,
+  "name": "gate-a-regression-positioning",
+  "module": "brand-messaging",
+  "type": "gate_A",
+  "prompt": "Give me a positioning statement for my startup \u2014 we make scheduling software for clinics.",
+  "expected_output": "Still gates: asks 2-3 sharp scoping questions (narrow audience, differentiator, main alternative) before writing; no guessed statement delivered this turn.",
+  "assertions": [
+    "Asks 2-3 sharp scoping questions before writing the statement",
+    "At least one question targets the narrow audience and at least one targets the differentiator or main alternative",
+    "Does NOT deliver a finished positioning statement built on guessed inputs in this turn",
+    "Questions are concise \u2014 not an open-ended interrogation"
+  ],
+  "files": []
+}

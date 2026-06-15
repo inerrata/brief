@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends or clearly favors a descriptive name over the branded 'PulseIQ' as the default, with reasoning",
+      "passed": true,
+      "evidence": "Recommends 'Monday Brief'/clear naming over PulseIQ; drop the IQ cliche."
+    },
+    {
+      "text": "Evaluates candidates against explicit criteria (self-explanatory, say-able, collision risk, consistency with existing naming)",
+      "passed": true,
+      "evidence": "Explicit criteria: descriptive-vs-evocative, say-aloud, trademark, truth-in-naming."
+    },
+    {
+      "text": "Offers at least 3 genuinely distinct name options",
+      "passed": true,
+      "evidence": "Three tiers of distinct options."
+    },
+    {
+      "text": "Notes when a branded name would be justified (a flagship differentiator) rather than dismissing branding absolutely",
+      "passed": true,
+      "evidence": "Notes when an evocative/brand name (Compass) is justified."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": 8,
+  "name": "gate-b-asset-in-repo",
+  "module": "cro",
+  "type": "gate_B_agentic",
+  "prompt": "The landing page copy in my project isn't converting \u2014 audit it and tell me what to fix.",
+  "expected_output": "Finds and reads the landing page file in the project itself, audits the real contents (quoting them), identifies the actual weaknesses, and gives prioritized concrete fixes \u2014 without asking the user to paste anything.",
+  "assertions": [
+    "Locates and reads the actual landing-page file in the project rather than asking the user to paste it",
+    "The audit references the real contents (quotes or names specific lines/elements from the file)",
+    "Identifies the major weaknesses actually present (vague superlative headline, jargon subhead, three competing CTAs, features without benefits, no proof)",
+    "Provides prioritized, concrete fixes including rewritten copy, not just labels",
+    "Does not invent content that is not in the file"
+  ],
+  "files": [
+    {
+      "path": "project/landing-page.md",
+      "content": "# Loopwork \u2014 current landing page copy\n\n## Hero\nHeadline: The Most Powerful Platform for Modern Teams\nSubhead: Loopwork leverages cutting-edge technology to seamlessly revolutionize the way your team collaborates, communicates, and creates.\nButtons: [Get Started] [Book a Demo] [Learn More]\n\n## Features\n- Real-time sync engine\n- AI-powered insights\n- Enterprise-grade security\n\n## Pricing teaser\nAffordable plans for everyone. [See pricing]\n"
+    }
+  ]
+}

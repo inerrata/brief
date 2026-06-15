@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Written in plain, peer-to-peer engineering tone with no marketing hype adjectives (no 'revolutionary', 'blazing', 'seamless', 'game-changing')",
+      "passed": true,
+      "evidence": "No hype words; explicitly avoids 'revolutionary/effortless'."
+    },
+    {
+      "text": "Concrete and specific about what the tool does and how (commands, mechanism, or workflow shown)",
+      "passed": true,
+      "evidence": "Concrete sample diff output and command example."
+    },
+    {
+      "text": "Acknowledges at least one limitation, trade-off, or non-goal",
+      "passed": true,
+      "evidence": "States read-only/no-data limitation and lists objects still on the roadmap."
+    },
+    {
+      "text": "Claims are demonstrable and specific rather than superlative",
+      "passed": true,
+      "evidence": "Specific and demonstrable, not superlative."
+    },
+    {
+      "text": "Reads as a Show HN post (first-person, direct, invites feedback), not a press release",
+      "passed": true,
+      "evidence": "Reads as a Show HN first comment with targeted feedback asks."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

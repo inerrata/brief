@@ -1,0 +1,21 @@
+{
+  "id": 10,
+  "name": "brand-md-read",
+  "module": "brand-profile",
+  "type": "happy_path",
+  "prompt": "Write a short upgrade-nudge email to our free users.",
+  "expected_output": "Reads the project's brand.md first and writes the email from it: right audience and voice, real proof from the profile, single CTA serving the stated quarterly goal \u2014 without re-asking answered questions.",
+  "assertions": [
+    "Reads the project's brand.md before writing (the output clearly uses its contents)",
+    "Does not re-ask scoping questions brand.md already answers (audience, voice, goal)",
+    "Uses real proof from the profile (the 52% open-rate stat and/or the Mia Torres testimonial) rather than placeholders",
+    "Respects the voice rules (warm, bookish, playful; never calls the send a 'blast')",
+    "The email drives the profile's stated quarterly goal \u2014 free-to-paid upgrades \u2014 with a single CTA"
+  ],
+  "files": [
+    {
+      "path": "project/brand.md",
+      "content": "# brand.md\n\n## Company\n- **Name:** Kindling\n- **What it is (one sentence):** Email marketing built for indie fiction authors.\n- **Industry:** Author tools / email marketing\n- **Stage:** growth\n- **Main alternative customers would use instead:** Mailchimp, or no list at all\n- **Single most important differentiator:** templates and automations designed around book launches, not ecommerce\n\n## Audience\n- **Primary audience (be narrow):** self-published fiction authors with 1k-50k readers\n- **Their biggest pain:** launches flop because their list is cold and generic tools feel built for shops, not stories\n- **What they believe now \u2192 what we want them to believe:** \"email marketing is salesy and not for writers\" \u2192 \"my list is my most loyal readership and Kindling makes it feel like writing, not selling\"\n\n## Voice & tone\n- **Adjectives that describe our voice:** warm, bookish, playful\n- **Never:** never call an email send a 'blast'; no growth-hacker jargon; no exclamation-mark pileups\n- **Formality (1 = casual, 5 = formal):** 2\n\n## Proof on file\n- **Stats:** Kindling users average a 52% open rate vs the 21% industry average (internal data 2025, n=3,400 accounts)\n- **Testimonials:** \"Kindling doubled my launch-week sales.\" \u2014 Mia Torres, romance author (permission on file)\n\n## Standing constraints\n- **Channels we use:** email, Instagram\n- **Current goal this quarter:** free-to-paid upgrades\n"
+    }
+  ]
+}

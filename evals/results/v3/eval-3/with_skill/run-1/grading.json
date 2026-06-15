@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Written in plain, peer-to-peer engineering tone with no marketing hype adjectives (no 'revolutionary', 'blazing', 'seamless', 'game-changing')",
+      "passed": true,
+      "evidence": "Plain peer tone; explicitly cuts 'powerful/seamless/effortless'."
+    },
+    {
+      "text": "Concrete and specific about what the tool does and how (commands, mechanism, or workflow shown)",
+      "passed": true,
+      "evidence": "Shows the three CLI commands and what each does."
+    },
+    {
+      "text": "Acknowledges at least one limitation, trade-off, or non-goal",
+      "passed": true,
+      "evidence": "'What it's not' paragraph: not a migration tool, Postgres-only, schema-not-data."
+    },
+    {
+      "text": "Claims are demonstrable and specific rather than superlative",
+      "passed": true,
+      "evidence": "Claims are concrete (CI non-zero exit) not superlative."
+    },
+    {
+      "text": "Reads as a Show HN post (first-person, direct, invites feedback), not a press release",
+      "passed": true,
+      "evidence": "First-person Show HN with feedback ask and first-comment prep."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

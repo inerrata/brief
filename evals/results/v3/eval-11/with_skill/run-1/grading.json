@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Asks 2-3 sharp scoping questions before writing the statement",
+      "passed": true,
+      "evidence": "Asks three sharp scoping questions before committing to a final statement."
+    },
+    {
+      "text": "At least one question targets the narrow audience and at least one targets the differentiator or main alternative",
+      "passed": true,
+      "evidence": "Q1 targets narrow audience; Q2/Q3 target differentiator and the real alternative."
+    },
+    {
+      "text": "Does NOT deliver a finished positioning statement built on guessed inputs in this turn",
+      "passed": true,
+      "evidence": "No finished statement on guesses: the optional draft is explicitly 'provisional', a 'placeholder to react to, not a finished answer', with product name and proof bracketed."
+    },
+    {
+      "text": "Questions are concise \u2014 not an open-ended interrogation",
+      "passed": true,
+      "evidence": "Three concise questions, not an open-ended interrogation."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

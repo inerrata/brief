@@ -4,7 +4,7 @@ A full-stack marketing skill for Claude — copy, brand, content, campaigns, res
 
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![format](https://img.shields.io/badge/format-SKILL.md-blue)
-![evals](https://img.shields.io/badge/evals-26%20%2B%2024%20held--out-blue)
+![evals](https://img.shields.io/badge/evals-26%20%2B%2024%20held--out%20%2B%2012%20new--features-blue)
 [![with--skill](https://img.shields.io/badge/with--skill-98.9%25%2a-brightgreen)](benchmarks/benchmark-iteration-3.md#caveats-read-these)
 [![held-out](https://img.shields.io/badge/held--out%20v2-122%2F122%2a-brightgreen)](benchmarks/benchmark-v2-evalset.md#caveats-read-these)
 ![delta](https://img.shields.io/badge/vs%20baseline-%2B5.7pp%20%283%C3%97%29-brightgreen)
@@ -70,6 +70,24 @@ To check the iteration-3 skill against cases it was never tuned on, a **separate
 | Evals at 1.00 | **24 / 24** |
 
 Both gate directions held: strategy statements (positioning, value prop, messaging hierarchy) asked first; working documents (ICP, content calendar) delivered on stated assumptions. Negative controls didn't fire. Method + honest caveats (1× run, self-graded) in [`benchmarks/benchmark-v2-evalset.md`](benchmarks/benchmark-v2-evalset.md).
+
+### New-features set (v3) — 12 prompts for the agentic gates + new modules
+
+A separate 12-prompt set targets the behaviors added after v2: the `product-marketing.md`
+and `specs.md` modules, agentic Gate B (fetch the URL / find the asset in-repo), and the
+`brand.md` read/offer flow.
+
+| New-features v3 | With skill | Baseline |
+|---|:--:|:--:|
+| Micro pass-rate | **98.1%** | 92.6% |
+| Triggering | **12 / 12 correct** | — |
+
+The honest read: the standout is **Gate A** — baseline wrote a finished positioning
+statement on guessed inputs; the skill asked first (1.00 vs 0.50). The agentic Gate B and
+brand.md-read behaviors work with **no regression**, but a capable agentic base model
+matches them in a 1× run, so they add little measured lift. One tracked miss: the skill
+doesn't yet reliably *offer* to create a `brand.md`. Method + per-eval table + caveats
+(1× run, self-graded) in [`benchmarks/benchmark-v3-newfeatures.md`](benchmarks/benchmark-v3-newfeatures.md).
 
 **Where it moves the needle most (iteration-2):**
 
@@ -233,7 +251,7 @@ Checked against every deliverable before it ships: **specificity** (numbers, not
 
 ## Evaluation
 
-The skill ships with its own test suite in [`evals/`](evals): **26 prompts** (`evals.json`) plus a **24-prompt held-out v2 set** (`evals-v2.json`, AI-generated) covering every module, phrasing variations, both gate checks, deliver-first traps, multi-module synthesis, an implicit trigger, an honesty probe, and **negative controls** (prompts that should *not* trigger it).
+The skill ships with its own test suite in [`evals/`](evals): **26 prompts** (`evals.json`), a **24-prompt held-out v2 set** (`evals-v2.json`, AI-generated), and a **12-prompt v3 new-features set** (`evals-v3.json`) targeting the agentic gates and the product-marketing/specs modules — together covering every module, phrasing variations, both gate checks, deliver-first traps, multi-module synthesis, an implicit trigger, an honesty probe, and **negative controls** (prompts that should *not* trigger it).
 
 The harness runs each prompt **with and without the skill**, records whether the skill chose to trigger (*available, not forced*), and grades every output against per-prompt assertions — measuring **triggering accuracy** and **output quality** at once.
 

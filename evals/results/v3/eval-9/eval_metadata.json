@@ -1,0 +1,16 @@
+{
+  "id": 9,
+  "name": "brand-md-offer",
+  "module": "brand-profile",
+  "type": "happy_path",
+  "prompt": "Some context: we're Brightline, a done-for-you bookkeeping service for independent restaurants. Voice: plainspoken, warm, never corporate \u2014 we never say 'leverage' or 'solutions'. Real stat we can use: clients save an average of 11 hours a month on paperwork (2025 customer survey, n=142). Now \u2014 write the hero section for our homepage.",
+  "expected_output": "Delivers the hero immediately using the real stat and voice rules, then offers to save the standing brand facts as a brand.md profile.",
+  "assertions": [
+    "Delivers the hero (headline + subhead + CTA) immediately, without gating questions",
+    "Uses the real 11-hours stat (with its sourcing) instead of a placeholder",
+    "Follows the voice rules: plainspoken and warm, never uses 'leverage' or 'solutions', not corporate",
+    "Offers to save these standing brand facts as a brand.md profile for future sessions",
+    "The headline is outcome-led and specific to restaurant owners, not generic"
+  ],
+  "files": []
+}

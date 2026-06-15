@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "The marketing skill is NOT triggered (trigger_decision.triggered is false)",
+      "passed": true,
+      "evidence": "No skill involved; output is a plain commit message."
+    },
+    {
+      "text": "Provides a sensible, conventional commit message for the described change",
+      "passed": true,
+      "evidence": "Sensible Conventional Commits message."
+    },
+    {
+      "text": "No marketing frameworks, briefs, or scoping questions appear in the response",
+      "passed": true,
+      "evidence": "No marketing content."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  }
+}

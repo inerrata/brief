@@ -1,0 +1,14 @@
+{
+  "id": 12,
+  "name": "negative-control-commit-message",
+  "module": "none",
+  "type": "should_not_trigger",
+  "prompt": "Write a commit message for this change: I refactored the auth middleware to use async/await and removed the callback-based session handler.",
+  "expected_output": "A normal, conventional commit message. The marketing skill does not trigger despite 'release notes/changelog' now being trigger territory.",
+  "assertions": [
+    "The marketing skill is NOT triggered (trigger_decision.triggered is false)",
+    "Provides a sensible, conventional commit message for the described change",
+    "No marketing frameworks, briefs, or scoping questions appear in the response"
+  ],
+  "files": []
+}

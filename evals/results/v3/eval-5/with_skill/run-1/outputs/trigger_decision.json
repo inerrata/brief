@@ -1,0 +1,1 @@
+{"triggered": true, "reason": "The request asks for Google RSA ad format specs (character limits and asset counts), which the skill's routing table maps directly to references/specs.md, ensuring verified numbers rather than answering from memory.", "references_read": ["SKILL.md", "specs.md"]}

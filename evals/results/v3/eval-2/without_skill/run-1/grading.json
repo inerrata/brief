@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Produces an actual battle card structured for mid-call scanning (clear sections, dense, scannable)",
+      "passed": true,
+      "evidence": "Structured battle card."
+    },
+    {
+      "text": "Includes a 'where they win' / competitor-strengths section that honestly names real QuickBooks advantages (e.g. ecosystem, accountant familiarity, integrations)",
+      "passed": true,
+      "evidence": "'Where QuickBooks Is Strong' section is honest."
+    },
+    {
+      "text": "Win claims are tied to proof points or clearly marked placeholders \u2014 no fabricated statistics",
+      "passed": true,
+      "evidence": "Proof points use placeholders; no fabricated stats."
+    },
+    {
+      "text": "Includes objection-and-response pairs for objections like price or 'we already use QuickBooks'",
+      "passed": true,
+      "evidence": "Objection-handling table present."
+    },
+    {
+      "text": "Includes landmine/trap questions for reps to plant against the competitor",
+      "passed": true,
+      "evidence": "Landmines-to-plant section present."
+    },
+    {
+      "text": "Stays roughly one page of dense content rather than sprawling",
+      "passed": false,
+      "evidence": "Sprawls well past one page: 9 numbered sections plus a 30-second pitch, discovery questions, and traps-to-avoid."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 1,
+    "total": 6,
+    "pass_rate": 0.8333
+  }
+}

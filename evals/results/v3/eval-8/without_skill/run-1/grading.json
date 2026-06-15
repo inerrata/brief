@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Locates and reads the actual landing-page file in the project rather than asking the user to paste it",
+      "passed": true,
+      "evidence": "'I read your current copy (landing-page.md)' \u2014 locates and reads the file itself."
+    },
+    {
+      "text": "The audit references the real contents (quotes or names specific lines/elements from the file)",
+      "passed": true,
+      "evidence": "Quotes the real headline, subhead, buttons, and features line by line."
+    },
+    {
+      "text": "Identifies the major weaknesses actually present (vague superlative headline, jargon subhead, three competing CTAs, features without benefits, no proof)",
+      "passed": true,
+      "evidence": "Identifies the same real weaknesses present in the file."
+    },
+    {
+      "text": "Provides prioritized, concrete fixes including rewritten copy, not just labels",
+      "passed": true,
+      "evidence": "Prioritized fixes plus a rewritten copy template."
+    },
+    {
+      "text": "Does not invent content that is not in the file",
+      "passed": true,
+      "evidence": "Uses bracketed placeholders for unknowns; nothing invented."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

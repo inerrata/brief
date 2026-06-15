@@ -1,0 +1,15 @@
+{
+  "id": 4,
+  "name": "feature-naming-pulseiq",
+  "module": "product-marketing",
+  "type": "happy_path",
+  "prompt": "Our analytics app just added a feature that automatically emails each user a Monday-morning summary of their key metrics. Marketing wants to call it 'PulseIQ'. What should we actually name it? Give me options.",
+  "expected_output": "Recommends descriptive naming over the branded 'PulseIQ' by default, evaluates candidates against explicit criteria, offers 3+ distinct options, and notes when branding a feature is justified.",
+  "assertions": [
+    "Recommends or clearly favors a descriptive name over the branded 'PulseIQ' as the default, with reasoning",
+    "Evaluates candidates against explicit criteria (self-explanatory, say-able, collision risk, consistency with existing naming)",
+    "Offers at least 3 genuinely distinct name options",
+    "Notes when a branded name would be justified (a flagship differentiator) rather than dismissing branding absolutely"
+  ],
+  "files": []
+}

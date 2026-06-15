@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Delivers actual release notes, not advice on how to write them",
+      "passed": true,
+      "evidence": "Delivers finished release notes for v2.3."
+    },
+    {
+      "text": "The breaking change (v1 API removal) is flagged prominently at or near the top, not buried",
+      "passed": true,
+      "evidence": "Breaking /v1 API removal is the first section, '\u26a0\ufe0f Breaking change \u2014 action required'."
+    },
+    {
+      "text": "Engineering items are translated into user outcomes (e.g. the sync race condition becomes 'edits no longer lost when editing on two devices'; streaming export becomes 'large exports now complete')",
+      "passed": true,
+      "evidence": "Sync race condition -> 'edits made on two devices at once are no longer dropped'; streaming -> 'exports no longer time out on large workspaces'."
+    },
+    {
+      "text": "The internal logging upgrade is omitted or clearly de-emphasized rather than presented as a user-facing change",
+      "passed": true,
+      "evidence": "Logging upgrade explicitly dropped as having no user-visible effect."
+    },
+    {
+      "text": "No vague filler like 'improved performance' or 'various bug fixes' without specifics",
+      "passed": true,
+      "evidence": "No 'improved performance'/'various fixes' filler; each line is specific."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Reads the project's brand.md before writing (the output clearly uses its contents)",
+      "passed": true,
+      "evidence": "Reads the project's brand.md (Kindling); output is built from its contents."
+    },
+    {
+      "text": "Does not re-ask scoping questions brand.md already answers (audience, voice, goal)",
+      "passed": true,
+      "evidence": "Does not re-ask audience/voice/goal that brand.md already answers."
+    },
+    {
+      "text": "Uses real proof from the profile (the 52% open-rate stat and/or the Mia Torres testimonial) rather than placeholders",
+      "passed": true,
+      "evidence": "Uses the real 52%-vs-21% open-rate stat and the Mia Torres testimonial."
+    },
+    {
+      "text": "Respects the voice rules (warm, bookish, playful; never calls the send a 'blast')",
+      "passed": true,
+      "evidence": "Warm/bookish/playful; never says 'blast', no exclamation pileups."
+    },
+    {
+      "text": "The email drives the profile's stated quarterly goal \u2014 free-to-paid upgrades \u2014 with a single CTA",
+      "passed": true,
+      "evidence": "Single CTA driving the stated free-to-paid quarterly goal."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

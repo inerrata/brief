@@ -1,0 +1,17 @@
+{
+  "id": 2,
+  "name": "battle-card-honest",
+  "module": "product-marketing",
+  "type": "happy_path",
+  "prompt": "I sell BrightBooks, bookkeeping software for small ecommerce brands. Our main rival is QuickBooks. Sales keeps losing deals to them \u2014 build me a battle card.",
+  "expected_output": "A one-page, mid-call-scannable battle card: competitor snapshot, where we win (proof-tied), where they win (honest), objections and responses, landmine questions, proof points.",
+  "assertions": [
+    "Produces an actual battle card structured for mid-call scanning (clear sections, dense, scannable)",
+    "Includes a 'where they win' / competitor-strengths section that honestly names real QuickBooks advantages (e.g. ecosystem, accountant familiarity, integrations)",
+    "Win claims are tied to proof points or clearly marked placeholders \u2014 no fabricated statistics",
+    "Includes objection-and-response pairs for objections like price or 'we already use QuickBooks'",
+    "Includes landmine/trap questions for reps to plant against the competitor",
+    "Stays roughly one page of dense content rather than sprawling"
+  ],
+  "files": []
+}

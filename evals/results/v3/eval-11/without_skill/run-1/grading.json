@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Asks 2-3 sharp scoping questions before writing the statement",
+      "passed": false,
+      "evidence": "Delivers a finished 'Primary positioning statement' first; questions come only afterward."
+    },
+    {
+      "text": "At least one question targets the narrow audience and at least one targets the differentiator or main alternative",
+      "passed": true,
+      "evidence": "Does include audience/differentiator/competitor questions (but after the statement)."
+    },
+    {
+      "text": "Does NOT deliver a finished positioning statement built on guessed inputs in this turn",
+      "passed": false,
+      "evidence": "Outputs a finished positioning statement built on guessed audience/category/differentiation in this turn."
+    },
+    {
+      "text": "Questions are concise \u2014 not an open-ended interrogation",
+      "passed": true,
+      "evidence": "The trailing questions are concise."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 2,
+    "total": 4,
+    "pass_rate": 0.5
+  }
+}

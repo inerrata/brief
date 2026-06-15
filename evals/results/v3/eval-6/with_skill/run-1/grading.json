@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "The announcement (the raise) lands within roughly the first 210 characters, before LinkedIn's '...see more' truncation",
+      "passed": true,
+      "evidence": "Lead line 'We just raised $2.4M...' (~76 chars) lands the raise before truncation."
+    },
+    {
+      "text": "Shows awareness of the truncation point explicitly or structurally (front-loaded news, short lines, white space)",
+      "passed": true,
+      "evidence": "Explicitly explains the ~140/210 'see more' cutoff and writes to it."
+    },
+    {
+      "text": "Delivers an actual ready-to-post LinkedIn post",
+      "passed": true,
+      "evidence": "Ready-to-post LinkedIn post."
+    },
+    {
+      "text": "Uses the provided facts ($2.4M, Foundry Capital) and invents no additional stats, customers, or metrics",
+      "passed": true,
+      "evidence": "Uses $2.4M and Foundry Capital; everything else is bracketed, nothing invented."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

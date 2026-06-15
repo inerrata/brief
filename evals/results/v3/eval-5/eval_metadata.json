@@ -1,0 +1,15 @@
+{
+  "id": 5,
+  "name": "specs-rsa-limits",
+  "module": "specs",
+  "type": "happy_path",
+  "prompt": "Quick one \u2014 what are the exact character limits for Google responsive search ads, and how many headlines and descriptions can I load in?",
+  "expected_output": "Correct, concise answer: 30-char headlines (up to 15), 90-char descriptions (up to 4), plus the mix-and-match implication.",
+  "assertions": [
+    "States the 30-character headline limit and 90-character description limit correctly",
+    "States up to 15 headlines and up to 4 descriptions",
+    "Mentions that Google mixes and matches assets, so each headline must stand alone (or gives pinning guidance)",
+    "Answer is concise and direct, matching the quick factual question \u2014 not a generic essay"
+  ],
+  "files": []
+}

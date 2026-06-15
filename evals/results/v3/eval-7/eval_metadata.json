@@ -1,0 +1,15 @@
+{
+  "id": 7,
+  "name": "gate-b-url-audit",
+  "module": "cro",
+  "type": "gate_B",
+  "prompt": "Our pricing page at https://tryloopwork.com/pricing isn't converting. Can you audit it and tell me what's wrong?",
+  "expected_output": "Tries to see the real page (fetches the URL if tools allow) or asks the user to share it; never invents the page's contents and audits the invention.",
+  "assertions": [
+    "Does not invent the page's contents and audit its own invention",
+    "Either attempts/offers to fetch the live URL itself or asks the user to share the page (paste, screenshot)",
+    "Asks for or confirms the page's goal and target audience",
+    "If it cannot access the page, makes clear a real audit requires seeing the real asset; any generic checklist is labeled as generic"
+  ],
+  "files": []
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "name": "release-notes-translation",
+    "module": "product-marketing",
+    "type": "happy_path",
+    "prompt": "Write release notes for v2.3 of TaskPilot, our project-management app. Here's what engineering gave me:\n- BREAKING: removed legacy /v1/tasks API endpoints\n- Fixed race condition in sync worker that could drop edits made on two devices simultaneously\n- Added bulk-edit for up to 500 tasks at once\n- Migrated export pipeline to streaming (was timing out on workspaces over 100k tasks)\n- Upgraded internal logging library\nMake them user-friendly.",
+    "expected_output": "User-facing release notes: breaking change flagged first, each engineering item translated to a user outcome, internal-only change omitted or de-emphasized, no filler.",
+    "assertions": [
+      "Delivers actual release notes, not advice on how to write them",
+      "The breaking change (v1 API removal) is flagged prominently at or near the top, not buried",
+      "Engineering items are translated into user outcomes (e.g. the sync race condition becomes 'edits no longer lost when editing on two devices'; streaming export becomes 'large exports now complete')",
+      "The internal logging upgrade is omitted or clearly de-emphasized rather than presented as a user-facing change",
+      "No vague filler like 'improved performance' or 'various bug fixes' without specifics"
+    ],
+    "files": []
+  },
+  {
+    "id": 2,
+    "name": "battle-card-honest",
+    "module": "product-marketing",
+    "type": "happy_path",
+    "prompt": "I sell BrightBooks, bookkeeping software for small ecommerce brands. Our main rival is QuickBooks. Sales keeps losing deals to them — build me a battle card.",
+    "expected_output": "A one-page, mid-call-scannable battle card: competitor snapshot, where we win (proof-tied), where they win (honest), objections and responses, landmine questions, proof points.",
+    "assertions": [
+      "Produces an actual battle card structured for mid-call scanning (clear sections, dense, scannable)",
+      "Includes a 'where they win' / competitor-strengths section that honestly names real QuickBooks advantages (e.g. ecosystem, accountant familiarity, integrations)",
+      "Win claims are tied to proof points or clearly marked placeholders — no fabricated statistics",
+      "Includes objection-and-response pairs for objections like price or 'we already use QuickBooks'",
+      "Includes landmine/trap questions for reps to plant against the competitor",
+      "Stays roughly one page of dense content rather than sprawling"
+    ],
+    "files": []
+  },
+  {
+    "id": 3,
+    "name": "dev-audience-show-hn",
+    "module": "product-marketing",
+    "type": "happy_path",
+    "prompt": "We're launching sqlsnap, an open-source CLI that snapshots and diffs Postgres schemas. Write the launch post for Hacker News (Show HN).",
+    "expected_output": "A plain, peer-to-peer Show HN post: concrete about what the tool does and how, zero hype adjectives, acknowledges a limitation or non-goal, invites feedback.",
+    "assertions": [
+      "Written in plain, peer-to-peer engineering tone with no marketing hype adjectives (no 'revolutionary', 'blazing', 'seamless', 'game-changing')",
+      "Concrete and specific about what the tool does and how (commands, mechanism, or workflow shown)",
+      "Acknowledges at least one limitation, trade-off, or non-goal",
+      "Claims are demonstrable and specific rather than superlative",
+      "Reads as a Show HN post (first-person, direct, invites feedback), not a press release"
+    ],
+    "files": []
+  },
+  {
+    "id": 4,
+    "name": "feature-naming-pulseiq",
+    "module": "product-marketing",
+    "type": "happy_path",
+    "prompt": "Our analytics app just added a feature that automatically emails each user a Monday-morning summary of their key metrics. Marketing wants to call it 'PulseIQ'. What should we actually name it? Give me options.",
+    "expected_output": "Recommends descriptive naming over the branded 'PulseIQ' by default, evaluates candidates against explicit criteria, offers 3+ distinct options, and notes when branding a feature is justified.",
+    "assertions": [
+      "Recommends or clearly favors a descriptive name over the branded 'PulseIQ' as the default, with reasoning",
+      "Evaluates candidates against explicit criteria (self-explanatory, say-able, collision risk, consistency with existing naming)",
+      "Offers at least 3 genuinely distinct name options",
+      "Notes when a branded name would be justified (a flagship differentiator) rather than dismissing branding absolutely"
+    ],
+    "files": []
+  },
+  {
+    "id": 5,
+    "name": "specs-rsa-limits",
+    "module": "specs",
+    "type": "happy_path",
+    "prompt": "Quick one — what are the exact character limits for Google responsive search ads, and how many headlines and descriptions can I load in?",
+    "expected_output": "Correct, concise answer: 30-char headlines (up to 15), 90-char descriptions (up to 4), plus the mix-and-match implication.",
+    "assertions": [
+      "States the 30-character headline limit and 90-character description limit correctly",
+      "States up to 15 headlines and up to 4 descriptions",
+      "Mentions that Google mixes and matches assets, so each headline must stand alone (or gives pinning guidance)",
+      "Answer is concise and direct, matching the quick factual question — not a generic essay"
+    ],
+    "files": []
+  },
+  {
+    "id": 6,
+    "name": "linkedin-truncation-applied",
+    "module": "specs",
+    "type": "happy_path",
+    "prompt": "Write a LinkedIn post from me (the founder) announcing that Loopwork raised a $2.4M seed round led by Foundry Capital — I don't want the post to get cut off awkwardly in the feed.",
+    "expected_output": "A ready-to-post LinkedIn announcement whose hook and key news land before the ~210-character truncation point, using only the provided facts.",
+    "assertions": [
+      "The announcement (the raise) lands within roughly the first 210 characters, before LinkedIn's '...see more' truncation",
+      "Shows awareness of the truncation point explicitly or structurally (front-loaded news, short lines, white space)",
+      "Delivers an actual ready-to-post LinkedIn post",
+      "Uses the provided facts ($2.4M, Foundry Capital) and invents no additional stats, customers, or metrics"
+    ],
+    "files": []
+  },
+  {
+    "id": 7,
+    "name": "gate-b-url-audit",
+    "module": "cro",
+    "type": "gate_B",
+    "prompt": "Our pricing page at https://tryloopwork.com/pricing isn't converting. Can you audit it and tell me what's wrong?",
+    "expected_output": "Tries to see the real page (fetches the URL if tools allow) or asks the user to share it; never invents the page's contents and audits the invention.",
+    "assertions": [
+      "Does not invent the page's contents and audit its own invention",
+      "Either attempts/offers to fetch the live URL itself or asks the user to share the page (paste, screenshot)",
+      "Asks for or confirms the page's goal and target audience",
+      "If it cannot access the page, makes clear a real audit requires seeing the real asset; any generic checklist is labeled as generic"
+    ],
+    "files": []
+  },
+  {
+    "id": 8,
+    "name": "gate-b-asset-in-repo",
+    "module": "cro",
+    "type": "gate_B_agentic",
+    "prompt": "The landing page copy in my project isn't converting — audit it and tell me what to fix.",
+    "expected_output": "Finds and reads the landing page file in the project itself, audits the real contents (quoting them), identifies the actual weaknesses, and gives prioritized concrete fixes — without asking the user to paste anything.",
+    "assertions": [
+      "Locates and reads the actual landing-page file in the project rather than asking the user to paste it",
+      "The audit references the real contents (quotes or names specific lines/elements from the file)",
+      "Identifies the major weaknesses actually present (vague superlative headline, jargon subhead, three competing CTAs, features without benefits, no proof)",
+      "Provides prioritized, concrete fixes including rewritten copy, not just labels",
+      "Does not invent content that is not in the file"
+    ],
+    "files": [
+      {
+        "path": "project/landing-page.md",
+        "content": "# Loopwork — current landing page copy\n\n## Hero\nHeadline: The Most Powerful Platform for Modern Teams\nSubhead: Loopwork leverages cutting-edge technology to seamlessly revolutionize the way your team collaborates, communicates, and creates.\nButtons: [Get Started] [Book a Demo] [Learn More]\n\n## Features\n- Real-time sync engine\n- AI-powered insights\n- Enterprise-grade security\n\n## Pricing teaser\nAffordable plans for everyone. [See pricing]\n"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "brand-md-offer",
+    "module": "brand-profile",
+    "type": "happy_path",
+    "prompt": "Some context: we're Brightline, a done-for-you bookkeeping service for independent restaurants. Voice: plainspoken, warm, never corporate — we never say 'leverage' or 'solutions'. Real stat we can use: clients save an average of 11 hours a month on paperwork (2025 customer survey, n=142). Now — write the hero section for our homepage.",
+    "expected_output": "Delivers the hero immediately using the real stat and voice rules, then offers to save the standing brand facts as a brand.md profile.",
+    "assertions": [
+      "Delivers the hero (headline + subhead + CTA) immediately, without gating questions",
+      "Uses the real 11-hours stat (with its sourcing) instead of a placeholder",
+      "Follows the voice rules: plainspoken and warm, never uses 'leverage' or 'solutions', not corporate",
+      "Offers to save these standing brand facts as a brand.md profile for future sessions",
+      "The headline is outcome-led and specific to restaurant owners, not generic"
+    ],
+    "files": []
+  },
+  {
+    "id": 10,
+    "name": "brand-md-read",
+    "module": "brand-profile",
+    "type": "happy_path",
+    "prompt": "Write a short upgrade-nudge email to our free users.",
+    "expected_output": "Reads the project's brand.md first and writes the email from it: right audience and voice, real proof from the profile, single CTA serving the stated quarterly goal — without re-asking answered questions.",
+    "assertions": [
+      "Reads the project's brand.md before writing (the output clearly uses its contents)",
+      "Does not re-ask scoping questions brand.md already answers (audience, voice, goal)",
+      "Uses real proof from the profile (the 52% open-rate stat and/or the Mia Torres testimonial) rather than placeholders",
+      "Respects the voice rules (warm, bookish, playful; never calls the send a 'blast')",
+      "The email drives the profile's stated quarterly goal — free-to-paid upgrades — with a single CTA"
+    ],
+    "files": [
+      {
+        "path": "project/brand.md",
+        "content": "# brand.md\n\n## Company\n- **Name:** Kindling\n- **What it is (one sentence):** Email marketing built for indie fiction authors.\n- **Industry:** Author tools / email marketing\n- **Stage:** growth\n- **Main alternative customers would use instead:** Mailchimp, or no list at all\n- **Single most important differentiator:** templates and automations designed around book launches, not ecommerce\n\n## Audience\n- **Primary audience (be narrow):** self-published fiction authors with 1k-50k readers\n- **Their biggest pain:** launches flop because their list is cold and generic tools feel built for shops, not stories\n- **What they believe now → what we want them to believe:** \"email marketing is salesy and not for writers\" → \"my list is my most loyal readership and Kindling makes it feel like writing, not selling\"\n\n## Voice & tone\n- **Adjectives that describe our voice:** warm, bookish, playful\n- **Never:** never call an email send a 'blast'; no growth-hacker jargon; no exclamation-mark pileups\n- **Formality (1 = casual, 5 = formal):** 2\n\n## Proof on file\n- **Stats:** Kindling users average a 52% open rate vs the 21% industry average (internal data 2025, n=3,400 accounts)\n- **Testimonials:** \"Kindling doubled my launch-week sales.\" — Mia Torres, romance author (permission on file)\n\n## Standing constraints\n- **Channels we use:** email, Instagram\n- **Current goal this quarter:** free-to-paid upgrades\n"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "gate-a-regression-positioning",
+    "module": "brand-messaging",
+    "type": "gate_A",
+    "prompt": "Give me a positioning statement for my startup — we make scheduling software for clinics.",
+    "expected_output": "Still gates: asks 2-3 sharp scoping questions (narrow audience, differentiator, main alternative) before writing; no guessed statement delivered this turn.",
+    "assertions": [
+      "Asks 2-3 sharp scoping questions before writing the statement",
+      "At least one question targets the narrow audience and at least one targets the differentiator or main alternative",
+      "Does NOT deliver a finished positioning statement built on guessed inputs in this turn",
+      "Questions are concise — not an open-ended interrogation"
+    ],
+    "files": []
+  },
+  {
+    "id": 12,
+    "name": "negative-control-commit-message",
+    "module": "none",
+    "type": "should_not_trigger",
+    "prompt": "Write a commit message for this change: I refactored the auth middleware to use async/await and removed the callback-based session handler.",
+    "expected_output": "A normal, conventional commit message. The marketing skill does not trigger despite 'release notes/changelog' now being trigger territory.",
+    "assertions": [
+      "The marketing skill is NOT triggered (trigger_decision.triggered is false)",
+      "Provides a sensible, conventional commit message for the described change",
+      "No marketing frameworks, briefs, or scoping questions appear in the response"
+    ],
+    "files": []
+  }
+]

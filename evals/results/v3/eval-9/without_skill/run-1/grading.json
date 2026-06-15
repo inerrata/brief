@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Delivers the hero (headline + subhead + CTA) immediately, without gating questions",
+      "passed": true,
+      "evidence": "Delivers the hero immediately."
+    },
+    {
+      "text": "Uses the real 11-hours stat (with its sourcing) instead of a placeholder",
+      "passed": true,
+      "evidence": "Uses the 11-hours stat with its source."
+    },
+    {
+      "text": "Follows the voice rules: plainspoken and warm, never uses 'leverage' or 'solutions', not corporate",
+      "passed": true,
+      "evidence": "Plainspoken/warm voice; avoids the banned words."
+    },
+    {
+      "text": "Offers to save these standing brand facts as a brand.md profile for future sessions",
+      "passed": false,
+      "evidence": "No brand.md offer (baseline has no concept of one)."
+    },
+    {
+      "text": "The headline is outcome-led and specific to restaurant owners, not generic",
+      "passed": true,
+      "evidence": "Outcome-led, restaurant-specific headline."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  }
+}

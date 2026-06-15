@@ -1,0 +1,15 @@
+{
+  "id": 6,
+  "name": "linkedin-truncation-applied",
+  "module": "specs",
+  "type": "happy_path",
+  "prompt": "Write a LinkedIn post from me (the founder) announcing that Loopwork raised a $2.4M seed round led by Foundry Capital \u2014 I don't want the post to get cut off awkwardly in the feed.",
+  "expected_output": "A ready-to-post LinkedIn announcement whose hook and key news land before the ~210-character truncation point, using only the provided facts.",
+  "assertions": [
+    "The announcement (the raise) lands within roughly the first 210 characters, before LinkedIn's '...see more' truncation",
+    "Shows awareness of the truncation point explicitly or structurally (front-loaded news, short lines, white space)",
+    "Delivers an actual ready-to-post LinkedIn post",
+    "Uses the provided facts ($2.4M, Foundry Capital) and invents no additional stats, customers, or metrics"
+  ],
+  "files": []
+}

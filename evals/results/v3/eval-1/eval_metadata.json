@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "name": "release-notes-translation",
+  "module": "product-marketing",
+  "type": "happy_path",
+  "prompt": "Write release notes for v2.3 of TaskPilot, our project-management app. Here's what engineering gave me:\n- BREAKING: removed legacy /v1/tasks API endpoints\n- Fixed race condition in sync worker that could drop edits made on two devices simultaneously\n- Added bulk-edit for up to 500 tasks at once\n- Migrated export pipeline to streaming (was timing out on workspaces over 100k tasks)\n- Upgraded internal logging library\nMake them user-friendly.",
+  "expected_output": "User-facing release notes: breaking change flagged first, each engineering item translated to a user outcome, internal-only change omitted or de-emphasized, no filler.",
+  "assertions": [
+    "Delivers actual release notes, not advice on how to write them",
+    "The breaking change (v1 API removal) is flagged prominently at or near the top, not buried",
+    "Engineering items are translated into user outcomes (e.g. the sync race condition becomes 'edits no longer lost when editing on two devices'; streaming export becomes 'large exports now complete')",
+    "The internal logging upgrade is omitted or clearly de-emphasized rather than presented as a user-facing change",
+    "No vague filler like 'improved performance' or 'various bug fixes' without specifics"
+  ],
+  "files": []
+}

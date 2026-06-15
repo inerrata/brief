@@ -1,0 +1,224 @@
+{
+  "set": "evals-v3.json",
+  "runs_per_arm": 1,
+  "with_skill": {
+    "assertions_passed": 53,
+    "assertions_total": 54,
+    "micro_pass_rate": 0.9815,
+    "macro_mean_eval_score": 0.9833,
+    "evals": 12
+  },
+  "without_skill": {
+    "assertions_passed": 50,
+    "assertions_total": 54,
+    "micro_pass_rate": 0.9259,
+    "macro_mean_eval_score": 0.9277,
+    "evals": 12
+  },
+  "per_eval": [
+    {
+      "id": 1,
+      "name": "release-notes-translation",
+      "module": "product-marketing",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 2,
+      "name": "battle-card-honest",
+      "module": "product-marketing",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 6,
+        "total": 6,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 5,
+        "total": 6,
+        "pass_rate": 0.833
+      },
+      "triggered": true
+    },
+    {
+      "id": 3,
+      "name": "dev-audience-show-hn",
+      "module": "product-marketing",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 4,
+      "name": "feature-naming-pulseiq",
+      "module": "product-marketing",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 5,
+      "name": "specs-rsa-limits",
+      "module": "specs",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 6,
+      "name": "linkedin-truncation-applied",
+      "module": "specs",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 7,
+      "name": "gate-b-url-audit",
+      "module": "cro",
+      "type": "gate_B",
+      "with_skill": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 8,
+      "name": "gate-b-asset-in-repo",
+      "module": "cro",
+      "type": "gate_B_agentic",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 9,
+      "name": "brand-md-offer",
+      "module": "brand-profile",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 4,
+        "total": 5,
+        "pass_rate": 0.8
+      },
+      "without_skill": {
+        "passed": 4,
+        "total": 5,
+        "pass_rate": 0.8
+      },
+      "triggered": true
+    },
+    {
+      "id": 10,
+      "name": "brand-md-read",
+      "module": "brand-profile",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 11,
+      "name": "gate-a-regression-positioning",
+      "module": "brand-messaging",
+      "type": "gate_A",
+      "with_skill": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 2,
+        "total": 4,
+        "pass_rate": 0.5
+      },
+      "triggered": true
+    },
+    {
+      "id": 12,
+      "name": "negative-control-commit-message",
+      "module": "none",
+      "type": "should_not_trigger",
+      "with_skill": {
+        "passed": 3,
+        "total": 3,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 3,
+        "total": 3,
+        "pass_rate": 1.0
+      },
+      "triggered": false
+    }
+  ]
+}
