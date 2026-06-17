@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "name": "social-founder-linkedin",
+  "module": "social-media",
+  "type": "happy_path",
+  "prompt": "We're a B2B payroll startup. I want to build our founder's audience on LinkedIn from basically zero. Give me an approach and a few post ideas.",
+  "expected_output": "Platform-native LinkedIn strategy: story-to-lesson/contrarian formats, hook + white-space mechanics, engagement/first-hour and links-in-comments guidance, plus concrete post ideas \u2014 not generic 'post consistently'.",
+  "assertions": [
+    "Gives LinkedIn-native tactics (e.g. personal-story-to-lesson or contrarian posts, short lines/white space, the ~210-char hook before 'see more')",
+    "Provides concrete, specific post ideas tailored to a B2B payroll founder, not just abstract advice",
+    "Mentions an engagement/distribution mechanic (early-hour engagement, comments, or putting links in the first comment)",
+    "Goes beyond generic 'be consistent / post daily' filler with real mechanics",
+    "No fabricated metrics; any numbers are illustrative or marked"
+  ],
+  "files": []
+}

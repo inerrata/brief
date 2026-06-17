@@ -8,8 +8,10 @@ description: >
   (GTM) plan, define a brand voice or tone, write a value proposition or positioning statement, create
   audience personas or ICPs, write SEO content briefs, plan an email sequence or newsletter, design a
   conversion-rate-optimization (CRO) test, analyze competitor positioning, write release notes, a
-  changelog, or a feature announcement, build sales enablement assets (battle cards, one-pagers), or
-  measure marketing performance. Make sure to use this skill whenever the user mentions attracting customers, growing an
+  changelog, or a feature announcement, build sales enablement assets (battle cards, one-pagers), plan
+  organic social or a platform-specific post, buy paid ads or structure a media-buying campaign, write a
+  press release or media pitch or handle PR and crisis communications, or run an influencer, affiliate, or
+  co-marketing partnership, or measure marketing performance. Make sure to use this skill whenever the user mentions attracting customers, growing an
   audience, launching a product, increasing conversions, communicating value, or any task that touches
   marketing copy or strategy — even if they don't explicitly say the word "marketing." This includes
   casual, non-marketer phrasings like "nobody's clicking / buying / signing up," "my page / ad / email
@@ -159,6 +161,10 @@ short "why this works" note or offer variants, but the deliverable comes first.
 | Metrics, KPIs, attribution, reporting, what to measure and how | `references/measurement.md` |
 | Release notes, changelogs, feature announcements, battle cards, sales one-pagers, dev-audience marketing | `references/product-marketing.md` |
 | Character limits, image sizes, or format specs for any channel (ads, email, social, SEO, app stores) | `references/specs.md` |
+| Organic social strategy, platform mechanics (LinkedIn/X/Instagram/TikTok), hooks, what travels per platform | `references/social-media.md` |
+| Paid ads buying — channel selection, account structure, bidding, budget, creative testing, scaling | `references/paid-media.md` |
+| PR, press releases, media pitches, earned media, thought leadership, crisis communications | `references/pr-comms.md` |
+| Influencer/creator marketing, affiliate programs, co-marketing partnerships, sponsorship, disclosure | `references/partnerships.md` |
 
 If a task spans several areas (e.g. "launch plan for my app"), read each relevant reference and synthesize.
 A launch typically needs `campaigns.md` + `copywriting.md` + `email-lifecycle.md` + `measurement.md`.

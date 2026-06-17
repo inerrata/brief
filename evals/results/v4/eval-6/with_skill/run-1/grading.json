@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Flags that a dark-mode feature alone is unlikely to be news for a major outlet like TechCrunch",
+      "passed": true,
+      "evidence": "Flags dark mode alone isn't a TechCrunch story, against the news-hook test."
+    },
+    {
+      "text": "Redirects to owned channels (release notes / blog / social) or suggests finding a genuine news hook (data, a larger announcement, a trend tie-in)",
+      "passed": true,
+      "evidence": "Redirects to owned channels and finds a real hook (the usage-data angle)."
+    },
+    {
+      "text": "Does not simply write a press release or pitch treating dark mode as headline news",
+      "passed": true,
+      "evidence": "Does not write a press release treating dark mode as headline news."
+    },
+    {
+      "text": "Is honest rather than over-promising coverage",
+      "passed": true,
+      "evidence": "Honest about coverage odds, no over-promising."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

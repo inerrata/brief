@@ -1,0 +1,16 @@
+{
+  "id": 4,
+  "name": "paid-google-vs-facebook",
+  "module": "paid-media",
+  "type": "deliver_first",
+  "prompt": "Should I run Google Ads or Facebook ads for my new ergonomic office chair?",
+  "expected_output": "Delivers a real recommendation on stated assumptions (deliver-first), framed by demand-capture vs demand-creation, with the search-volume/intent logic \u2014 not a wall of questions.",
+  "assertions": [
+    "Gives an actual recommendation on stated assumptions, not only clarifying questions",
+    "Frames the choice as search (capture existing demand) vs paid social (create demand / visual discovery)",
+    "Reasons about whether people already search for the product, and notes a visual product suits social discovery",
+    "States its assumption(s) in a line and invites correction",
+    "Mentions judging by CPA/ROAS against economics rather than vanity metrics"
+  ],
+  "files": []
+}

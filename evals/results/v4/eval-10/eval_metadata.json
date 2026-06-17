@@ -1,0 +1,14 @@
+{
+  "id": 10,
+  "name": "negative-control-tcp-udp",
+  "module": "none",
+  "type": "should_not_trigger",
+  "prompt": "What's the difference between TCP and UDP?",
+  "expected_output": "A correct technical networking explanation. The marketing skill does not trigger.",
+  "assertions": [
+    "The marketing skill is NOT triggered (trigger_decision.triggered is false)",
+    "Gives a correct, useful explanation of TCP vs UDP",
+    "No marketing frameworks, briefs, or scoping questions appear"
+  ],
+  "files": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": 5,
+  "name": "pr-series-a-release",
+  "module": "pr-comms",
+  "type": "happy_path",
+  "prompt": "Write a press release announcing our $5M Series A led by Northgate Ventures. We're an AI tool for radiologists.",
+  "expected_output": "A real press release: headline with the news, dateline + inverted-pyramid lead, a named approved-style quote, boilerplate, contact \u2014 no hype adjectives, no fabricated stats (placeholders where proof is needed).",
+  "assertions": [
+    "Produces an actual press release with headline, lead paragraph, body, a quote, and boilerplate",
+    "Lead paragraph carries the who/what/when in the first sentence (inverted pyramid)",
+    "Includes a named executive quote (placeholder name/title is fine) that sounds like a person, not boilerplate",
+    "Uses the given facts ($5M, Northgate Ventures); any other stat is a marked placeholder, nothing fabricated",
+    "Avoids hype adjectives a journalist would cut ('revolutionary', 'game-changing', 'world-class')"
+  ],
+  "files": []
+}

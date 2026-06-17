@@ -1,0 +1,16 @@
+{
+  "id": 8,
+  "name": "partnerships-influencer-skincare",
+  "module": "partnerships",
+  "type": "happy_path",
+  "prompt": "Help me set up an influencer campaign for my new skincare brand.",
+  "expected_output": "Audience-fit over follower count, micro/mid-tier consideration, authenticity vetting, a brief that gives direction but creative freedom, required disclosure, and measurement matched to the goal.",
+  "assertions": [
+    "Prioritizes audience fit / relevance over raw follower count",
+    "Raises vetting for authentic engagement (real engagement, not bought audience) and/or micro vs mega trade-off",
+    "Recommends a brief that gives a core message + must-haves while leaving the creator's authentic voice intact",
+    "States that paid/gifted partnerships must be clearly disclosed (#ad / FTC) \u2014 not optional",
+    "Ties measurement to the goal (awareness vs direct response) with per-partner tracking"
+  ],
+  "files": []
+}

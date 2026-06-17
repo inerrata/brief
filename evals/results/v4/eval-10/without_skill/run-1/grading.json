@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "The marketing skill is NOT triggered (trigger_decision.triggered is false)",
+      "passed": true,
+      "evidence": "No skill involved; plain networking answer (baseline arm)."
+    },
+    {
+      "text": "Gives a correct, useful explanation of TCP vs UDP",
+      "passed": true,
+      "evidence": "Correct TCP vs UDP explanation."
+    },
+    {
+      "text": "No marketing frameworks, briefs, or scoping questions appear",
+      "passed": true,
+      "evidence": "No marketing content."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  }
+}

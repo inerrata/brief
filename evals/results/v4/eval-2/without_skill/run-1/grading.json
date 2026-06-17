@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Re-forms the content into platform-native formats rather than reposting identical text everywhere",
+      "passed": true,
+      "evidence": "Re-forms into platform-native formats rather than identical reposting."
+    },
+    {
+      "text": "Names a distinct native format per platform (e.g. X thread, LinkedIn carousel/post, Instagram Reel or carousel)",
+      "passed": true,
+      "evidence": "Names distinct formats per platform."
+    },
+    {
+      "text": "Gives hook guidance for at least one platform (the first line/first second)",
+      "passed": true,
+      "evidence": "Gives hook guidance (first line / first second)."
+    },
+    {
+      "text": "Reflects platform differences (e.g. X is punchy/threaded, Instagram is visual-first, LinkedIn is professional-narrative)",
+      "passed": true,
+      "evidence": "Reflects platform differences."
+    },
+    {
+      "text": "Does not just say 'share the link on each platform'",
+      "passed": true,
+      "evidence": "Does not just say 'post the link everywhere'."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

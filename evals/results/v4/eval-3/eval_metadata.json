@@ -1,0 +1,16 @@
+{
+  "id": 3,
+  "name": "paid-saas-first-ads",
+  "module": "paid-media",
+  "type": "happy_path",
+  "prompt": "I want to start running ads for my $49/mo project-management SaaS. Where do I begin?",
+  "expected_output": "Grounds the start in target CPA from unit economics, conversion tracking + a converting landing page first, channel choice by intent (search captures demand vs social creates it), one channel to start \u2014 not 'run Facebook ads'.",
+  "assertions": [
+    "Anchors on a target CPA / unit economics (LTV:CAC) before recommending spend",
+    "Flags prerequisites: conversion tracking installed and a landing page that converts, before launching",
+    "Chooses a channel by buyer intent (search = capture existing demand vs paid social = create demand)",
+    "Recommends starting with one channel/focus rather than several at once",
+    "No fabricated benchmark numbers stated as fact; estimates are flagged as estimates"
+  ],
+  "files": []
+}

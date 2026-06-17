@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Gives LinkedIn-native tactics (e.g. personal-story-to-lesson or contrarian posts, short lines/white space, the ~210-char hook before 'see more')",
+      "passed": true,
+      "evidence": "LinkedIn-native: story-to-lesson/contrarian pillars, ~210-char hook, white space, carousels."
+    },
+    {
+      "text": "Provides concrete, specific post ideas tailored to a B2B payroll founder, not just abstract advice",
+      "passed": true,
+      "evidence": "Eight concrete payroll-founder post ideas with written hooks."
+    },
+    {
+      "text": "Mentions an engagement/distribution mechanic (early-hour engagement, comments, or putting links in the first comment)",
+      "passed": true,
+      "evidence": "First-hour engagement, comment-on-bigger-accounts, links in first comment."
+    },
+    {
+      "text": "Goes beyond generic 'be consistent / post daily' filler with real mechanics",
+      "passed": true,
+      "evidence": "Goes well beyond 'be consistent' \u2014 pillars, hook mechanics, engagement engine."
+    },
+    {
+      "text": "No fabricated metrics; any numbers are illustrative or marked",
+      "passed": true,
+      "evidence": "Numbers are illustrative; no fabricated metrics asserted as fact."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

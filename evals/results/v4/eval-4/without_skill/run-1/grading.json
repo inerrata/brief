@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Gives an actual recommendation on stated assumptions, not only clarifying questions",
+      "passed": true,
+      "evidence": "Gives a clear recommendation (Google first) on stated assumptions."
+    },
+    {
+      "text": "Frames the choice as search (capture existing demand) vs paid social (create demand / visual discovery)",
+      "passed": true,
+      "evidence": "Demand-capture vs demand-creation framing in a comparison table."
+    },
+    {
+      "text": "Reasons about whether people already search for the product, and notes a visual product suits social discovery",
+      "passed": true,
+      "evidence": "Reasons about search intent and the visual product suiting social."
+    },
+    {
+      "text": "States its assumption(s) in a line and invites correction",
+      "passed": true,
+      "evidence": "States assumptions and asks to refine."
+    },
+    {
+      "text": "Mentions judging by CPA/ROAS against economics rather than vanity metrics",
+      "passed": true,
+      "evidence": "Says optimize for CPA/trials, not clicks/cheap traffic."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

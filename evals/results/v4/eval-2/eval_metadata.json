@@ -1,0 +1,16 @@
+{
+  "id": 2,
+  "name": "social-repurpose-platforms",
+  "module": "social-media",
+  "type": "happy_path",
+  "prompt": "I just published a long blog post on remote-team rituals. How do I turn it into social content for LinkedIn, X, and Instagram?",
+  "expected_output": "Re-forms the content per platform (not the same text everywhere): native format per channel (LinkedIn post/carousel, X thread, Instagram Reel/carousel), each with hook guidance.",
+  "assertions": [
+    "Re-forms the content into platform-native formats rather than reposting identical text everywhere",
+    "Names a distinct native format per platform (e.g. X thread, LinkedIn carousel/post, Instagram Reel or carousel)",
+    "Gives hook guidance for at least one platform (the first line/first second)",
+    "Reflects platform differences (e.g. X is punchy/threaded, Instagram is visual-first, LinkedIn is professional-narrative)",
+    "Does not just say 'share the link on each platform'"
+  ],
+  "files": []
+}

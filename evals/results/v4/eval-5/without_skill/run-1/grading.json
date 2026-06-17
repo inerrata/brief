@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Produces an actual press release with headline, lead paragraph, body, a quote, and boilerplate",
+      "passed": true,
+      "evidence": "Full press release with headline, dateline, lead, quotes, boilerplate, contact."
+    },
+    {
+      "text": "Lead paragraph carries the who/what/when in the first sentence (inverted pyramid)",
+      "passed": true,
+      "evidence": "Lead carries who/what/when first (inverted pyramid)."
+    },
+    {
+      "text": "Includes a named executive quote (placeholder name/title is fine) that sounds like a person, not boilerplate",
+      "passed": true,
+      "evidence": "Named quotes (placeholders) with guidance to make them human."
+    },
+    {
+      "text": "Uses the given facts ($5M, Northgate Ventures); any other stat is a marked placeholder, nothing fabricated",
+      "passed": true,
+      "evidence": "Uses $5M + Northgate; placeholders elsewhere, nothing fabricated."
+    },
+    {
+      "text": "Avoids hype adjectives a journalist would cut ('revolutionary', 'game-changing', 'world-class')",
+      "passed": true,
+      "evidence": "Avoids hype adjectives; flags healthcare regulated-claim caution."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Prioritizes audience fit / relevance over raw follower count",
+      "passed": true,
+      "evidence": "Audience fit over follower count, stated explicitly."
+    },
+    {
+      "text": "Raises vetting for authentic engagement (real engagement, not bought audience) and/or micro vs mega trade-off",
+      "passed": true,
+      "evidence": "Vetting table for authentic engagement; micro/mid over mega."
+    },
+    {
+      "text": "Recommends a brief that gives a core message + must-haves while leaving the creator's authentic voice intact",
+      "passed": true,
+      "evidence": "Brief gives core message + must-haves, explicitly invites authentic voice."
+    },
+    {
+      "text": "States that paid/gifted partnerships must be clearly disclosed (#ad / FTC) \u2014 not optional",
+      "passed": true,
+      "evidence": "Disclosure required by FTC, brand is liable, contractual must-have."
+    },
+    {
+      "text": "Ties measurement to the goal (awareness vs direct response) with per-partner tracking",
+      "passed": true,
+      "evidence": "Per-creator codes/links; awareness vs direct-response metrics; incrementality."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

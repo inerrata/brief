@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Anchors on a target CPA / unit economics (LTV:CAC) before recommending spend",
+      "passed": true,
+      "evidence": "Step 0 is unit economics / target CAC before spend."
+    },
+    {
+      "text": "Flags prerequisites: conversion tracking installed and a landing page that converts, before launching",
+      "passed": true,
+      "evidence": "Step 1 requires the funnel to convert and tracking installed first."
+    },
+    {
+      "text": "Chooses a channel by buyer intent (search = capture existing demand vs paid social = create demand)",
+      "passed": true,
+      "evidence": "Chooses channel by intent (search vs social)."
+    },
+    {
+      "text": "Recommends starting with one channel/focus rather than several at once",
+      "passed": true,
+      "evidence": "Recommends starting with one channel."
+    },
+    {
+      "text": "No fabricated benchmark numbers stated as fact; estimates are flagged as estimates",
+      "passed": true,
+      "evidence": "Numbers are illustrative, not fabricated as fact."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

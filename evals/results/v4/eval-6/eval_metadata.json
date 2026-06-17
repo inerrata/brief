@@ -1,0 +1,15 @@
+{
+  "id": 6,
+  "name": "pr-darkmode-nonstory",
+  "module": "pr-comms",
+  "type": "news_judgment",
+  "prompt": "We just added dark mode to our note-taking app. Help me pitch this to TechCrunch.",
+  "expected_output": "Recognizes a dark-mode feature is not real news for a major tech outlet; redirects to owned channels and/or suggests a genuine hook (data, a bigger story) rather than pitching a non-story.",
+  "assertions": [
+    "Flags that a dark-mode feature alone is unlikely to be news for a major outlet like TechCrunch",
+    "Redirects to owned channels (release notes / blog / social) or suggests finding a genuine news hook (data, a larger announcement, a trend tie-in)",
+    "Does not simply write a press release or pitch treating dark mode as headline news",
+    "Is honest rather than over-promising coverage"
+  ],
+  "files": []
+}
