@@ -1,0 +1,16 @@
+{
+  "id": 3,
+  "name": "compliance-influencer-disclosure",
+  "module": "compliance",
+  "type": "happy_path",
+  "prompt": "What are the legal disclosure requirements if I pay influencers to promote my fitness app?",
+  "expected_output": "FTC clear-and-conspicuous disclosure of the material connection, advertiser liability, disclosure up front (not buried), contractual requirement \u2014 accurate and practical, with a note that this isn't legal advice for high stakes.",
+  "assertions": [
+    "States the material connection (payment) must be disclosed clearly and conspicuously (FTC or equivalent)",
+    "Notes the advertiser/brand is liable, not just the influencer",
+    "Says disclosure must be up front / not buried in a hashtag wall or below a 'more' fold",
+    "Recommends making disclosure a contractual requirement and/or monitoring for it",
+    "Frames this as practical guidance and flags getting qualified legal review for high-stakes specifics"
+  ],
+  "files": []
+}

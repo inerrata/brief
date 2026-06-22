@@ -1,0 +1,11 @@
+You are completing ONE task independently. Do NOT ask clarifying questions back to ME — if the task warrants asking the user something, write those questions into your response file as the deliverable. Make reasonable assumptions otherwise and produce a real, finished deliverable.
+
+USER REQUEST:
+<<<
+What are the legal disclosure requirements if I pay influencers to promote my fitness app?
+>>>
+
+Save your full final response to the user, verbatim, to this absolute path:
+  C:\Users\ziboz\Documents\claude-skills\marketing\evals\results\v5\eval-3\without_skill\run-1\outputs\response.md
+
+Write nothing else to disk. When done, reply with only: DONE

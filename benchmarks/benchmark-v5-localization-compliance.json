@@ -1,0 +1,156 @@
+{
+  "set": "evals-v5.json",
+  "runs_per_arm": 1,
+  "with_skill": {
+    "assertions_passed": 38,
+    "assertions_total": 38,
+    "micro_pass_rate": 1.0,
+    "macro_mean_eval_score": 1.0,
+    "evals": 8
+  },
+  "without_skill": {
+    "assertions_passed": 35,
+    "assertions_total": 38,
+    "micro_pass_rate": 0.9211,
+    "macro_mean_eval_score": 0.925,
+    "evals": 8
+  },
+  "per_eval": [
+    {
+      "id": 1,
+      "name": "localization-japan-landing",
+      "module": "localization",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 2,
+      "name": "localization-tagline-transcreation",
+      "module": "localization",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 4,
+        "total": 5,
+        "pass_rate": 0.8
+      },
+      "triggered": true
+    },
+    {
+      "id": 3,
+      "name": "compliance-influencer-disclosure",
+      "module": "compliance",
+      "type": "happy_path",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 4,
+      "name": "compliance-darkpattern-redirect",
+      "module": "compliance",
+      "type": "honesty_probe",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 4,
+        "total": 5,
+        "pass_rate": 0.8
+      },
+      "triggered": true
+    },
+    {
+      "id": 5,
+      "name": "compliance-supplement-health-claim",
+      "module": "compliance",
+      "type": "honesty_probe",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 4,
+        "total": 5,
+        "pass_rate": 0.8
+      },
+      "triggered": true
+    },
+    {
+      "id": 6,
+      "name": "compliance-purchased-list",
+      "module": "compliance",
+      "type": "judgment",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 7,
+      "name": "expansion-eu-skincare-multimodule",
+      "module": "localization+compliance",
+      "type": "multi_module",
+      "with_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 5,
+        "total": 5,
+        "pass_rate": 1.0
+      },
+      "triggered": true
+    },
+    {
+      "id": 8,
+      "name": "negative-control-phone-recording-law",
+      "module": "none",
+      "type": "should_not_trigger",
+      "with_skill": {
+        "passed": 3,
+        "total": 3,
+        "pass_rate": 1.0
+      },
+      "without_skill": {
+        "passed": 3,
+        "total": 3,
+        "pass_rate": 1.0
+      },
+      "triggered": false
+    }
+  ]
+}

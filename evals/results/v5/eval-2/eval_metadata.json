@@ -1,0 +1,16 @@
+{
+  "id": 2,
+  "name": "localization-tagline-transcreation",
+  "module": "localization",
+  "type": "happy_path",
+  "prompt": "Translate our campaign tagline 'Crush your goals' into German.",
+  "expected_output": "Recognizes a tagline needs transcreation, not literal translation; flags that the idiom won't carry; recreates the intent natively with options; recommends native review \u2014 rather than a single literal rendering.",
+  "assertions": [
+    "Recognizes a tagline should be transcreated (recreate the intent/effect), not literally translated",
+    "Flags that the English idiom 'crush your goals' won't carry literally into German",
+    "Offers German option(s) that recreate the intent and reads natively, ideally with a back-translation/explanation",
+    "Recommends native-speaker / in-market review before using it",
+    "Does not just hand back one literal word-for-word translation"
+  ],
+  "files": []
+}

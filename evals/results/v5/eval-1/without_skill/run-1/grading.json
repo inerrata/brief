@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Distinguishes localization/transcreation from literal translation rather than just offering to translate the text",
+      "passed": true,
+      "evidence": "Frames Japan as a re-launch / transcreation not translation; three-approach table."
+    },
+    {
+      "text": "Calls for native, in-market review before launch (not machine translation alone)",
+      "passed": true,
+      "evidence": "Native Japanese marketer/review called the highest-leverage step."
+    },
+    {
+      "text": "Raises market/cultural adaptation: local proof/case studies, imagery, buying behavior, or channel differences (e.g. dominant platforms differ in Japan)",
+      "passed": true,
+      "evidence": "Ringi consensus buying, density-as-trust, comparison sites, APPI, support-as-product."
+    },
+    {
+      "text": "Mentions locale mechanics (formality register, text expansion/layout, date/currency, or international SEO/keywords researched fresh)",
+      "passed": true,
+      "evidence": "JPY pricing, \u7a0e\u629c/\u7a0e\u8fbc, date formats, keigo register, \u7279\u5546\u6cd5 page."
+    },
+    {
+      "text": "Delivers an actionable plan on stated assumptions rather than only asking questions",
+      "passed": true,
+      "evidence": "Full plan plus a 90-day sequence on stated assumptions."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

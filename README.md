@@ -4,7 +4,7 @@ A full-stack marketing skill for Claude — copy, brand, content, campaigns, res
 
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![format](https://img.shields.io/badge/format-SKILL.md-blue)
-![evals](https://img.shields.io/badge/evals-26%20%2B%2024%20%2B%2012%20%2B%2010-blue)
+![evals](https://img.shields.io/badge/evals-26%20%2B%2024%20%2B%2012%20%2B%2010%20%2B%208-blue)
 [![with--skill](https://img.shields.io/badge/with--skill-98.9%25%2a-brightgreen)](benchmarks/benchmark-iteration-3.md#caveats-read-these)
 [![held-out](https://img.shields.io/badge/held--out%20v2-122%2F122%2a-brightgreen)](benchmarks/benchmark-v2-evalset.md#caveats-read-these)
 ![delta](https://img.shields.io/badge/vs%20baseline-%2B5.7pp%20%283%C3%97%29-brightgreen)
@@ -12,7 +12,7 @@ A full-stack marketing skill for Claude — copy, brand, content, campaigns, res
 
 <sub>\* 1× runs, self-graded — click a badge for the full caveats. The most rigorous number remains the 3×-averaged iteration-2 result (86.4% vs 80.7% baseline, **+5.7 pp**).</sub>
 
-Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 15 purpose-built reference modules only when relevant. The depth of fifteen specialist playbooks, none of the context bloat. Works with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and anything that reads the open `SKILL.md` format.
+Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 17 purpose-built reference modules only when relevant. The depth of seventeen specialist playbooks, none of the context bloat. Works with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and anything that reads the open `SKILL.md` format.
 
 ---
 
@@ -107,6 +107,24 @@ modules don't *lift* a 1× pass. What this eval confirms is **correct routing (1
 triggering), on-framework output, and no regression**, with the honesty rules made explicit
 rather than emergent. Full reasoning + caveats in [`benchmarks/benchmark-v4-channels.md`](benchmarks/benchmark-v4-channels.md).
 
+### Localization & compliance (v5) — 8 prompts for the v1.5.0 modules
+
+An 8-prompt set covers the two modules added in v1.5.0 (localization, compliance), including
+two compliance honesty probes (a dark-pattern request and an illegal-health-claim request).
+
+| Localization & compliance v5 | With skill | Baseline |
+|---|:--:|:--:|
+| Micro pass-rate | **100%** | 92.1% |
+| Delta | **+7.9 pp** | — |
+| Triggering | **8 / 8 correct** | — |
+
+This is the first post-v2 module set to show a **real, defensible delta** — and it lands
+exactly where the modules add a load-bearing step the base model skips: the skill **refused
+to write fake-scarcity / resetting-timer copy** (baseline wrote it under protest),
+**recommended legal review** for a regulated supplement claim, and **required native
+in-market review** of a transcreated tagline. All three baseline misses; the with-skill arm
+is clean. Method + per-eval table + honest caveats (1× run, self-graded) in [`benchmarks/benchmark-v5-localization-compliance.md`](benchmarks/benchmark-v5-localization-compliance.md).
+
 **Where it moves the needle most (iteration-2):**
 
 | Eval | With | Base | Δ | Why |
@@ -151,7 +169,7 @@ cp -r brief/_unpacked/marketing your-project/.claude/skills/marketing
 Two options, depending on your plan/UI:
 
 - **Skills upload** (Pro/Max/Team/Enterprise): download `marketing.skill` and upload it under **Settings → Capabilities → Skills**. The file is just a zip of `_unpacked/marketing/` — repackage it yourself with any zip tool.
-- **Projects fallback** (works everywhere): paste the contents of [`_unpacked/marketing/SKILL.md`](_unpacked/marketing/SKILL.md) into a Project's custom instructions (**Project → Settings → Project instructions**). You lose progressive disclosure (the 15 reference modules won't lazy-load), so for deep work also paste the relevant module from `_unpacked/marketing/references/`.
+- **Projects fallback** (works everywhere): paste the contents of [`_unpacked/marketing/SKILL.md`](_unpacked/marketing/SKILL.md) into a Project's custom instructions (**Project → Settings → Project instructions**). You lose progressive disclosure (the 17 reference modules won't lazy-load), so for deep work also paste the relevant module from `_unpacked/marketing/references/`.
 
 ### Brand profile (optional, recommended)
 
@@ -180,6 +198,8 @@ Don't want to fill it in by hand? Ask the skill to draft it for you — it can b
 | **Paid media** | Channel selection, account structure, bidding, budget, creative testing, the cold/warm/hot funnel, reading the numbers, scaling |
 | **PR & comms** | News judgment, media pitches, press releases, media relationships, thought leadership, crisis communications |
 | **Partnerships** | Influencer/creator marketing, vetting, affiliate programs, co-marketing, disclosure & honesty, measurement |
+| **Localization** | Translation vs. localization vs. transcreation, what survives a locale switch, locale mechanics, cultural adaptation, international SEO |
+| **Compliance** | Truth-in-advertising & substantiation, disclosure law (FTC/ASA), CAN-SPAM/GDPR/CASL, privacy, regulated categories, dark patterns, how to redirect a non-compliant request |
 
 ---
 
@@ -238,7 +258,8 @@ marketing/
     ├── brand-messaging.md   ├── seo.md              ├── cro.md
     ├── content-strategy.md  ├── campaigns.md        ├── measurement.md
     ├── product-marketing.md ├── specs.md            ├── social-media.md
-    ├── paid-media.md        ├── pr-comms.md         └── partnerships.md
+    ├── paid-media.md        ├── pr-comms.md         ├── partnerships.md
+    ├── localization.md      └── compliance.md
 ```
 
 At session start, only the `SKILL.md` **description** (~100 tokens) is in context. When a marketing task is detected, the full `SKILL.md` loads and routes to the relevant module(s); unused modules never load. Multi-area requests pull several and synthesize.
@@ -274,7 +295,7 @@ Checked against every deliverable before it ships: **specificity** (numbers, not
 
 ## Evaluation
 
-The skill ships with its own test suite in [`evals/`](evals): **26 prompts** (`evals.json`), a **24-prompt held-out v2 set** (`evals-v2.json`, AI-generated), a **12-prompt v3 new-features set** (`evals-v3.json`) targeting the agentic gates and the product-marketing/specs modules, and a **10-prompt v4 set** (`evals-v4.json`) for the social/paid/PR/partnerships modules — together covering every module, phrasing variations, both gate checks, deliver-first traps, multi-module synthesis, an implicit trigger, honesty probes, and **negative controls** (prompts that should *not* trigger it).
+The skill ships with its own test suite in [`evals/`](evals): **26 prompts** (`evals.json`), a **24-prompt held-out v2 set** (`evals-v2.json`, AI-generated), a **12-prompt v3 new-features set** (`evals-v3.json`) targeting the agentic gates and the product-marketing/specs modules, a **10-prompt v4 set** (`evals-v4.json`) for the social/paid/PR/partnerships modules, and an **8-prompt v5 set** (`evals-v5.json`) for localization and compliance — together covering every module, phrasing variations, both gate checks, deliver-first traps, multi-module synthesis, an implicit trigger, honesty probes, and **negative controls** (prompts that should *not* trigger it).
 
 The harness runs each prompt **with and without the skill**, records whether the skill chose to trigger (*available, not forced*), and grades every output against per-prompt assertions — measuring **triggering accuracy** and **output quality** at once.
 
@@ -322,7 +343,7 @@ Run with-skill and baseline for each prompt, grade against expected_output, and 
 ## Roadmap
 
 - ✅ ~~Paid-media, social-media, PR & comms, and partnerships/influencer modules~~ (v1.4.0)
-- More reference modules (localization/transcreation, compliance & disclosure deep-dive)
+- ✅ ~~Localization/transcreation and compliance & disclosure modules~~ (v1.5.0)
 - ✅ ~~Product-marketing module (release notes, battle cards, dev marketing) + channel-specs cheat sheet~~
 - ✅ ~~Agentic audits — fetch the URL / find the asset in-repo instead of asking for a paste~~
 - ✅ ~~brand.md generation — the skill drafts your brand profile from conversation or your homepage~~

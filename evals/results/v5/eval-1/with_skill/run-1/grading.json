@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Distinguishes localization/transcreation from literal translation rather than just offering to translate the text",
+      "passed": true,
+      "evidence": "Frames Japan as relocalization/transcreation, not translation; per-asset job table."
+    },
+    {
+      "text": "Calls for native, in-market review before launch (not machine translation alone)",
+      "passed": true,
+      "evidence": "Native in-market review called non-negotiable, with name/trademark pressure-test."
+    },
+    {
+      "text": "Raises market/cultural adaptation: local proof/case studies, imagery, buying behavior, or channel differences (e.g. dominant platforms differ in Japan)",
+      "passed": true,
+      "evidence": "Local proof (Japanese logos/case studies), review sites (ITreview/BOXIL), LINE, ringi buying behavior."
+    },
+    {
+      "text": "Mentions locale mechanics (formality register, text expansion/layout, date/currency, or international SEO/keywords researched fresh)",
+      "passed": true,
+      "evidence": "Formality register (\u3067\u3059/\u307e\u3059), text-shrink/typography, \u00a5 pricing, hreflang, fresh JP keywords."
+    },
+    {
+      "text": "Delivers an actionable plan on stated assumptions rather than only asking questions",
+      "passed": true,
+      "evidence": "Delivers the full plan on stated assumptions; asks for the page to finish the copy."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

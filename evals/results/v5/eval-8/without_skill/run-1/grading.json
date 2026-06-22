@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "The marketing skill is NOT triggered (trigger_decision.triggered is false)",
+      "passed": true,
+      "evidence": "No skill involved; general legal answer (baseline arm)."
+    },
+    {
+      "text": "Gives a correct general answer (California requires all-party consent) with an appropriate not-legal-advice caveat",
+      "passed": true,
+      "evidence": "Correct: California all-party consent (\u00a7632), with a not-a-lawyer caveat."
+    },
+    {
+      "text": "No marketing frameworks, briefs, disclosure-for-ads, or scoping questions appear",
+      "passed": true,
+      "evidence": "No marketing content."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  }
+}

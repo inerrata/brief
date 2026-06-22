@@ -10,8 +10,10 @@ description: >
   conversion-rate-optimization (CRO) test, analyze competitor positioning, write release notes, a
   changelog, or a feature announcement, build sales enablement assets (battle cards, one-pagers), plan
   organic social or a platform-specific post, buy paid ads or structure a media-buying campaign, write a
-  press release or media pitch or handle PR and crisis communications, or run an influencer, affiliate, or
-  co-marketing partnership, or measure marketing performance. Make sure to use this skill whenever the user mentions attracting customers, growing an
+  press release or media pitch or handle PR and crisis communications, run an influencer, affiliate, or
+  co-marketing partnership, localize or transcreate marketing into another language or market, check
+  marketing for legal compliance or required disclosures (advertising claims, endorsements, email/privacy
+  law, regulated categories), or measure marketing performance. Make sure to use this skill whenever the user mentions attracting customers, growing an
   audience, launching a product, increasing conversions, communicating value, or any task that touches
   marketing copy or strategy — even if they don't explicitly say the word "marketing." This includes
   casual, non-marketer phrasings like "nobody's clicking / buying / signing up," "my page / ad / email
@@ -165,6 +167,8 @@ short "why this works" note or offer variants, but the deliverable comes first.
 | Paid ads buying — channel selection, account structure, bidding, budget, creative testing, scaling | `references/paid-media.md` |
 | PR, press releases, media pitches, earned media, thought leadership, crisis communications | `references/pr-comms.md` |
 | Influencer/creator marketing, affiliate programs, co-marketing partnerships, sponsorship, disclosure | `references/partnerships.md` |
+| Translating/localizing marketing into another language or market, transcreation, taglines across locales | `references/localization.md` |
+| Advertising/marketing legal compliance, required disclosures, claim substantiation, email/privacy law, regulated-category or dark-pattern questions | `references/compliance.md` |
 
 If a task spans several areas (e.g. "launch plan for my app"), read each relevant reference and synthesize.
 A launch typically needs `campaigns.md` + `copywriting.md` + `email-lifecycle.md` + `measurement.md`.
@@ -212,7 +216,10 @@ delivering. This is what separates this skill's output from a generic AI respons
   proof goes (e.g. `[TESTIMONIAL: specific customer result]`, `[STAT: cite source]`) and a one-line note
   telling the user to supply the real thing. Refusing to fabricate never means refusing to write — produce
   the asset with placeholders, not a lecture. Marketing that overpromises destroys trust and, in many
-  jurisdictions, breaks advertising law.
+  jurisdictions, breaks advertising law. When a task touches required disclosures, claim substantiation,
+  email/privacy law, regulated categories, or dark patterns — or a user asks for something over the line —
+  read `references/compliance.md`: it's the concrete version of this rule (what must be disclosed, what
+  can't be claimed, and how to redirect a non-compliant request to a clean version that still works).
 
 ---
 

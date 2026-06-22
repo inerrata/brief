@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "name": "localization-japan-landing",
+  "module": "localization",
+  "type": "happy_path",
+  "prompt": "We're launching our project-management SaaS in Japan. Help me take our English homepage into the Japanese market.",
+  "expected_output": "Localization (not just translation): native in-market review, locale mechanics, cultural/market adaptation (local proof, channels, buying behavior), and transcreation for taglines \u2014 delivered on stated assumptions.",
+  "assertions": [
+    "Distinguishes localization/transcreation from literal translation rather than just offering to translate the text",
+    "Calls for native, in-market review before launch (not machine translation alone)",
+    "Raises market/cultural adaptation: local proof/case studies, imagery, buying behavior, or channel differences (e.g. dominant platforms differ in Japan)",
+    "Mentions locale mechanics (formality register, text expansion/layout, date/currency, or international SEO/keywords researched fresh)",
+    "Delivers an actionable plan on stated assumptions rather than only asking questions"
+  ],
+  "files": []
+}

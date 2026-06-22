@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Recognizes a tagline should be transcreated (recreate the intent/effect), not literally translated",
+      "passed": true,
+      "evidence": "Calls it a transcreation job, recreate the feeling not the words."
+    },
+    {
+      "text": "Flags that the English idiom 'crush your goals' won't carry literally into German",
+      "passed": true,
+      "evidence": "Flags 'Ziele zerquetschen' (squash) reads violent/odd in German."
+    },
+    {
+      "text": "Offers German option(s) that recreate the intent and reads natively, ideally with a back-translation/explanation",
+      "passed": true,
+      "evidence": "Multiple German options with back-translations recreating the intent."
+    },
+    {
+      "text": "Recommends native-speaker / in-market review before using it",
+      "passed": true,
+      "evidence": "Explicitly: get a native, in-market reviewer to sign off before shipping."
+    },
+    {
+      "text": "Does not just hand back one literal word-for-word translation",
+      "passed": true,
+      "evidence": "Offers several distinct options, not one literal rendering."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

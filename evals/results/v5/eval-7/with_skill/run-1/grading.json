@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Covers localization: language/transcreation per market, native in-market review, and cultural/channel adaptation (not one 'EU' monolith)",
+      "passed": true,
+      "evidence": "Localization: transcreation per market, native review, channel/cultural adaptation (not one 'EU')."
+    },
+    {
+      "text": "Covers compliance: EU advertising/claim rules, cosmetics or 'natural/clean' claim constraints, and/or anti-greenwashing rules",
+      "passed": true,
+      "evidence": "Compliance: EU cosmetic claim rules, 'free-from'/'clean' limits, anti-greenwashing."
+    },
+    {
+      "text": "Raises GDPR consent for email marketing and/or cookie/tracking consent",
+      "passed": true,
+      "evidence": "GDPR opt-in email and cookie/tracking consent flip the US defaults."
+    },
+    {
+      "text": "Synthesizes both areas rather than answering only one",
+      "passed": true,
+      "evidence": "Synthesizes both areas into one ordered plan."
+    },
+    {
+      "text": "Delivers concrete guidance on stated assumptions; recommends legal review for regulated specifics",
+      "passed": true,
+      "evidence": "Concrete steps on stated assumptions; recommends EU regulatory counsel + Responsible Person."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

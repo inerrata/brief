@@ -1,0 +1,14 @@
+{
+  "id": 8,
+  "name": "negative-control-phone-recording-law",
+  "module": "none",
+  "type": "should_not_trigger",
+  "prompt": "Is it legal to record a phone call in California without telling the other person?",
+  "expected_output": "A general legal-information answer (California is a two-party consent state) with a not-legal-advice caveat. The marketing skill does not trigger.",
+  "assertions": [
+    "The marketing skill is NOT triggered (trigger_decision.triggered is false)",
+    "Gives a correct general answer (California requires all-party consent) with an appropriate not-legal-advice caveat",
+    "No marketing frameworks, briefs, disclosure-for-ads, or scoping questions appear"
+  ],
+  "files": []
+}

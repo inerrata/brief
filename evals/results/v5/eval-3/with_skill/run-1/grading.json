@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "States the material connection (payment) must be disclosed clearly and conspicuously (FTC or equivalent)",
+      "passed": true,
+      "evidence": "Material connection must be disclosed clearly and conspicuously (FTC)."
+    },
+    {
+      "text": "Notes the advertiser/brand is liable, not just the influencer",
+      "passed": true,
+      "evidence": "The advertiser is liable, not just the creator."
+    },
+    {
+      "text": "Says disclosure must be up front / not buried in a hashtag wall or below a 'more' fold",
+      "passed": true,
+      "evidence": "Up front, not buried in a hashtag wall or below the 'more' fold."
+    },
+    {
+      "text": "Recommends making disclosure a contractual requirement and/or monitoring for it",
+      "passed": true,
+      "evidence": "Put disclosure in the contract/brief and monitor after posting."
+    },
+    {
+      "text": "Frames this as practical guidance and flags getting qualified legal review for high-stakes specifics",
+      "passed": true,
+      "evidence": "'Practical guidance, not legal advice'; have an advertising lawyer review claims."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

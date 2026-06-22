@@ -1,0 +1,16 @@
+{
+  "id": 7,
+  "name": "expansion-eu-skincare-multimodule",
+  "module": "localization+compliance",
+  "type": "multi_module",
+  "prompt": "We're a US skincare brand expanding into the EU. What changes for our marketing?",
+  "expected_output": "Synthesizes localization (per-market language/transcreation, native review, channels, cultural adaptation) and compliance (EU claim rules, cosmetics/'natural' claim limits, GDPR consent for email/tracking, green-claim rules) on stated assumptions.",
+  "assertions": [
+    "Covers localization: language/transcreation per market, native in-market review, and cultural/channel adaptation (not one 'EU' monolith)",
+    "Covers compliance: EU advertising/claim rules, cosmetics or 'natural/clean' claim constraints, and/or anti-greenwashing rules",
+    "Raises GDPR consent for email marketing and/or cookie/tracking consent",
+    "Synthesizes both areas rather than answering only one",
+    "Delivers concrete guidance on stated assumptions; recommends legal review for regulated specifics"
+  ],
+  "files": []
+}

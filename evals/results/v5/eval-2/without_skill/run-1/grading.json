@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Recognizes a tagline should be transcreated (recreate the intent/effect), not literally translated",
+      "passed": true,
+      "evidence": "Says a tagline rarely translates word-for-word."
+    },
+    {
+      "text": "Flags that the English idiom 'crush your goals' won't carry literally into German",
+      "passed": true,
+      "evidence": "Notes the 'crush' idiom needs care; gives nuance per option."
+    },
+    {
+      "text": "Offers German option(s) that recreate the intent and reads natively, ideally with a back-translation/explanation",
+      "passed": true,
+      "evidence": "German options with a nuance table and back-translations."
+    },
+    {
+      "text": "Recommends native-speaker / in-market review before using it",
+      "passed": false,
+      "evidence": "Does NOT recommend native-speaker / in-market review before using it \u2014 gives options and asks tone questions but omits the review step."
+    },
+    {
+      "text": "Does not just hand back one literal word-for-word translation",
+      "passed": true,
+      "evidence": "Offers multiple options, not one literal rendering."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  }
+}

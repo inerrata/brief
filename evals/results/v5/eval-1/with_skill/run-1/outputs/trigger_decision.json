@@ -1,0 +1,5 @@
+{
+  "triggered": true,
+  "reason": "The request is to localize/transcreate an English homepage into the Japanese market, a core marketing localization task the skill explicitly covers.",
+  "references_read": ["SKILL.md", "localization.md"]
+}
