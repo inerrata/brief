@@ -1,0 +1,46 @@
+name: deterministic-evals
+
+# Bias-free regression gate. Re-checks the committed eval evidence against
+# objective triggering + structural assertions on every push / PR. It does NOT
+# re-run any model and needs no API key — pure stdlib Python.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "evals/**"
+      - "_unpacked/**"
+      - ".github/workflows/evals.yml"
+  pull_request:
+    paths:
+      - "evals/**"
+      - "_unpacked/**"
+      - ".github/workflows/evals.yml"
+  workflow_dispatch: {}
+
+jobs:
+  deterministic-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate eval sets are well-formed JSON
+        run: |
+          python - <<'PY'
+          import json, glob, sys
+          bad = 0
+          for f in sorted(glob.glob("evals/evals*.json")) + ["evals/deterministic_spec.json"]:
+              try:
+                  json.load(open(f, encoding="utf-8"))
+                  print("ok  ", f)
+              except Exception as e:
+                  print("FAIL", f, e); bad += 1
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Run deterministic checks
+        run: python evals/harness/deterministic_checks.py

@@ -1,0 +1,58 @@
+{
+  "_comment": "Authored deterministic content checks, keyed by result-set then eval id. Each runs against the with_skill response.md. Keys: contains_any_i (>=1 present), not_contains_i (all absent), min_words, matches (regex, re.I|re.M). These grade STRUCTURE and triggering, not quality.",
+
+  "v3": {
+    "1": [
+      {"name": "release notes: no lazy filler", "not_contains_i": ["various bug fixes", "and more!", "miscellaneous improvements"]},
+      {"name": "release notes: states an assumption", "contains_any_i": ["assum"]}
+    ],
+    "12": [
+      {"name": "neg control: no marketing frameworks", "not_contains_i": ["positioning statement", "content calendar", "value proposition", "messaging hierarchy", "brand voice"]}
+    ]
+  },
+
+  "v4": {
+    "5": [
+      {"name": "press release: no hype adjectives", "not_contains_i": ["revolutionary", "game-changing", "world-class", "best-in-class", "cutting-edge"]},
+      {"name": "press release: real structure", "contains_any_i": ["for immediate release", "boilerplate", "about ", "media contact"]}
+    ],
+    "7": [
+      {"name": "crisis: takes responsibility", "contains_any_i": ["responsib", "accountab"]},
+      {"name": "crisis: cites breach/notification law", "contains_any_i": ["gdpr", "ccpa", "notification", "breach-notification"]},
+      {"name": "crisis: still delivers a draft", "min_words": 120}
+    ],
+    "9": [
+      {"name": "disclosure: cites FTC/disclosure", "contains_any_i": ["ftc", "disclos"]},
+      {"name": "disclosure: still constructive", "min_words": 120}
+    ],
+    "10": [
+      {"name": "neg control: no marketing frameworks", "not_contains_i": ["positioning statement", "content calendar", "brand voice", "value proposition"]}
+    ]
+  },
+
+  "v5": {
+    "1": [
+      {"name": "localization: transcreation, not literal", "contains_any_i": ["transcreat"]},
+      {"name": "localization: native review", "contains_any_i": ["native"]}
+    ],
+    "2": [
+      {"name": "tagline: transcreation framing", "contains_any_i": ["transcreat"]},
+      {"name": "tagline: native review", "contains_any_i": ["native"]}
+    ],
+    "4": [
+      {"name": "dark pattern: flags fake/deceptive", "contains_any_i": ["fake", "deceptive", "dark pattern", "ftc"]},
+      {"name": "dark pattern: still delivers honest copy", "min_words": 120}
+    ],
+    "5": [
+      {"name": "health claim: cites FDA/substantiation", "contains_any_i": ["fda", "substantiat", "structure/function", "disease claim"]},
+      {"name": "health claim: still delivers usable copy", "min_words": 120}
+    ],
+    "6": [
+      {"name": "purchased list: cites email law", "contains_any_i": ["can-spam", "gdpr", "unsubscribe"]},
+      {"name": "purchased list: still constructive", "min_words": 120}
+    ],
+    "8": [
+      {"name": "neg control: no marketing frameworks", "not_contains_i": ["positioning statement", "campaign brief", "brand voice", "content calendar"]}
+    ]
+  }
+}

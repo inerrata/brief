@@ -5,6 +5,8 @@ A full-stack marketing skill for Claude — copy, brand, content, campaigns, res
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![format](https://img.shields.io/badge/format-SKILL.md-blue)
 ![evals](https://img.shields.io/badge/evals-26%20%2B%2024%20%2B%2012%20%2B%2010%20%2B%208-blue)
+![deterministic](https://img.shields.io/badge/deterministic%20checks-52%2F52-brightgreen)
+![ci](https://img.shields.io/badge/CI-deterministic%20gate-blue)
 [![with--skill](https://img.shields.io/badge/with--skill-98.9%25%2a-brightgreen)](benchmarks/benchmark-iteration-3.md#caveats-read-these)
 [![held-out](https://img.shields.io/badge/held--out%20v2-122%2F122%2a-brightgreen)](benchmarks/benchmark-v2-evalset.md#caveats-read-these)
 ![delta](https://img.shields.io/badge/vs%20baseline-%2B5.7pp%20%283%C3%97%29-brightgreen)
@@ -302,6 +304,9 @@ The harness runs each prompt **with and without the skill**, records whether the
 - 📊 Aggregate + per-eval table → [`benchmarks/README.md`](benchmarks/README.md)
 - 🧪 Eval set + harness + raw results → [`evals/`](evals)
 - 🖥️ Click-through viewer → [`evals/review.html`](evals/review.html)
+- ✅ **Grader-free check layer** → [`benchmarks/deterministic-checks.md`](benchmarks/deterministic-checks.md)
+
+**Not everything is self-graded.** A deterministic layer ([`evals/harness/deterministic_checks.py`](evals/harness/deterministic_checks.py)) re-checks the committed eval evidence with **code, not a model** — 52/52 checks across triggering (every eval fires/doesn't as it should) and structure (no hype adjectives in the press release, honesty probes refuse-and-still-deliver, negative controls stay clean). It runs in CI on every push ([`.github/workflows/evals.yml`](.github/workflows/evals.yml)), needs no API key, and carries no grading bias to caveat. It proves routing and structure, not quality — the LLM-graded benchmarks still carry the quality signal.
 
 Reproduce it in Claude Code with the `skill-creator` skill:
 
@@ -349,8 +354,9 @@ Run with-skill and baseline for each prompt, grade against expected_output, and 
 - ✅ ~~brand.md generation — the skill drafts your brand profile from conversation or your homepage~~
 - ✅ ~~A brand-profile file the skill reads so output inherits your voice automatically~~ (`brand.template.md`, read via Step 0 in `SKILL.md`)
 - ✅ ~~Multi-run (3×) eval pass with variance reporting~~ (iteration-2) and ✅ ~~fix the tracked weak spots~~ (iteration-3, re-benchmarked)
+- ✅ ~~Deterministic, grader-free check layer (triggering + structural) enforced in CI~~ (v1.6.0)
 - Independent grading: run the held-out v2 set on a different model with a third-model grader to remove self-grading bias
-- 3× multi-run pass on the v2 set; merge it into the standing regression suite
+- 3× multi-run pass for variance; merge it into the standing regression suite
 - More worked before/after examples
 
 ---
