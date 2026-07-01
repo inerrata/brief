@@ -10,11 +10,15 @@ on:
     paths:
       - "evals/**"
       - "_unpacked/**"
+      - "build/**"
+      - "dist/**"
       - ".github/workflows/evals.yml"
   pull_request:
     paths:
       - "evals/**"
       - "_unpacked/**"
+      - "build/**"
+      - "dist/**"
       - ".github/workflows/evals.yml"
   workflow_dispatch: {}
 
@@ -44,3 +48,22 @@ jobs:
 
       - name: Run deterministic checks
         run: python evals/harness/deterministic_checks.py
+
+  # dist/ adapters (AGENTS.md, .cursorrules) are generated from SKILL.md.
+  # Rebuild them and fail if the committed files have drifted from the source.
+  adapters-in-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild adapters and fail on drift
+        run: |
+          python build/build_adapters.py
+          git diff --exit-code -- dist/ || {
+            echo "::error::dist/ adapters are out of date — run 'python build/build_adapters.py' and commit the result."
+            exit 1
+          }

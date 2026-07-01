@@ -14,7 +14,7 @@ A full-stack marketing skill for Claude — copy, brand, content, campaigns, res
 
 <sub>\* 1× runs, self-graded — click a badge for the full caveats. The most rigorous number remains the 3×-averaged iteration-2 result (86.4% vs 80.7% baseline, **+5.7 pp**).</sub>
 
-Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 17 purpose-built reference modules only when relevant. The depth of seventeen specialist playbooks, none of the context bloat. Works with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and anything that reads the open `SKILL.md` format.
+Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 17 purpose-built reference modules only when relevant. The depth of seventeen specialist playbooks, none of the context bloat. Works with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and anything that reads the open `SKILL.md` format — with **ready-made adapters** for Cursor/Codex/Gemini generated from the same source in [`dist/`](dist).
 
 ---
 
@@ -172,6 +172,15 @@ Two options, depending on your plan/UI:
 
 - **Skills upload** (Pro/Max/Team/Enterprise): download `marketing.skill` and upload it under **Settings → Capabilities → Skills**. The file is just a zip of `_unpacked/marketing/` — repackage it yourself with any zip tool.
 - **Projects fallback** (works everywhere): paste the contents of [`_unpacked/marketing/SKILL.md`](_unpacked/marketing/SKILL.md) into a Project's custom instructions (**Project → Settings → Project instructions**). You lose progressive disclosure (the 17 reference modules won't lazy-load), so for deep work also paste the relevant module from `_unpacked/marketing/references/`.
+
+### Cursor / Codex CLI / Gemini CLI
+
+Ready-made adapters live in [`dist/`](dist) — generated from `SKILL.md` by [`build/build_adapters.py`](build/build_adapters.py) and kept in sync by CI, so they never drift from the source:
+
+1. Copy [`dist/AGENTS.md`](dist/AGENTS.md) into your project root (**Codex CLI**; rename to `GEMINI.md` for **Gemini CLI**), or [`dist/.cursorrules`](dist/.cursorrules) for **Cursor**.
+2. Copy `_unpacked/marketing/` into your project as `marketing/` so the reference modules are on disk.
+
+The adapter is the same routing layer — the agent lazy-reads `marketing/references/*.md` only when a task needs them, preserving progressive disclosure outside Claude.
 
 ### Brand profile (optional, recommended)
 
@@ -337,7 +346,7 @@ Run with-skill and baseline for each prompt, grade against expected_output, and 
 
 **Will it invent testimonials or stats if I ask?** No. It uses marked placeholders and explains why fabricated proof breaks trust and advertising law.
 
-**Does it work outside Claude?** Yes — any tool that reads `SKILL.md` (Cursor, Codex CLI, Gemini CLI, …).
+**Does it work outside Claude?** Yes — ready-made adapters for Cursor (`dist/.cursorrules`) and Codex/Gemini CLI (`dist/AGENTS.md`) are generated from the same `SKILL.md` source and kept in sync by CI. See [Install](#install).
 
 **How is this different from "be a marketer"?** Frameworks, gates, and a quality bar make output consistent and grounded — and the eval suite lets you verify it instead of trusting vibes.
 
@@ -355,6 +364,7 @@ Run with-skill and baseline for each prompt, grade against expected_output, and 
 - ✅ ~~A brand-profile file the skill reads so output inherits your voice automatically~~ (`brand.template.md`, read via Step 0 in `SKILL.md`)
 - ✅ ~~Multi-run (3×) eval pass with variance reporting~~ (iteration-2) and ✅ ~~fix the tracked weak spots~~ (iteration-3, re-benchmarked)
 - ✅ ~~Deterministic, grader-free check layer (triggering + structural) enforced in CI~~ (v1.6.0)
+- ✅ ~~Format adapters — `dist/AGENTS.md` (Codex/Gemini) + `dist/.cursorrules` (Cursor), generated from `SKILL.md`, CI-guarded against drift~~ (v1.7.0)
 - Independent grading: run the held-out v2 set on a different model with a third-model grader to remove self-grading bias
 - 3× multi-run pass for variance; merge it into the standing regression suite
 - More worked before/after examples
