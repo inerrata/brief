@@ -157,7 +157,7 @@ curl -fsSL https://raw.githubusercontent.com/inerrata/brief/main/install.sh | ba
 irm https://raw.githubusercontent.com/inerrata/brief/main/install.ps1 | iex
 ```
 
-Installs to `~/.claude/skills/marketing` (all your projects pick it up).
+Installs the **latest release** to `~/.claude/skills/marketing` (all your projects pick it up). Pin a version with `--ref v1.8.0` (bash: `curl … | bash -s -- --ref v1.8.0`; PowerShell: `$env:BRIEF_REF = 'v1.8.0'` first), or track unreleased `main` with `--ref main`. Check what you're running any time: `cat ~/.claude/skills/marketing/VERSION`.
 
 ### Claude Code (project-specific)
 
@@ -365,6 +365,7 @@ Run with-skill and baseline for each prompt, grade against expected_output, and 
 - ✅ ~~Multi-run (3×) eval pass with variance reporting~~ (iteration-2) and ✅ ~~fix the tracked weak spots~~ (iteration-3, re-benchmarked)
 - ✅ ~~Deterministic, grader-free check layer (triggering + structural) enforced in CI~~ (v1.6.0)
 - ✅ ~~Format adapters — `dist/AGENTS.md` (Codex/Gemini) + `dist/.cursorrules` (Cursor), generated from `SKILL.md`, CI-guarded against drift~~ (v1.7.0)
+- ✅ ~~Versioned installs — `VERSION` file in the skill, installers default to the latest release with `--ref` pinning, `CHANGELOG.md`~~ (v1.8.0)
 - Independent grading: run the held-out v2 set on a different model with a third-model grader to remove self-grading bias
 - 3× multi-run pass for variance; merge it into the standing regression suite
 - More worked before/after examples
